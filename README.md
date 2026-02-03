@@ -1,0 +1,1 @@
+- Lấy từ BCTC trên CafeF, lấy từ công ty mẹ, lấy cả năm, có kiểm toán, từ 2020-2024
