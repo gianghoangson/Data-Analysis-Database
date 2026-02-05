@@ -21,6 +21,9 @@ nam_thanh_lap = 1875
 # 2. DANH SÁCH BIẾN & TỪ KHÓA
 # ==============================================================================
 DATA_38_VARS = {
+    # --- BIẾN TẠM (Dùng để hứng số liệu thành phần) ---
+    "_temp_khau_hao": None,         # Hứng "Chi phí khấu hao"
+    "_temp_cp_bang_tien_khac": None, # Hứng "Chi phí bằng tiền khác"
     # --- Nhập tay ---
     "1. Managerial ownership": None, "2. State ownership": None,
     "3. Institutional ownership": None, "4. Foreign ownership": None,
@@ -45,31 +48,35 @@ DATA_38_VARS = {
 }
 
 OCR_KEYWORDS = {
+    # Thay vì map trực tiếp vào biến 11, ta map vào biến tạm
+    "Chi phí khấu hao": "_temp_khau_hao", 
+    "Chi phí khác": "_temp_cp_bang_tien_khac",
+    
     "Doanh thu thuần": "6. Total sales revenue and Net sales revenue",
-    "Tổng cộng tài sản": "7. Total assets",
+    "Tổng tài sản": "7. Total assets",
     "Chi phí bán hàng": "8. Selling expenses",
     "Chi phí quản lý doanh nghiệp": "9. General and administrative expenditure",
     "Tài sản cố định vô hình": "10. Value of intangible assets",
     "Chi phí sản xuất chung": "11. Manufacturing overhead",
     "Lợi nhuận thuần từ hoạt động kinh doanh": "12. Net operating income",
-    "Chi phí nguyên liệu, vật liệu": "13. Consumption of raw material",
+    "Chi phí nguyên vật liệu trong chi phí sản xuất": "13. Consumption of raw material",
     "Hàng hóa": "14. Merchandise purchase of the year",
-    "Chi phí sản xuất, kinh doanh dở dang": "15. Work-in-progess goods purchase",
+    "Chi phí sản xuất kinh doanh dở dang": "15. Work-in-progess goods purchase",
     "Chi phí dịch vụ mua ngoài": "16. Outside manufacturing expenses",
     "Tổng chi phí sản xuất": "17. Production cost", 
     "Chi phí nghiên cứu": "18. R&D expenditure",
-    "Lợi nhuận sau thuế thu nhập doanh nghiệp": "21. Net Income",
+    "Lợi nhuận thuần từ hoạt động kinh doanh": "21. Net Income",
     "Vốn chủ sở hữu": "22. Total shareholders' equity",
     "Nợ phải trả": "24. Total liabilities",
     "Lưu chuyển tiền thuần từ hoạt động kinh doanh": "25. Net cash from operating activities",
-    "Tiền chi để mua sắm, xây dựng": "26. Capital expenditure",
+    "Tiền chi mua sắm, xây dựng tài sản cố định": "26. Capital expenditure",
     "Lưu chuyển tiền thuần từ hoạt động đầu tư": "27. Cash flows from investing activities",
     "Tiền và các khoản tương đương tiền": "28. Cash and cash equivalent",
     "Vay và nợ thuê tài chính dài hạn": "29. Long-term debt",
     "Tài sản ngắn hạn": "30. Current assets",
     "Nợ ngắn hạn": "31. Current liabiltiies",
     "Hàng tồn kho": "33. Total inventory",
-    "Cổ tức, lợi nhuận đã trả": "34. Divident payment",
+    "Tiền chi trả cổ tức": "34. Divident payment",
     "Lãi cơ bản trên cổ phiếu": "35. EPS",
     "Số lượng nhân viên": "36. Number of employees",
     "Tài sản cố định hữu hình": "37. Net plant, property and equipment"
@@ -176,6 +183,26 @@ def get_pdf_data():
 
     except Exception as e:
         print(f"   ❌ Lỗi Module PDF: {e}")
+
+    
+    # Tính biến 11
+    val_khau_hao = DATA_38_VARS.get("_temp_khau_hao")
+    val_cp_khac = DATA_38_VARS.get("_temp_cp_bang_tien_khac")
+    
+    # Chuyển về 0 nếu không tìm thấy (để cộng không bị lỗi)
+    num_khau_hao = val_khau_hao if val_khau_hao else 0
+    num_cp_khac = val_cp_khac if val_cp_khac else 0
+    
+    if num_khau_hao > 0 or num_cp_khac > 0:
+        total_11 = num_khau_hao + num_cp_khac
+        DATA_38_VARS["11. Manufacturing overhead"] = total_11
+        print(f"      ✅ Đã tính Biến 11 = Khấu hao ({num_khau_hao:,.0f}) + CP Khác ({num_cp_khac:,.0f}) = {total_11:,.0f}")
+    else:
+        print("      ⚠️ Không tìm thấy số liệu Khấu hao hoặc CP Khác để cộng.")
+
+    # Xóa biến tạm cho sạch file Excel
+    if "_temp_khau_hao" in DATA_38_VARS: del DATA_38_VARS["_temp_khau_hao"]
+    if "_temp_cp_bang_tien_khac" in DATA_38_VARS: del DATA_38_VARS["_temp_cp_bang_tien_khac"]
 
 # ==============================================================================
 # 4. CHẠY
