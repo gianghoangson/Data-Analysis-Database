@@ -49,7 +49,7 @@ class FinancialReportProcessor:
         "Tài sản cố định hữu hình": "37. Net plant, property and equipment"
     }
     
-    def __init__(self, tesseract_path="D:/tesseract ocr/tesseract.exe"):
+    def __init__(self, tesseract_path=r"C:\Program Files\Tesseract-OCR\tesseract.exe"):
         """
         Khởi tạo processor
         
