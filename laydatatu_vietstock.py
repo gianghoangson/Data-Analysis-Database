@@ -6,6 +6,9 @@ import pandas as pd
 import re
 import os
 import yfinance as yf
+from pytesseract import Output
+import cv2
+import numpy as np
 
 # ==============================================================================
 # 1. CẤU HÌNH
@@ -65,7 +68,7 @@ OCR_KEYWORDS = {
     "Chi phí dịch vụ mua ngoài": "16. Outside manufacturing expenses",
     "Tổng chi phí sản xuất": "17. Production cost", 
     "Chi phí nghiên cứu": "18. R&D expenditure",
-    "Lợi nhuận thuần từ hoạt động kinh doanh": "21. Net Income",
+    "Lợi nhuận thuần sau thuế": "21. Net Income",
     "Vốn chủ sở hữu": "22. Total shareholders' equity",
     "Nợ phải trả": "24. Total liabilities",
     "Lưu chuyển tiền thuần từ hoạt động kinh doanh": "25. Net cash from operating activities",
@@ -148,6 +151,147 @@ def process_extracted_text(text, mode_name):
                     DATA_38_VARS[key_en] = val
                     print(f"      ✅ [{mode_name}] Bắt được: {key_en} = {val:,.0f}")
 
+def targeted_ocr_refinement_v10(doc, data_vars, keywords_dict):
+    print("\n----- [BƯỚC 2.5] PHÂN TÍCH LAYOUT & GHÉP DÒNG (v10 - FIX BIẾN 12) -----")
+    
+    missing_items = {vn: en for vn, en in keywords_dict.items() if data_vars.get(en) is None}
+    if not missing_items: return
+
+    for page_idx in range(len(doc)):
+        page = doc.load_page(page_idx)
+        pix = page.get_pixmap(dpi=300)
+        img = Image.open(io.BytesIO(pix.tobytes("png")))
+        
+        img_cv = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2GRAY)
+        _, thresh = cv2.threshold(img_cv, 180, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+        
+        d = pytesseract.image_to_data(thresh, lang='vie', output_type=Output.DICT)
+        
+        # GOM TỪ THÀNH DÒNG (Giữ nguyên logic tọa độ)
+        lines = []
+        curr_line = []
+        last_id = None
+        for i in range(len(d['text'])):
+            txt = d['text'][i].strip()
+            if txt:
+                line_id = (d['block_num'][i], d['line_num'][i])
+                if line_id != last_id and curr_line:
+                    lines.append(" ".join(curr_line))
+                    curr_line = []
+                curr_line.append(txt)
+                last_id = line_id
+        if curr_line: lines.append(" ".join(curr_line))
+
+        # DUYỆT CỬA SỔ TRƯỢT VỚI CHUẨN HÓA CHUỖI
+        for vn_key, en_key in missing_items.items():
+            if data_vars[en_key] is not None: continue
+            
+            # Chuẩn hóa keyword: Xóa dấu cách thừa, chuyển thường
+            clean_kw = "".join(vn_key.lower().split()) 
+            
+            for i in range(len(lines)):
+                for w_size in [1, 2, 3]: # Thử ghép đến 3 dòng
+                    if i + w_size > len(lines): continue
+                    
+                    window_text = " ".join(lines[i:i+w_size]).lower()
+                    # Chuẩn hóa cụm từ trong cửa sổ quét
+                    clean_window = "".join(window_text.split())
+                    
+                    # So khớp không quan trọng khoảng cách/dấu cách
+                    if clean_kw in clean_window:
+                        # Tìm số trong cả khối cửa sổ
+                        full_context = " ".join(lines[i:i+w_size])
+                        # Regex bắt số âm/dương nghìn tỷ
+                        matches = re.findall(r'\(?\d{1,3}(?:[.,\s]\d{3})+\)?', full_context)
+                        
+                        potential_vals = []
+                        for m in matches:
+                            c = m.replace('.','').replace(',','').replace(' ','')
+                            neg = '(' in c
+                            try:
+                                val = float(re.sub(r'[()]', '', c))
+                                if neg: val = -val
+                                # Loại bỏ mã số (như mã 30 của biến 12)
+                                if abs(val) > 1000000: potential_vals.append(val)
+                            except: continue
+                        
+                        if potential_vals:
+                            data_vars[en_key] = potential_vals[0]
+                            print(f"    ✨ [v10 FIXED] {en_key} = {potential_vals[0]:,.0f}")
+                            break
+                if data_vars[en_key] is not None: break
+
+import unicodedata
+
+def khong_dau(text):
+    """Loại bỏ hoàn toàn dấu tiếng Việt để so khớp linh hoạt"""
+    if not text: return ""
+    text = unicodedata.normalize('NFKD', text)
+    return "".join([c for c in text if not unicodedata.combining(c)]).lower()
+
+def targeted_ocr_refinement_v11(doc, data_vars, keywords_dict):
+    print("\n----- [BƯỚC 2.5] CHIẾN THUẬT V11: FUZZY ANCHOR & RADIUS SEARCH -----")
+    
+    missing_items = {vn: en for vn, en in keywords_dict.items() if data_vars.get(en) is None}
+    if not missing_items: return
+
+    for page_idx in range(len(doc)):
+        page = doc.load_page(page_idx)
+        pix = page.get_pixmap(dpi=400) # 400 DPI là tỷ lệ vàng cho SAB
+        img = Image.open(io.BytesIO(pix.tobytes("png")))
+        
+        # Tiền xử lý ảnh chuyên sâu
+        img_cv = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2GRAY)
+        img_cv = cv2.GaussianBlur(img_cv, (1, 1), 0)
+        _, thresh = cv2.threshold(img_cv, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+        
+        # Lấy text thô theo dòng
+        raw_text = pytesseract.image_to_string(thresh, lang='vie', config='--psm 6')
+        lines = [l.strip() for l in raw_text.split('\n') if len(l.strip()) > 5]
+
+        for vn_key, en_key in missing_items.items():
+            if data_vars[en_key] is not None: continue
+            
+            # Chuẩn hóa tên biến cần tìm
+            target_clean = khong_dau(vn_key)
+            # Lấy "mồi" là 12 ký tự đầu không dấu
+            anchor_mồi = target_clean[:12]
+
+            for i in range(len(lines)):
+                # Nếu dòng hiện tại chứa "mồi"
+                if anchor_mồi in khong_dau(lines[i]):
+                    # GOM BÁN KÍNH: Lấy dòng hiện tại và 2 dòng tiếp theo
+                    context_block = " ".join(lines[i : i+3])
+                    context_clean = khong_dau(context_block)
+                    
+                    # Kiểm tra xem toàn bộ tên biến có nằm trong khối 3 dòng này không
+                    if target_clean in context_clean or khong_dau(vn_key.split()[-1]) in context_clean:
+                        # TRÍCH XUẤT SỐ: Tìm mọi cụm giống số tiền
+                        # Pattern này bắt được: (1.223.348.339.323)
+                        matches = re.findall(r'\(?\d{1,3}(?:[.,\s]\d{3})+\)?', context_block)
+                        
+                        potential_numbers = []
+                        for m in matches:
+                            # Dọn dẹp số cực sạch
+                            num_str = m.replace('.', '').replace(',', '').replace(' ', '')
+                            is_negative = '(' in num_str
+                            num_only = re.sub(r'[()]', '', num_str)
+                            
+                            try:
+                                val = float(num_only)
+                                if is_negative: val = -val
+                                # Sabeco dùng đơn vị đồng -> bỏ qua các mã số nhỏ (21, 30)
+                                if abs(val) > 1000000:
+                                    potential_numbers.append(val)
+                            except: continue
+                        
+                        if potential_numbers:
+                            # Số đầu tiên sau tên biến luôn là cột "Năm nay"
+                            data_vars[en_key] = potential_numbers[0]
+                            print(f"    ✅ [v11 SUCCESS] {en_key} = {potential_numbers[0]:,.0f}")
+                            break
+            if data_vars[en_key] is not None: break
+
 def get_pdf_data():
     print("\n----- [BƯỚC 2] ĐANG QUÉT PDF (CHẾ ĐỘ KÉP: PSM 6 + PSM 3) -----")
     pytesseract.pytesseract.tesseract_cmd = path_to_tesseract
@@ -181,6 +325,8 @@ def get_pdf_data():
                 process_extracted_text(text_psm3, "PSM 3")
             except: pass
 
+        targeted_ocr_refinement_v11(doc, DATA_38_VARS, OCR_KEYWORDS)
+
     except Exception as e:
         print(f"   ❌ Lỗi Module PDF: {e}")
 
@@ -213,6 +359,6 @@ if __name__ == "__main__":
     
     print("\n----- [BƯỚC 3] TỔNG HỢP VÀ XUẤT FILE -----")
     df = pd.DataFrame([DATA_38_VARS])
-    output_filename = "Ket_qua_38_Bien.xlsx"
+    output_filename = "Ket_qua_38_Bien_Final.xlsx"
     df.T.to_excel(output_filename)
     print(f"🎉 XONG! File dữ liệu nằm tại: {output_filename}")
