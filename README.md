@@ -1,2 +1,0 @@
-- Lấy từ BCTC trên CafeF, lấy từ BCTC hợp nhất, lấy cả năm, có kiểm toán, từ 2020-2024
-- 4 biến đầu nhập tay
