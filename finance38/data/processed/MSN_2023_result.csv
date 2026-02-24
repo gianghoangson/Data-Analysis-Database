@@ -1,9 +1,9 @@
 ﻿index_id,index_name,name_vn,value,unit,source
-1,Managerial ownership,Sở hữu của ban điều hành,,%,manual
+1,Managerial ownership,Sở hữu của ban điều hành,10.0,%,manual
 2,State ownership,Sở hữu nhà nước,,%,manual
 3,Institutional ownership,Sở hữu tổ chức,,%,manual
 4,Foreign ownership,Sở hữu nước ngoài,,%,manual
-5,Total share outstanding,Tổng số cổ phiếu lưu hành,,shares,yahoo
+5,Total share outstanding,Tổng số cổ phiếu lưu hành,1445915457.0,shares,yahoo
 6,Total sales revenue and Net sales revenue,Doanh thu thuần,,VND,pdf
 7,Total assets,Tổng tài sản,,VND,pdf
 8,Selling expenses,Chi phí bán hàng,14192355.0,VND,pdf
@@ -21,7 +21,7 @@
 20,Process innovation,Đổi mới quy trình,,binary,manual
 21,Net Income,Lợi nhuận sau thuế,,VND,pdf
 22,Total shareholders' equity,Vốn chủ sở hữu,1430843406.0,VND,pdf
-23,Market value of equity,Vốn hóa thị trường,,VND,yahoo
+23,Market value of equity,Vốn hóa thị trường,96876335619000.0,VND,yahoo
 24,Total liabilities,Nợ phải trả,,VND,pdf
 25,Net cash from operating activities,Lưu chuyển tiền thuần từ HĐKD,,VND,pdf
 26,Capital expenditure,Chi mua sắm TSCĐ,,VND,pdf
@@ -36,4 +36,4 @@
 35,EPS,Lãi cơ bản trên cổ phiếu,,VND,pdf
 36,Number of employees,Số lượng nhân viên,,people,pdf
 37,"Net plant, property and equipment",Tài sản cố định hữu hình,171865.0,VND,pdf
-38,Firm age,Tuổi công ty,,years,computed
+38,Firm age,Tuổi công ty,19.0,years,computed

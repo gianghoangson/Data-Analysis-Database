@@ -1,9 +1,9 @@
 ﻿index_id,index_name,name_vn,value,unit,source
-1,Managerial ownership,Sở hữu của ban điều hành,,%,manual
+1,Managerial ownership,Sở hữu của ban điều hành,10.0,%,manual
 2,State ownership,Sở hữu nhà nước,,%,manual
 3,Institutional ownership,Sở hữu tổ chức,,%,manual
 4,Foreign ownership,Sở hữu nước ngoài,,%,manual
-5,Total share outstanding,Tổng số cổ phiếu lưu hành,,shares,yahoo
+5,Total share outstanding,Tổng số cổ phiếu lưu hành,7675465855.0,shares,yahoo
 6,Total sales revenue and Net sales revenue,Doanh thu thuần,138855112131387.0,VND,pdf
 7,Total assets,Tổng tài sản,,VND,pdf
 8,Selling expenses,Chi phí bán hàng,7650762789307.0,VND,pdf
@@ -21,7 +21,7 @@
 20,Process innovation,Đổi mới quy trình,,binary,manual
 21,Net Income,Lợi nhuận sau thuế,49599124109.0,VND,pdf
 22,Total shareholders' equity,Vốn chủ sở hữu,114647457983699.0,VND,pdf
-23,Market value of equity,Vốn hóa thị trường,,VND,yahoo
+23,Market value of equity,Vốn hóa thị trường,171098921353993.6,VND,yahoo
 24,Total liabilities,Nợ phải trả,109842249570282.0,VND,pdf
 25,Net cash from operating activities,Lưu chuyển tiền thuần từ HĐKD,,VND,pdf
 26,Capital expenditure,Chi mua sắm TSCĐ,,VND,pdf
@@ -30,10 +30,10 @@
 29,Long-term debt,Vay và nợ thuê tài chính dài hạn,34617006307593.0,VND,pdf
 30,Current assets,Tài sản ngắn hạn,86674276272995.0,VND,pdf
 31,Current liabilities,Nợ ngắn hạn,,VND,pdf
-32,Growth ratio,Tỷ lệ tăng trưởng doanh thu,,%,computed
+32,Growth ratio,Tỷ lệ tăng trưởng doanh thu,0.0,%,computed
 33,Total inventory,Hàng tồn kho,20212.0,VND,pdf
 34,Dividend payment,Chi trả cổ tức,,VND,pdf
 35,EPS,Lãi cơ bản trên cổ phiếu,,VND,pdf
 36,Number of employees,Số lượng nhân viên,,people,pdf
 37,"Net plant, property and equipment",Tài sản cố định hữu hình,150075048.0,VND,pdf
-38,Firm age,Tuổi công ty,,years,computed
+38,Firm age,Tuổi công ty,32.0,years,computed

@@ -1,5 +1,5 @@
 ﻿index_id,index_name,name_vn,value,unit,source
-1,Managerial ownership,Sở hữu của ban điều hành,,%,manual
+1,Managerial ownership,Sở hữu của ban điều hành,10.0,%,manual
 2,State ownership,Sở hữu nhà nước,,%,manual
 3,Institutional ownership,Sở hữu tổ chức,,%,manual
 4,Foreign ownership,Sở hữu nước ngoài,,%,manual
@@ -30,10 +30,10 @@
 29,Long-term debt,Vay và nợ thuê tài chính dài hạn,43380157361.0,VND,pdf
 30,Current assets,Tài sản ngắn hạn,70025928617.0,VND,pdf
 31,Current liabilities,Nợ ngắn hạn,4563002409508.0,VND,pdf
-32,Growth ratio,Tỷ lệ tăng trưởng doanh thu,,%,computed
+32,Growth ratio,Tỷ lệ tăng trưởng doanh thu,12.71,%,computed
 33,Total inventory,Hàng tồn kho,8754741712359.0,VND,pdf
 34,Dividend payment,Chi trả cổ tức,,VND,pdf
 35,EPS,Lãi cơ bản trên cổ phiếu,,VND,pdf
 36,Number of employees,Số lượng nhân viên,,people,pdf
 37,"Net plant, property and equipment",Tài sản cố định hữu hình,259137188160.0,VND,pdf
-38,Firm age,Tuổi công ty,,years,computed
+38,Firm age,Tuổi công ty,33.0,years,computed
