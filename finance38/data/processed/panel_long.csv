@@ -1,0 +1,951 @@
+﻿company_code,year,index_id,index_name,value,unit,source
+EVG,2020,1,Managerial ownership,10.0,%,yahoo
+EVG,2020,6,Total sales revenue and Net sales revenue,768475502469.0,VND,pdf
+EVG,2020,8,Selling expenses,24504383419.0,VND,pdf
+EVG,2020,9,General and administrative expenditure,24504383419.0,VND,pdf
+EVG,2020,10,Value of intangible assets,45520000.0,VND,pdf
+EVG,2020,14,Merchandise purchase of the year,721409221443.0,VND,pdf
+EVG,2020,16,Outside manufacturing expenses,9691718165.0,VND,pdf
+EVG,2020,17,Production cost,721409221443.0,VND,pdf
+EVG,2020,21,Net Income,61006514415.0,VND,pdf
+EVG,2020,22,Total shareholders' equity,742968559740.0,VND,pdf
+EVG,2020,24,Total liabilities,285945551309.0,VND,pdf
+EVG,2020,25,Net cash from operating activities,213068269.0,VND,pdf
+EVG,2020,28,Cash and cash equivalent,24785963267.0,VND,pdf
+EVG,2020,29,Long-term debt,46029077746.0,VND,pdf
+EVG,2020,30,Current assets,397881756712.0,VND,pdf
+EVG,2020,31,Current liabilities,239916473563.0,VND,pdf
+EVG,2020,33,Total inventory,205634814355.0,VND,pdf
+EVG,2020,37,"Net plant, property and equipment",1521772300.0,VND,pdf
+EVG,2020,38,Firm age,11.0,years,yahoo
+EVG,2021,1,Managerial ownership,10.0,%,yahoo
+EVG,2021,6,Total sales revenue and Net sales revenue,702206170174.0,VND,pdf
+EVG,2021,7,Total assets,702206170174.0,VND,pdf
+EVG,2021,8,Selling expenses,28418489797.0,VND,pdf
+EVG,2021,9,General and administrative expenditure,28418489797.0,VND,pdf
+EVG,2021,12,Net operating income,28418489797.0,VND,pdf
+EVG,2021,14,Merchandise purchase of the year,668595111160.0,VND,pdf
+EVG,2021,17,Production cost,668595111160.0,VND,pdf
+EVG,2021,21,Net Income,77236862683.0,VND,pdf
+EVG,2021,22,Total shareholders' equity,1161824185833.0,VND,pdf
+EVG,2021,24,Total liabilities,98758245571.0,VND,pdf
+EVG,2021,25,Net cash from operating activities,160737532794.0,VND,pdf
+EVG,2021,28,Cash and cash equivalent,43142759357.0,VND,pdf
+EVG,2021,29,Long-term debt,354348000.0,VND,pdf
+EVG,2021,30,Current assets,1216028082240.0,VND,pdf
+EVG,2021,31,Current liabilities,347929976425.0,VND,pdf
+EVG,2021,32,Growth ratio,-8.62,%,computed
+EVG,2021,33,Total inventory,214572262534.0,VND,pdf
+EVG,2021,37,"Net plant, property and equipment",528746454.0,VND,pdf
+EVG,2021,38,Firm age,12.0,years,yahoo
+EVG,2022,1,Managerial ownership,10.0,%,yahoo
+EVG,2022,6,Total sales revenue and Net sales revenue,809391545910.0,VND,pdf
+EVG,2022,8,Selling expenses,31740106678.0,VND,pdf
+EVG,2022,9,General and administrative expenditure,31740106678.0,VND,pdf
+EVG,2022,12,Net operating income,31740106678.0,VND,pdf
+EVG,2022,14,Merchandise purchase of the year,776705238567.0,VND,pdf
+EVG,2022,17,Production cost,776705238567.0,VND,pdf
+EVG,2022,21,Net Income,20853028147.0,VND,pdf
+EVG,2022,25,Net cash from operating activities,-212453034509.0,VND,pdf
+EVG,2022,27,Cash flows from investing activities,-872274184154.0,VND,pdf
+EVG,2022,28,Cash and cash equivalent,6415540694.0,VND,pdf
+EVG,2022,29,Long-term debt,659890251.0,VND,pdf
+EVG,2022,30,Current assets,1793512540244.0,VND,pdf
+EVG,2022,32,Growth ratio,15.26,%,computed
+EVG,2022,33,Total inventory,1076713780.0,VND,pdf
+EVG,2022,38,Firm age,13.0,years,yahoo
+EVG,2023,1,Managerial ownership,10.0,%,yahoo
+EVG,2023,6,Total sales revenue and Net sales revenue,809391545910.0,VND,pdf
+EVG,2023,8,Selling expenses,35029178255.0,VND,pdf
+EVG,2023,9,General and administrative expenditure,35029178255.0,VND,pdf
+EVG,2023,14,Merchandise purchase of the year,67357793530.0,VND,pdf
+EVG,2023,15,Work-in-progress goods purchase,1079627272.0,VND,pdf
+EVG,2023,21,Net Income,65541068445.0,VND,pdf
+EVG,2023,22,Total shareholders' equity,2256935536218.0,VND,pdf
+EVG,2023,24,Total liabilities,671024309848.0,VND,pdf
+EVG,2023,29,Long-term debt,523377400000.0,VND,pdf
+EVG,2023,30,Current assets,1925558999887.0,VND,pdf
+EVG,2023,31,Current liabilities,147646909848.0,VND,pdf
+EVG,2023,32,Growth ratio,0.0,%,computed
+EVG,2023,33,Total inventory,2126781959.0,VND,pdf
+EVG,2023,38,Firm age,14.0,years,yahoo
+EVG,2024,1,Managerial ownership,10.0,%,yahoo
+EVG,2024,6,Total sales revenue and Net sales revenue,815139721185.0,VND,pdf
+EVG,2024,7,Total assets,2959528044882.0,VND,pdf
+EVG,2024,8,Selling expenses,35087032191.0,VND,pdf
+EVG,2024,9,General and administrative expenditure,35087032191.0,VND,pdf
+EVG,2024,12,Net operating income,35087032191.0,VND,pdf
+EVG,2024,14,Merchandise purchase of the year,11111691856.0,VND,pdf
+EVG,2024,21,Net Income,2244738767572.0,VND,pdf
+EVG,2024,30,Current assets,1023212863.0,VND,pdf
+EVG,2024,32,Growth ratio,0.71,%,computed
+EVG,2024,33,Total inventory,16715520198.0,VND,pdf
+EVG,2024,37,"Net plant, property and equipment",690678624.0,VND,pdf
+EVG,2024,38,Firm age,15.0,years,yahoo
+HAG,2020,1,Managerial ownership,10.0,%,yahoo
+HAG,2020,6,Total sales revenue and Net sales revenue,3176645956.0,VND,pdf
+HAG,2020,7,Total assets,2069726229.0,VND,pdf
+HAG,2020,8,Selling expenses,-2022124320.0,VND,pdf
+HAG,2020,9,General and administrative expenditure,-2022124320.0,VND,pdf
+HAG,2020,10,Value of intangible assets,521292702.0,VND,pdf
+HAG,2020,14,Merchandise purchase of the year,-2970915613.0,VND,pdf
+HAG,2020,17,Production cost,-2970915613.0,VND,pdf
+HAG,2020,21,Net Income,-1255661344.0,VND,pdf
+HAG,2020,22,Total shareholders' equity,10027795459.0,VND,pdf
+HAG,2020,24,Total liabilities,7414461050.0,VND,pdf
+HAG,2020,29,Long-term debt,11809043645.0,VND,pdf
+HAG,2020,30,Current assets,6498604992.0,VND,pdf
+HAG,2020,31,Current liabilities,6498604992.0,VND,pdf
+HAG,2020,33,Total inventory,2347965565.0,VND,pdf
+HAG,2020,35,EPS,-1354.0,VND,pdf
+HAG,2020,36,Number of employees,3313.0,people,pdf
+HAG,2020,38,Firm age,27.0,years,yahoo
+HAG,2021,1,Managerial ownership,10.0,%,yahoo
+HAG,2021,6,Total sales revenue and Net sales revenue,3189964886.0,VND,pdf
+HAG,2021,7,Total assets,6534440081.0,VND,pdf
+HAG,2021,8,Selling expenses,2025519335.0,VND,pdf
+HAG,2021,9,General and administrative expenditure,-2022124320.0,VND,pdf
+HAG,2021,10,Value of intangible assets,122890961.0,VND,pdf
+HAG,2021,14,Merchandise purchase of the year,-1590448139.0,VND,pdf
+HAG,2021,16,Outside manufacturing expenses,120959970.0,VND,pdf
+HAG,2021,17,Production cost,-1590448139.0,VND,pdf
+HAG,2021,21,Net Income,-1255661344.0,VND,pdf
+HAG,2021,22,Total shareholders' equity,4673233340.0,VND,pdf
+HAG,2021,24,Total liabilities,4467100553.0,VND,pdf
+HAG,2021,32,Growth ratio,0.42,%,computed
+HAG,2021,33,Total inventory,410031564.0,VND,pdf
+HAG,2021,36,Number of employees,1565.0,people,pdf
+HAG,2021,38,Firm age,28.0,years,yahoo
+HAG,2022,1,Managerial ownership,10.0,%,yahoo
+HAG,2022,6,Total sales revenue and Net sales revenue,5197982826.0,VND,pdf
+HAG,2022,7,Total assets,6534440081.0,VND,pdf
+HAG,2022,8,Selling expenses,1349894514.0,VND,pdf
+HAG,2022,9,General and administrative expenditure,-1512789999.0,VND,pdf
+HAG,2022,10,Value of intangible assets,261683353.0,VND,pdf
+HAG,2022,14,Merchandise purchase of the year,-3937380869.0,VND,pdf
+HAG,2022,16,Outside manufacturing expenses,198224977.0,VND,pdf
+HAG,2022,17,Production cost,-3937380869.0,VND,pdf
+HAG,2022,21,Net Income,1124674840.0,VND,pdf
+HAG,2022,22,Total shareholders' equity,5194743341.0,VND,pdf
+HAG,2022,24,Total liabilities,14603644212.0,VND,pdf
+HAG,2022,29,Long-term debt,5385580725.0,VND,pdf
+HAG,2022,30,Current assets,1179502574.0,VND,pdf
+HAG,2022,31,Current liabilities,3341007157.0,VND,pdf
+HAG,2022,32,Growth ratio,62.95,%,computed
+HAG,2022,33,Total inventory,1148037609.0,VND,pdf
+HAG,2022,36,Number of employees,2754.0,people,pdf
+HAG,2022,38,Firm age,29.0,years,yahoo
+HAG,2023,1,Managerial ownership,10.0,%,yahoo
+HAG,2023,5,Total share outstanding,1267399283.0,shares,yahoo
+HAG,2023,6,Total sales revenue and Net sales revenue,6442397199.0,VND,pdf
+HAG,2023,7,Total assets,4065442997.0,VND,pdf
+HAG,2023,8,Selling expenses,4690412815.0,VND,pdf
+HAG,2023,9,General and administrative expenditure,4690412815.0,VND,pdf
+HAG,2023,10,Value of intangible assets,254140873.0,VND,pdf
+HAG,2023,14,Merchandise purchase of the year,-5148941719.0,VND,pdf
+HAG,2023,16,Outside manufacturing expenses,25644136.0,VND,pdf
+HAG,2023,17,Production cost,-5148941719.0,VND,pdf
+HAG,2023,21,Net Income,1781685785.0,VND,pdf
+HAG,2023,22,Total shareholders' equity,6677470105.0,VND,pdf
+HAG,2023,23,Market value of equity,16729670535600.0,VND,yahoo
+HAG,2023,24,Total liabilities,14225785185.0,VND,pdf
+HAG,2023,29,Long-term debt,4515380905.0,VND,pdf
+HAG,2023,30,Current assets,12134729704.0,VND,pdf
+HAG,2023,31,Current liabilities,1669170708.0,VND,pdf
+HAG,2023,32,Growth ratio,23.94,%,computed
+HAG,2023,33,Total inventory,928718695.0,VND,pdf
+HAG,2023,35,EPS,1794.0,VND,pdf
+HAG,2023,36,Number of employees,1748.0,people,pdf
+HAG,2023,38,Firm age,30.0,years,yahoo
+HAG,2024,1,Managerial ownership,10.0,%,yahoo
+HAG,2024,5,Total share outstanding,1267399283.0,shares,yahoo
+HAG,2024,6,Total sales revenue and Net sales revenue,6492569736.0,VND,pdf
+HAG,2024,7,Total assets,3585606944.0,VND,pdf
+HAG,2024,14,Merchandise purchase of the year,60141005.0,VND,pdf
+HAG,2024,21,Net Income,1060121821.0,VND,pdf
+HAG,2024,23,Market value of equity,15208791396000.0,VND,yahoo
+HAG,2024,24,Total liabilities,2687479980.0,VND,pdf
+HAG,2024,30,Current assets,2687479980.0,VND,pdf
+HAG,2024,31,Current liabilities,2687479980.0,VND,pdf
+HAG,2024,32,Growth ratio,0.78,%,computed
+HAG,2024,33,Total inventory,694457742.0,VND,pdf
+HAG,2024,36,Number of employees,1756.0,people,pdf
+HAG,2024,38,Firm age,31.0,years,yahoo
+HPG,2020,1,Managerial ownership,10.0,%,yahoo
+HPG,2020,5,Total share outstanding,7675465855.0,shares,yahoo
+HPG,2020,6,Total sales revenue and Net sales revenue,91279041771826.0,VND,pdf
+HPG,2020,8,Selling expenses,9030079639207.0,VND,pdf
+HPG,2020,9,General and administrative expenditure,9030079639207.0,VND,pdf
+HPG,2020,14,Merchandise purchase of the year,214453522563.0,VND,pdf
+HPG,2020,17,Production cost,214453522563.0,VND,pdf
+HPG,2020,21,Net Income,21792442633285.0,VND,pdf
+HPG,2020,22,Total shareholders' equity,59219786306111.0,VND,pdf
+HPG,2020,23,Market value of equity,135511758837584.31,VND,yahoo
+HPG,2020,24,Total liabilities,291648082726.0,VND,pdf
+HPG,2020,28,Cash and cash equivalent,298228.0,VND,pdf
+HPG,2020,29,Long-term debt,20316430635228.0,VND,pdf
+HPG,2020,30,Current assets,56747258197010.0,VND,pdf
+HPG,2020,31,Current liabilities,26984198187977.0,VND,pdf
+HPG,2020,33,Total inventory,26286822229202.0,VND,pdf
+HPG,2020,37,"Net plant, property and equipment",-38618068918610.0,VND,pdf
+HPG,2020,38,Firm age,28.0,years,yahoo
+HPG,2021,1,Managerial ownership,10.0,%,yahoo
+HPG,2021,5,Total share outstanding,7675465855.0,shares,yahoo
+HPG,2021,6,Total sales revenue and Net sales revenue,150865359967200.0,VND,pdf
+HPG,2021,10,Value of intangible assets,261519239336.0,VND,pdf
+HPG,2021,14,Merchandise purchase of the year,1127956910057.0,VND,pdf
+HPG,2021,17,Production cost,70389153770946.0,VND,pdf
+HPG,2021,21,Net Income,442633285.0,VND,pdf
+HPG,2021,22,Total shareholders' equity,90780625511439.0,VND,pdf
+HPG,2021,23,Market value of equity,204410713005290.06,VND,yahoo
+HPG,2021,24,Total liabilities,87455796846810.0,VND,pdf
+HPG,2021,28,Cash and cash equivalent,471375562130.0,VND,pdf
+HPG,2021,29,Long-term debt,996480970369.0,VND,pdf
+HPG,2021,30,Current assets,3650156741241.0,VND,pdf
+HPG,2021,31,Current liabilities,73459315876441.0,VND,pdf
+HPG,2021,32,Growth ratio,65.28,%,computed
+HPG,2021,33,Total inventory,42134493932210.0,VND,pdf
+HPG,2021,38,Firm age,29.0,years,yahoo
+HPG,2022,1,Managerial ownership,10.0,%,yahoo
+HPG,2022,5,Total share outstanding,7675465855.0,shares,yahoo
+HPG,2022,6,Total sales revenue and Net sales revenue,150865359967200.0,VND,pdf
+HPG,2022,14,Merchandise purchase of the year,1864.0,VND,pdf
+HPG,2022,16,Outside manufacturing expenses,12103510397646.0,VND,pdf
+HPG,2022,21,Net Income,33833829973987.0,VND,pdf
+HPG,2022,22,Total shareholders' equity,96112939615783.0,VND,pdf
+HPG,2022,23,Market value of equity,104665440751610.14,VND,yahoo
+HPG,2022,24,Total liabilities,222582021349.0,VND,pdf
+HPG,2022,28,Cash and cash equivalent,8324588920227.0,VND,pdf
+HPG,2022,29,Long-term debt,11837189211664.0,VND,pdf
+HPG,2022,30,Current assets,80514710854456.0,VND,pdf
+HPG,2022,31,Current liabilities,62385392809685.0,VND,pdf
+HPG,2022,32,Growth ratio,0.0,%,computed
+HPG,2022,33,Total inventory,34491111096123.0,VND,pdf
+HPG,2022,35,EPS,34478143197460.0,VND,pdf
+HPG,2022,38,Firm age,30.0,years,yahoo
+HPG,2023,1,Managerial ownership,10.0,%,yahoo
+HPG,2023,5,Total share outstanding,7675465855.0,shares,yahoo
+HPG,2023,6,Total sales revenue and Net sales revenue,138855112131387.0,VND,pdf
+HPG,2023,8,Selling expenses,7650762789307.0,VND,pdf
+HPG,2023,9,General and administrative expenditure,7650762789307.0,VND,pdf
+HPG,2023,12,Net operating income,267005585330.0,VND,pdf
+HPG,2023,14,Merchandise purchase of the year,357563003.0,VND,pdf
+HPG,2023,17,Production cost,106015187198082.0,VND,pdf
+HPG,2023,21,Net Income,49599124109.0,VND,pdf
+HPG,2023,22,Total shareholders' equity,114647457983699.0,VND,pdf
+HPG,2023,23,Market value of equity,162522172915656.75,VND,yahoo
+HPG,2023,24,Total liabilities,109842249570282.0,VND,pdf
+HPG,2023,28,Cash and cash equivalent,6887646139852.0,VND,pdf
+HPG,2023,29,Long-term debt,34617006307593.0,VND,pdf
+HPG,2023,30,Current assets,86674276272995.0,VND,pdf
+HPG,2023,32,Growth ratio,-7.96,%,computed
+HPG,2023,33,Total inventory,20212.0,VND,pdf
+HPG,2023,37,"Net plant, property and equipment",150075048.0,VND,pdf
+HPG,2023,38,Firm age,31.0,years,yahoo
+HPG,2024,1,Managerial ownership,10.0,%,yahoo
+HPG,2024,5,Total share outstanding,7675465855.0,shares,yahoo
+HPG,2024,6,Total sales revenue and Net sales revenue,138855112131387.0,VND,pdf
+HPG,2024,8,Selling expenses,7650762789307.0,VND,pdf
+HPG,2024,9,General and administrative expenditure,7650762789307.0,VND,pdf
+HPG,2024,12,Net operating income,267005585330.0,VND,pdf
+HPG,2024,14,Merchandise purchase of the year,357563003.0,VND,pdf
+HPG,2024,17,Production cost,106015187198082.0,VND,pdf
+HPG,2024,21,Net Income,49599124109.0,VND,pdf
+HPG,2024,22,Total shareholders' equity,114647457983699.0,VND,pdf
+HPG,2024,23,Market value of equity,171098921353993.6,VND,yahoo
+HPG,2024,24,Total liabilities,109842249570282.0,VND,pdf
+HPG,2024,28,Cash and cash equivalent,6887646139852.0,VND,pdf
+HPG,2024,29,Long-term debt,34617006307593.0,VND,pdf
+HPG,2024,30,Current assets,86674276272995.0,VND,pdf
+HPG,2024,32,Growth ratio,0.0,%,computed
+HPG,2024,33,Total inventory,20212.0,VND,pdf
+HPG,2024,37,"Net plant, property and equipment",150075048.0,VND,pdf
+HPG,2024,38,Firm age,32.0,years,yahoo
+HSG,2020,1,Managerial ownership,10.0,%,yahoo
+HSG,2020,6,Total sales revenue and Net sales revenue,28081303783088.0,VND,pdf
+HSG,2020,9,General and administrative expenditure,1378928413328.0,VND,pdf
+HSG,2020,10,Value of intangible assets,2275.0,VND,pdf
+HSG,2020,14,Merchandise purchase of the year,790099771563.0,VND,pdf
+HSG,2020,17,Production cost,22903482165423.0,VND,pdf
+HSG,2020,21,Net Income,1153014017309.0,VND,pdf
+HSG,2020,24,Total liabilities,983533510048.0,VND,pdf
+HSG,2020,28,Cash and cash equivalent,767066.0,VND,pdf
+HSG,2020,30,Current assets,9022315330402.0,VND,pdf
+HSG,2020,33,Total inventory,5523844442.0,VND,pdf
+HSG,2020,37,"Net plant, property and equipment",6185137.0,VND,pdf
+HSG,2020,38,Firm age,19.0,years,yahoo
+HSG,2021,1,Managerial ownership,10.0,%,yahoo
+HSG,2021,6,Total sales revenue and Net sales revenue,48726522233736.0,VND,pdf
+HSG,2021,8,Selling expenses,2221083074110.0,VND,pdf
+HSG,2021,9,General and administrative expenditure,1378928413328.0,VND,pdf
+HSG,2021,10,Value of intangible assets,88587.0,VND,pdf
+HSG,2021,13,Consumption of raw material,42143228874.0,VND,pdf
+HSG,2021,14,Merchandise purchase of the year,223855023517.0,VND,pdf
+HSG,2021,21,Net Income,5633071186571.0,VND,pdf
+HSG,2021,22,Total shareholders' equity,6590738511323.0,VND,pdf
+HSG,2021,24,Total liabilities,15786236174085.0,VND,pdf
+HSG,2021,28,Cash and cash equivalent,796782.0,VND,pdf
+HSG,2021,29,Long-term debt,1413989572667.0,VND,pdf
+HSG,2021,30,Current assets,5572266092.0,VND,pdf
+HSG,2021,31,Current liabilities,14372246601418.0,VND,pdf
+HSG,2021,32,Growth ratio,73.52,%,computed
+HSG,2021,33,Total inventory,-6987119321159.0,VND,pdf
+HSG,2021,37,"Net plant, property and equipment",1700044.0,VND,pdf
+HSG,2021,38,Firm age,20.0,years,yahoo
+HSG,2022,1,Managerial ownership,10.0,%,yahoo
+HSG,2022,6,Total sales revenue and Net sales revenue,50090135318501.0,VND,pdf
+HSG,2022,8,Selling expenses,3832642500065.0,VND,pdf
+HSG,2022,9,General and administrative expenditure,201458245191.0,VND,pdf
+HSG,2022,10,Value of intangible assets,86072.0,VND,pdf
+HSG,2022,14,Merchandise purchase of the year,1548422592532.0,VND,pdf
+HSG,2022,28,Cash and cash equivalent,81840974230.0,VND,pdf
+HSG,2022,32,Growth ratio,2.8,%,computed
+HSG,2022,33,Total inventory,4603003.0,VND,pdf
+HSG,2022,37,"Net plant, property and equipment",1974982.0,VND,pdf
+HSG,2022,38,Firm age,21.0,years,yahoo
+HSG,2023,1,Managerial ownership,10.0,%,yahoo
+HSG,2023,5,Total share outstanding,620982309.0,shares,yahoo
+HSG,2023,6,Total sales revenue and Net sales revenue,50090135318501.0,VND,pdf
+HSG,2023,8,Selling expenses,1794587785556.0,VND,pdf
+HSG,2023,10,Value of intangible assets,84446.0,VND,pdf
+HSG,2023,14,Merchandise purchase of the year,1200272872533.0,VND,pdf
+HSG,2023,16,Outside manufacturing expenses,84859067464.0,VND,pdf
+HSG,2023,17,Production cost,13603191775437.0,VND,pdf
+HSG,2023,23,Market value of equity,13403447105881.828,VND,yahoo
+HSG,2023,24,Total liabilities,1843192008584.0,VND,pdf
+HSG,2023,28,Cash and cash equivalent,330134957719.0,VND,pdf
+HSG,2023,30,Current assets,274839904924.0,VND,pdf
+HSG,2023,32,Growth ratio,0.0,%,computed
+HSG,2023,33,Total inventory,7628606120691.0,VND,pdf
+HSG,2023,37,"Net plant, property and equipment",2800398.0,VND,pdf
+HSG,2023,38,Firm age,22.0,years,yahoo
+HSG,2024,1,Managerial ownership,10.0,%,yahoo
+HSG,2024,5,Total share outstanding,620982309.0,shares,yahoo
+HSG,2024,6,Total sales revenue and Net sales revenue,39271893738448.0,VND,pdf
+HSG,2024,8,Selling expenses,-3344662264465.0,VND,pdf
+HSG,2024,9,General and administrative expenditure,510613852948.0,VND,pdf
+HSG,2024,12,Net operating income,510613852948.0,VND,pdf
+HSG,2024,14,Merchandise purchase of the year,1165561520909.0,VND,pdf
+HSG,2024,21,Net Income,4532690018178.0,VND,pdf
+HSG,2024,22,Total shareholders' equity,10916937056537.0,VND,pdf
+HSG,2024,23,Market value of equity,11282472326643.75,VND,yahoo
+HSG,2024,25,Net cash from operating activities,1441.0,VND,pdf
+HSG,2024,27,Cash flows from investing activities,-723627736383.0,VND,pdf
+HSG,2024,28,Cash and cash equivalent,6905824.0,VND,pdf
+HSG,2024,29,Long-term debt,16269912425.0,VND,pdf
+HSG,2024,31,Current liabilities,6568894350227.0,VND,pdf
+HSG,2024,32,Growth ratio,-21.6,%,computed
+HSG,2024,33,Total inventory,4169.0,VND,pdf
+HSG,2024,38,Firm age,23.0,years,yahoo
+KDC,2020,1,Managerial ownership,10.0,%,yahoo
+KDC,2020,5,Total share outstanding,289806316.0,shares,yahoo
+KDC,2020,6,Total sales revenue and Net sales revenue,3115100665935.0,VND,pdf
+KDC,2020,8,Selling expenses,333765494653.0,VND,pdf
+KDC,2020,14,Merchandise purchase of the year,-2867882440464.0,VND,pdf
+KDC,2020,17,Production cost,-2867882440464.0,VND,pdf
+KDC,2020,21,Net Income,1201626269410.0,VND,pdf
+KDC,2020,22,Total shareholders' equity,5957272877780.0,VND,pdf
+KDC,2020,23,Market value of equity,9259103497910.375,VND,yahoo
+KDC,2020,30,Current assets,36808493045.0,VND,pdf
+KDC,2020,33,Total inventory,4302666161.0,VND,pdf
+KDC,2020,38,Firm age,27.0,years,yahoo
+KDC,2021,1,Managerial ownership,10.0,%,yahoo
+KDC,2021,5,Total share outstanding,289806316.0,shares,yahoo
+KDC,2021,6,Total sales revenue and Net sales revenue,11508839428961.0,VND,pdf
+KDC,2021,8,Selling expenses,-709149704725.0,VND,pdf
+KDC,2021,9,General and administrative expenditure,528528719902.0,VND,pdf
+KDC,2021,10,Value of intangible assets,10212664088.0,VND,pdf
+KDC,2021,14,Merchandise purchase of the year,-10307853464101.0,VND,pdf
+KDC,2021,17,Production cost,-10307853464101.0,VND,pdf
+KDC,2021,21,Net Income,4541091125598.0,VND,pdf
+KDC,2021,22,Total shareholders' equity,6296260363968.0,VND,pdf
+KDC,2021,23,Market value of equity,14864614241785.062,VND,yahoo
+KDC,2021,28,Cash and cash equivalent,769192809384.0,VND,pdf
+KDC,2021,30,Current assets,4182943060802.0,VND,pdf
+KDC,2021,32,Growth ratio,269.45,%,computed
+KDC,2021,33,Total inventory,561773538573.0,VND,pdf
+KDC,2021,38,Firm age,28.0,years,yahoo
+KDC,2022,1,Managerial ownership,10.0,%,yahoo
+KDC,2022,5,Total share outstanding,289806316.0,shares,yahoo
+KDC,2022,6,Total sales revenue and Net sales revenue,14951913906439.0,VND,pdf
+KDC,2022,8,Selling expenses,-972863977207.0,VND,pdf
+KDC,2022,9,General and administrative expenditure,121441478262.0,VND,pdf
+KDC,2022,10,Value of intangible assets,9102813913.0,VND,pdf
+KDC,2022,14,Merchandise purchase of the year,-13368669209522.0,VND,pdf
+KDC,2022,17,Production cost,-13368669209522.0,VND,pdf
+KDC,2022,21,Net Income,1591122176288.0,VND,pdf
+KDC,2022,22,Total shareholders' equity,6697733414658.0,VND,pdf
+KDC,2022,23,Market value of equity,17892591007323.516,VND,yahoo
+KDC,2022,30,Current assets,38482608514.0,VND,pdf
+KDC,2022,32,Growth ratio,29.92,%,computed
+KDC,2022,33,Total inventory,342311763155.0,VND,pdf
+KDC,2022,38,Firm age,29.0,years,yahoo
+KDC,2023,1,Managerial ownership,10.0,%,yahoo
+KDC,2023,5,Total share outstanding,289806316.0,shares,yahoo
+KDC,2023,6,Total sales revenue and Net sales revenue,14951913906439.0,VND,pdf
+KDC,2023,7,Total assets,11392802599915.0,VND,pdf
+KDC,2023,8,Selling expenses,-972863977207.0,VND,pdf
+KDC,2023,9,General and administrative expenditure,450917900450.0,VND,pdf
+KDC,2023,14,Merchandise purchase of the year,-8885209538160.0,VND,pdf
+KDC,2023,17,Production cost,-8885209538160.0,VND,pdf
+KDC,2023,21,Net Income,1373287586279.0,VND,pdf
+KDC,2023,22,Total shareholders' equity,6630873224649.0,VND,pdf
+KDC,2023,23,Market value of equity,17342049571397.266,VND,yahoo
+KDC,2023,28,Cash and cash equivalent,1295109444030.0,VND,pdf
+KDC,2023,30,Current assets,4166456771102.0,VND,pdf
+KDC,2023,32,Growth ratio,0.0,%,computed
+KDC,2023,33,Total inventory,113194569084.0,VND,pdf
+KDC,2023,38,Firm age,30.0,years,yahoo
+KDC,2024,1,Managerial ownership,10.0,%,yahoo
+KDC,2024,5,Total share outstanding,289806316.0,shares,yahoo
+KDC,2024,6,Total sales revenue and Net sales revenue,10061274326646.0,VND,pdf
+KDC,2024,7,Total assets,931886732070.0,VND,pdf
+KDC,2024,8,Selling expenses,-902844796015.0,VND,pdf
+KDC,2024,12,Net operating income,4358509705.0,VND,pdf
+KDC,2024,14,Merchandise purchase of the year,-8976911032935.0,VND,pdf
+KDC,2024,17,Production cost,-8976911032935.0,VND,pdf
+KDC,2024,21,Net Income,43518224124.0,VND,pdf
+KDC,2024,23,Market value of equity,16726908496345.14,VND,yahoo
+KDC,2024,24,Total liabilities,11158444071640.0,VND,pdf
+KDC,2024,28,Cash and cash equivalent,868000487198.0,VND,pdf
+KDC,2024,30,Current assets,3304443685242.0,VND,pdf
+KDC,2024,31,Current liabilities,876405255930.0,VND,pdf
+KDC,2024,32,Growth ratio,-32.71,%,computed
+KDC,2024,33,Total inventory,-176695431356.0,VND,pdf
+KDC,2024,38,Firm age,31.0,years,yahoo
+MSN,2020,1,Managerial ownership,10.0,%,yahoo
+MSN,2020,8,Selling expenses,13166087.0,VND,pdf
+MSN,2020,14,Merchandise purchase of the year,211214.0,VND,pdf
+MSN,2020,21,Net Income,2182124.0,VND,pdf
+MSN,2020,28,Cash and cash equivalent,6800528.0,VND,pdf
+MSN,2020,29,Long-term debt,51831620.0,VND,pdf
+MSN,2020,33,Total inventory,12449.0,VND,pdf
+MSN,2020,38,Firm age,16.0,years,yahoo
+MSN,2021,1,Managerial ownership,10.0,%,yahoo
+MSN,2021,10,Value of intangible assets,11292760.0,VND,pdf
+MSN,2021,14,Merchandise purchase of the year,3837320.0,VND,pdf
+MSN,2021,21,Net Income,18795877.0,VND,pdf
+MSN,2021,28,Cash and cash equivalent,6800528.0,VND,pdf
+MSN,2021,29,Long-term debt,49208983.0,VND,pdf
+MSN,2021,33,Total inventory,1918206.0,VND,pdf
+MSN,2021,35,EPS,8562882.0,VND,pdf
+MSN,2021,37,"Net plant, property and equipment",31151629.0,VND,pdf
+MSN,2021,38,Firm age,17.0,years,yahoo
+MSN,2022,10,Value of intangible assets,12574516.0,VND,pdf
+MSN,2022,14,Merchandise purchase of the year,3947303.0,VND,pdf
+MSN,2022,21,Net Income,11381940.0,VND,pdf
+MSN,2022,22,Total shareholders' equity,1423724783.0,VND,pdf
+MSN,2022,25,Net cash from operating activities,-3788852.0,VND,pdf
+MSN,2022,27,Cash flows from investing activities,26447.0,VND,pdf
+MSN,2022,28,Cash and cash equivalent,13853100.0,VND,pdf
+MSN,2022,29,Long-term debt,39385199.0,VND,pdf
+MSN,2022,33,Total inventory,14445345.0,VND,pdf
+MSN,2022,38,Firm age,18.0,years,yahoo
+MSN,2023,1,Managerial ownership,10.0,%,yahoo
+MSN,2023,5,Total share outstanding,1445915457.0,shares,yahoo
+MSN,2023,8,Selling expenses,14192355.0,VND,pdf
+MSN,2023,9,General and administrative expenditure,5222742.0,VND,pdf
+MSN,2023,10,Value of intangible assets,1589727.0,VND,pdf
+MSN,2023,12,Net operating income,2350429.0,VND,pdf
+MSN,2023,14,Merchandise purchase of the year,56130507.0,VND,pdf
+MSN,2023,22,Total shareholders' equity,1430843406.0,VND,pdf
+MSN,2023,23,Market value of equity,96876335619000.0,VND,yahoo
+MSN,2023,27,Cash flows from investing activities,-7823672.0,VND,pdf
+MSN,2023,28,Cash and cash equivalent,338149.0,VND,pdf
+MSN,2023,29,Long-term debt,58723731.0,VND,pdf
+MSN,2023,33,Total inventory,1076401.0,VND,pdf
+MSN,2023,37,"Net plant, property and equipment",171865.0,VND,pdf
+MSN,2023,38,Firm age,19.0,years,yahoo
+MSN,2024,1,Managerial ownership,10.0,%,yahoo
+MSN,2024,5,Total share outstanding,1445915457.0,shares,yahoo
+MSN,2024,10,Value of intangible assets,-2016866.0,VND,pdf
+MSN,2024,14,Merchandise purchase of the year,4333260.0,VND,pdf
+MSN,2024,21,Net Income,4494349.0,VND,pdf
+MSN,2024,23,Market value of equity,101358673535700.0,VND,yahoo
+MSN,2024,25,Net cash from operating activities,9525462.0,VND,pdf
+MSN,2024,27,Cash flows from investing activities,10669.0,VND,pdf
+MSN,2024,28,Cash and cash equivalent,73362.0,VND,pdf
+MSN,2024,33,Total inventory,-98554.0,VND,pdf
+MSN,2024,37,"Net plant, property and equipment",3584177.0,VND,pdf
+MSN,2024,38,Firm age,20.0,years,yahoo
+NTP,2020,1,Managerial ownership,10.0,%,yahoo
+NTP,2020,6,Total sales revenue and Net sales revenue,4788713095640.0,VND,pdf
+NTP,2020,8,Selling expenses,745661295573.0,VND,pdf
+NTP,2020,9,General and administrative expenditure,520926859859.0,VND,pdf
+NTP,2020,12,Net operating income,520926859859.0,VND,pdf
+NTP,2020,14,Merchandise purchase of the year,3097.0,VND,pdf
+NTP,2020,17,Production cost,3325381674138.0,VND,pdf
+NTP,2020,21,Net Income,246494747822.0,VND,pdf
+NTP,2020,22,Total shareholders' equity,2589288536954.0,VND,pdf
+NTP,2020,24,Total liabilities,1984900418669.0,VND,pdf
+NTP,2020,28,Cash and cash equivalent,297022694727.0,VND,pdf
+NTP,2020,29,Long-term debt,35457201151.0,VND,pdf
+NTP,2020,30,Current assets,1678805704339.0,VND,pdf
+NTP,2020,31,Current liabilities,270673123230.0,VND,pdf
+NTP,2020,33,Total inventory,4238.0,VND,pdf
+NTP,2020,37,"Net plant, property and equipment",1323608.0,VND,pdf
+NTP,2020,38,Firm age,60.0,years,yahoo
+NTP,2021,1,Managerial ownership,10.0,%,yahoo
+NTP,2021,6,Total sales revenue and Net sales revenue,4823524562218.0,VND,pdf
+NTP,2021,8,Selling expenses,582038492316.0,VND,pdf
+NTP,2021,9,General and administrative expenditure,557872853928.0,VND,pdf
+NTP,2021,12,Net operating income,557872853928.0,VND,pdf
+NTP,2021,14,Merchandise purchase of the year,3682609246256.0,VND,pdf
+NTP,2021,17,Production cost,3682609246256.0,VND,pdf
+NTP,2021,21,Net Income,495438942708.0,VND,pdf
+NTP,2021,22,Total shareholders' equity,2707977704900.0,VND,pdf
+NTP,2021,24,Total liabilities,2190220357037.0,VND,pdf
+NTP,2021,27,Cash flows from investing activities,-754678831507.0,VND,pdf
+NTP,2021,28,Cash and cash equivalent,436319978.0,VND,pdf
+NTP,2021,29,Long-term debt,16720597523.0,VND,pdf
+NTP,2021,30,Current assets,2721738069056.0,VND,pdf
+NTP,2021,31,Current liabilities,2173499759514.0,VND,pdf
+NTP,2021,32,Growth ratio,0.73,%,computed
+NTP,2021,33,Total inventory,-3446359120.0,VND,pdf
+NTP,2021,37,"Net plant, property and equipment",209920.0,VND,pdf
+NTP,2021,38,Firm age,61.0,years,yahoo
+NTP,2022,1,Managerial ownership,10.0,%,yahoo
+NTP,2022,6,Total sales revenue and Net sales revenue,5833535613193.0,VND,pdf
+NTP,2022,8,Selling expenses,2.950827387632206e+23,VND,pdf
+NTP,2022,9,General and administrative expenditure,154378233969.0,VND,pdf
+NTP,2022,14,Merchandise purchase of the year,134739453360.0,VND,pdf
+NTP,2022,16,Outside manufacturing expenses,339607928567.0,VND,pdf
+NTP,2022,21,Net Income,511900942783.0,VND,pdf
+NTP,2022,22,Total shareholders' equity,2707977704900.0,VND,pdf
+NTP,2022,24,Total liabilities,233019745258.0,VND,pdf
+NTP,2022,28,Cash and cash equivalent,167926602716.0,VND,pdf
+NTP,2022,29,Long-term debt,16720597523.0,VND,pdf
+NTP,2022,30,Current assets,3075796747433.0,VND,pdf
+NTP,2022,31,Current liabilities,233019745258.0,VND,pdf
+NTP,2022,32,Growth ratio,20.94,%,computed
+NTP,2022,37,"Net plant, property and equipment",933335000.0,VND,pdf
+NTP,2022,38,Firm age,62.0,years,yahoo
+NTP,2023,1,Managerial ownership,10.0,%,yahoo
+NTP,2023,6,Total sales revenue and Net sales revenue,5685112416767.0,VND,pdf
+NTP,2023,8,Selling expenses,655168766148.0,VND,pdf
+NTP,2023,9,General and administrative expenditure,655168766148.0,VND,pdf
+NTP,2023,10,Value of intangible assets,7105350000.0,VND,pdf
+NTP,2023,12,Net operating income,655168766148.0,VND,pdf
+NTP,2023,14,Merchandise purchase of the year,3619645131711.0,VND,pdf
+NTP,2023,17,Production cost,3619645131711.0,VND,pdf
+NTP,2023,21,Net Income,559414720517.0,VND,pdf
+NTP,2023,22,Total shareholders' equity,3115499287.0,VND,pdf
+NTP,2023,24,Total liabilities,2338199851626.0,VND,pdf
+NTP,2023,28,Cash and cash equivalent,485324285487.0,VND,pdf
+NTP,2023,30,Current assets,3501190530399.0,VND,pdf
+NTP,2023,31,Current liabilities,338199851626.0,VND,pdf
+NTP,2023,32,Growth ratio,-2.54,%,computed
+NTP,2023,33,Total inventory,5084.0,VND,pdf
+NTP,2023,35,EPS,559414720517.0,VND,pdf
+NTP,2023,37,"Net plant, property and equipment",-71254910048.0,VND,pdf
+NTP,2023,38,Firm age,63.0,years,yahoo
+NTP,2024,1,Managerial ownership,10.0,%,yahoo
+NTP,2024,6,Total sales revenue and Net sales revenue,5542221510296.0,VND,pdf
+NTP,2024,8,Selling expenses,343753233664878.0,VND,pdf
+NTP,2024,9,General and administrative expenditure,885058912782.0,VND,pdf
+NTP,2024,10,Value of intangible assets,7105350000.0,VND,pdf
+NTP,2024,12,Net operating income,885058912782.0,VND,pdf
+NTP,2024,14,Merchandise purchase of the year,3886614549588.0,VND,pdf
+NTP,2024,16,Outside manufacturing expenses,369568126100.0,VND,pdf
+NTP,2024,17,Production cost,3886614549588.0,VND,pdf
+NTP,2024,21,Net Income,1023430361089.0,VND,pdf
+NTP,2024,22,Total shareholders' equity,3666374210005.0,VND,pdf
+NTP,2024,24,Total liabilities,2338199851626.0,VND,pdf
+NTP,2024,28,Cash and cash equivalent,237516360.0,VND,pdf
+NTP,2024,30,Current assets,4472882423054.0,VND,pdf
+NTP,2024,31,Current liabilities,2338199851626.0,VND,pdf
+NTP,2024,32,Growth ratio,-2.51,%,computed
+NTP,2024,33,Total inventory,-33611274.0,VND,pdf
+NTP,2024,35,EPS,735659511537.0,VND,pdf
+NTP,2024,37,"Net plant, property and equipment",266982.0,VND,pdf
+NTP,2024,38,Firm age,64.0,years,yahoo
+PLX,2020,1,Managerial ownership,10.0,%,yahoo
+PLX,2020,6,Total sales revenue and Net sales revenue,189603525406879.0,VND,pdf
+PLX,2020,7,Total assets,61106212964443.0,VND,pdf
+PLX,2020,8,Selling expenses,3269310893373.0,VND,pdf
+PLX,2020,9,General and administrative expenditure,5511407200163.0,VND,pdf
+PLX,2020,10,Value of intangible assets,421488.0,VND,pdf
+PLX,2020,14,Merchandise purchase of the year,166995.0,VND,pdf
+PLX,2020,15,Work-in-progress goods purchase,127972606823.0,VND,pdf
+PLX,2020,21,Net Income,2760573038032.0,VND,pdf
+PLX,2020,22,Total shareholders' equity,24126402466781.0,VND,pdf
+PLX,2020,24,Total liabilities,36979810497662.0,VND,pdf
+PLX,2020,28,Cash and cash equivalent,10611737373774.0,VND,pdf
+PLX,2020,29,Long-term debt,1580135356248.0,VND,pdf
+PLX,2020,30,Current assets,37796818993084.0,VND,pdf
+PLX,2020,31,Current liabilities,35399675141414.0,VND,pdf
+PLX,2020,33,Total inventory,9399531195899.0,VND,pdf
+PLX,2020,37,"Net plant, property and equipment",7213204.0,VND,pdf
+PLX,2020,38,Firm age,64.0,years,yahoo
+PLX,2021,1,Managerial ownership,10.0,%,yahoo
+PLX,2021,6,Total sales revenue and Net sales revenue,169105701481340.0,VND,pdf
+PLX,2021,7,Total assets,169008605067215.0,VND,pdf
+PLX,2021,8,Selling expenses,3509499759070.0,VND,pdf
+PLX,2021,9,General and administrative expenditure,397506868500.0,VND,pdf
+PLX,2021,13,Consumption of raw material,3893970152439.0,VND,pdf
+PLX,2021,14,Merchandise purchase of the year,3826706276284.0,VND,pdf
+PLX,2021,16,Outside manufacturing expenses,5328561671649.0,VND,pdf
+PLX,2021,21,Net Income,3123734179723.0,VND,pdf
+PLX,2021,22,Total shareholders' equity,542140339196.0,VND,pdf
+PLX,2021,24,Total liabilities,26135746258535.0,VND,pdf
+PLX,2021,28,Cash and cash equivalent,6192497.0,VND,pdf
+PLX,2021,29,Long-term debt,1323962662861.0,VND,pdf
+PLX,2021,30,Current assets,2516583189725.0,VND,pdf
+PLX,2021,31,Current liabilities,35207086754200.0,VND,pdf
+PLX,2021,32,Growth ratio,-10.81,%,computed
+PLX,2021,33,Total inventory,13163096309698.0,VND,pdf
+PLX,2021,37,"Net plant, property and equipment",7213204.0,VND,pdf
+PLX,2021,38,Firm age,65.0,years,yahoo
+PLX,2022,1,Managerial ownership,10.0,%,yahoo
+PLX,2022,6,Total sales revenue and Net sales revenue,304171606608893.0,VND,pdf
+PLX,2022,7,Total assets,64791240989120.0,VND,pdf
+PLX,2022,8,Selling expenses,10499546305289.0,VND,pdf
+PLX,2022,9,General and administrative expenditure,3517193962030.0,VND,pdf
+PLX,2022,10,Value of intangible assets,265630.0,VND,pdf
+PLX,2022,14,Merchandise purchase of the year,8341611628294.0,VND,pdf
+PLX,2022,21,Net Income,2706196720866.0,VND,pdf
+PLX,2022,22,Total shareholders' equity,27782610644219.0,VND,pdf
+PLX,2022,24,Total liabilities,46693004842014.0,VND,pdf
+PLX,2022,28,Cash and cash equivalent,114752533325.0,VND,pdf
+PLX,2022,29,Long-term debt,998428913157.0,VND,pdf
+PLX,2022,30,Current assets,50170189581865.0,VND,pdf
+PLX,2022,31,Current liabilities,45694575928857.0,VND,pdf
+PLX,2022,32,Growth ratio,79.87,%,computed
+PLX,2022,33,Total inventory,17232373206446.0,VND,pdf
+PLX,2022,37,"Net plant, property and equipment",8914296.0,VND,pdf
+PLX,2022,38,Firm age,66.0,years,yahoo
+PLX,2023,1,Managerial ownership,10.0,%,yahoo
+PLX,2023,5,Total share outstanding,1270592235.0,shares,yahoo
+PLX,2023,6,Total sales revenue and Net sales revenue,304171606608893.0,VND,pdf
+PLX,2023,7,Total assets,79675619099330.0,VND,pdf
+PLX,2023,8,Selling expenses,4345312370975.0,VND,pdf
+PLX,2023,9,General and administrative expenditure,476606825270.0,VND,pdf
+PLX,2023,10,Value of intangible assets,-24143179724.0,VND,pdf
+PLX,2023,13,Consumption of raw material,4580950980273.0,VND,pdf
+PLX,2023,14,Merchandise purchase of the year,9988470775076.0,VND,pdf
+PLX,2023,16,Outside manufacturing expenses,105718357073.0,VND,pdf
+PLX,2023,21,Net Income,1360674905270.0,VND,pdf
+PLX,2023,22,Total shareholders' equity,29202107178831.0,VND,pdf
+PLX,2023,23,Market value of equity,40817241999901.32,VND,yahoo
+PLX,2023,24,Total liabilities,50473511920499.0,VND,pdf
+PLX,2023,28,Cash and cash equivalent,14048245083619.0,VND,pdf
+PLX,2023,29,Long-term debt,812900013466.0,VND,pdf
+PLX,2023,30,Current assets,57306926231393.0,VND,pdf
+PLX,2023,31,Current liabilities,49660611907033.0,VND,pdf
+PLX,2023,32,Growth ratio,0.0,%,computed
+PLX,2023,33,Total inventory,14639913875637.0,VND,pdf
+PLX,2023,37,"Net plant, property and equipment",11946213.0,VND,pdf
+PLX,2023,38,Firm age,67.0,years,yahoo
+PLX,2024,1,Managerial ownership,10.0,%,yahoo
+PLX,2024,5,Total share outstanding,1270592235.0,shares,yahoo
+PLX,2024,6,Total sales revenue and Net sales revenue,284124014890319.0,VND,pdf
+PLX,2024,7,Total assets,51179621629763.0,VND,pdf
+PLX,2024,8,Selling expenses,5669236252898.0,VND,pdf
+PLX,2024,9,General and administrative expenditure,560794442106.0,VND,pdf
+PLX,2024,14,Merchandise purchase of the year,7623.0,VND,pdf
+PLX,2024,16,Outside manufacturing expenses,3504918159232.0,VND,pdf
+PLX,2024,21,Net Income,3161151940515.0,VND,pdf
+PLX,2024,22,Total shareholders' equity,3161151940515.0,VND,pdf
+PLX,2024,23,Market value of equity,46962463826104.28,VND,yahoo
+PLX,2024,24,Total liabilities,2830303546674.0,VND,pdf
+PLX,2024,28,Cash and cash equivalent,7623.0,VND,pdf
+PLX,2024,29,Long-term debt,202966023540.0,VND,pdf
+PLX,2024,31,Current liabilities,51179621629763.0,VND,pdf
+PLX,2024,32,Growth ratio,-6.59,%,computed
+PLX,2024,33,Total inventory,12652247899.0,VND,pdf
+PLX,2024,37,"Net plant, property and equipment",1039655.0,VND,pdf
+PLX,2024,38,Firm age,68.0,years,yahoo
+PNJ,2020,1,Managerial ownership,10.0,%,yahoo
+PNJ,2020,6,Total sales revenue and Net sales revenue,17510788660999.0,VND,pdf
+PNJ,2020,8,Selling expenses,1506216143061.0,VND,pdf
+PNJ,2020,9,General and administrative expenditure,1506712385551.0,VND,pdf
+PNJ,2020,10,Value of intangible assets,650372885361.0,VND,pdf
+PNJ,2020,14,Merchandise purchase of the year,-14076055770112.0,VND,pdf
+PNJ,2020,17,Production cost,-14076055770112.0,VND,pdf
+PNJ,2020,21,Net Income,670045205971.0,VND,pdf
+PNJ,2020,22,Total shareholders' equity,5241861865008.0,VND,pdf
+PNJ,2020,24,Total liabilities,241284233443.0,VND,pdf
+PNJ,2020,30,Current assets,7143929036497.0,VND,pdf
+PNJ,2020,31,Current liabilities,1907366443.0,VND,pdf
+PNJ,2020,33,Total inventory,6545905987056.0,VND,pdf
+PNJ,2020,37,"Net plant, property and equipment",281244232172.0,VND,pdf
+PNJ,2020,38,Firm age,32.0,years,yahoo
+PNJ,2021,1,Managerial ownership,10.0,%,yahoo
+PNJ,2021,6,Total sales revenue and Net sales revenue,19735646137250.0,VND,pdf
+PNJ,2021,7,Total assets,10619016547122.0,VND,pdf
+PNJ,2021,8,Selling expenses,927933521764.0,VND,pdf
+PNJ,2021,9,General and administrative expenditure,362870156577.0,VND,pdf
+PNJ,2021,10,Value of intangible assets,650848303.0,VND,pdf
+PNJ,2021,14,Merchandise purchase of the year,763475538.0,VND,pdf
+PNJ,2021,21,Net Income,920611645.0,VND,pdf
+PNJ,2021,22,Total shareholders' equity,6012633980253.0,VND,pdf
+PNJ,2021,24,Total liabilities,4606382566869.0,VND,pdf
+PNJ,2021,29,Long-term debt,43380157361.0,VND,pdf
+PNJ,2021,30,Current assets,70025928617.0,VND,pdf
+PNJ,2021,31,Current liabilities,4563002409508.0,VND,pdf
+PNJ,2021,32,Growth ratio,12.71,%,computed
+PNJ,2021,33,Total inventory,8754741712359.0,VND,pdf
+PNJ,2021,37,"Net plant, property and equipment",259137188160.0,VND,pdf
+PNJ,2021,38,Firm age,33.0,years,yahoo
+PNJ,2022,1,Managerial ownership,10.0,%,yahoo
+PNJ,2022,6,Total sales revenue and Net sales revenue,33876454559153.0,VND,pdf
+PNJ,2022,14,Merchandise purchase of the year,2039055649896.0,VND,pdf
+PNJ,2022,21,Net Income,615061462200.0,VND,pdf
+PNJ,2022,25,Net cash from operating activities,100581206698.0,VND,pdf
+PNJ,2022,27,Cash flows from investing activities,-370667278626.0,VND,pdf
+PNJ,2022,32,Growth ratio,71.65,%,computed
+PNJ,2022,33,Total inventory,323314557.0,VND,pdf
+PNJ,2022,34,Dividend payment,-671158340.0,VND,pdf
+PNJ,2022,38,Firm age,34.0,years,yahoo
+PNJ,2023,1,Managerial ownership,10.0,%,yahoo
+PNJ,2023,5,Total share outstanding,337905217.0,shares,yahoo
+PNJ,2023,6,Total sales revenue and Net sales revenue,33876454559153.0,VND,pdf
+PNJ,2023,8,Selling expenses,2835769469802.0,VND,pdf
+PNJ,2023,9,General and administrative expenditure,2484131409572.0,VND,pdf
+PNJ,2023,10,Value of intangible assets,6982250583.0,VND,pdf
+PNJ,2023,12,Net operating income,2484131409572.0,VND,pdf
+PNJ,2023,14,Merchandise purchase of the year,307114254166.0,VND,pdf
+PNJ,2023,17,Production cost,27005589756309.0,VND,pdf
+PNJ,2023,21,Net Income,1971099177135.0,VND,pdf
+PNJ,2023,23,Market value of equity,27574858188780.805,VND,yahoo
+PNJ,2023,32,Growth ratio,0.0,%,computed
+PNJ,2023,33,Total inventory,1336881052967.0,VND,pdf
+PNJ,2023,37,"Net plant, property and equipment",-1712404193.0,VND,pdf
+PNJ,2023,38,Firm age,35.0,years,yahoo
+PNJ,2024,1,Managerial ownership,10.0,%,yahoo
+PNJ,2024,5,Total share outstanding,337905217.0,shares,yahoo
+PNJ,2024,6,Total sales revenue and Net sales revenue,38232401184050.0,VND,pdf
+PNJ,2024,8,Selling expenses,2835769469802.0,VND,pdf
+PNJ,2024,9,General and administrative expenditure,2652129250669.0,VND,pdf
+PNJ,2024,10,Value of intangible assets,608688570597.0,VND,pdf
+PNJ,2024,12,Net operating income,2652129250669.0,VND,pdf
+PNJ,2024,14,Merchandise purchase of the year,31149334531193.0,VND,pdf
+PNJ,2024,16,Outside manufacturing expenses,173160607691.0,VND,pdf
+PNJ,2024,17,Production cost,31149334531193.0,VND,pdf
+PNJ,2024,21,Net Income,2112916282946.0,VND,pdf
+PNJ,2024,23,Market value of equity,31903109872294.375,VND,yahoo
+PNJ,2024,32,Growth ratio,12.86,%,computed
+PNJ,2024,33,Total inventory,2930000000000.0,VND,pdf
+PNJ,2024,37,"Net plant, property and equipment",248430247930.0,VND,pdf
+PNJ,2024,38,Firm age,36.0,years,yahoo
+SAB,2020,1,Managerial ownership,10.0,%,yahoo
+SAB,2020,5,Total share outstanding,1282562372.0,shares,yahoo
+SAB,2020,6,Total sales revenue and Net sales revenue,39828535843014.0,VND,pdf
+SAB,2020,8,Selling expenses,5242320825536.0,VND,pdf
+SAB,2020,9,General and administrative expenditure,5242320825536.0,VND,pdf
+SAB,2020,10,Value of intangible assets,62221.0,VND,pdf
+SAB,2020,14,Merchandise purchase of the year,-4321915026.0,VND,pdf
+SAB,2020,21,Net Income,5932879551458.0,VND,pdf
+SAB,2020,23,Market value of equity,105476536690704.16,VND,yahoo
+SAB,2020,24,Total liabilities,-561690538465.0,VND,pdf
+SAB,2020,25,Net cash from operating activities,5205642035515.0,VND,pdf
+SAB,2020,28,Cash and cash equivalent,987216978696.0,VND,pdf
+SAB,2020,33,Total inventory,23891.0,VND,pdf
+SAB,2020,37,"Net plant, property and equipment",2154623.0,VND,pdf
+SAB,2020,38,Firm age,43.0,years,yahoo
+SAB,2021,1,Managerial ownership,10.0,%,yahoo
+SAB,2021,5,Total share outstanding,1282562372.0,shares,yahoo
+SAB,2021,6,Total sales revenue and Net sales revenue,31435551511793.0,VND,pdf
+SAB,2021,7,Total assets,3459074140936.0,VND,pdf
+SAB,2021,8,Selling expenses,5204542870332.0,VND,pdf
+SAB,2021,10,Value of intangible assets,62573.0,VND,pdf
+SAB,2021,12,Net operating income,4011960350649.0,VND,pdf
+SAB,2021,13,Consumption of raw material,145774473960.0,VND,pdf
+SAB,2021,14,Merchandise purchase of the year,2003711324.0,VND,pdf
+SAB,2021,15,Work-in-progress goods purchase,69478655598.0,VND,pdf
+SAB,2021,17,Production cost,1445885115915.0,VND,pdf
+SAB,2021,21,Net Income,11792863811240.0,VND,pdf
+SAB,2021,22,Total shareholders' equity,18966495473280.0,VND,pdf
+SAB,2021,23,Market value of equity,78527271000119.7,VND,yahoo
+SAB,2021,24,Total liabilities,6469730925708.0,VND,pdf
+SAB,2021,25,Net cash from operating activities,4084.0,VND,pdf
+SAB,2021,27,Cash flows from investing activities,-43980184684.0,VND,pdf
+SAB,2021,28,Cash and cash equivalent,38196945.0,VND,pdf
+SAB,2021,29,Long-term debt,91400272698.0,VND,pdf
+SAB,2021,30,Current assets,20009862784505.0,VND,pdf
+SAB,2021,31,Current liabilities,6378330653010.0,VND,pdf
+SAB,2021,32,Growth ratio,-21.07,%,computed
+SAB,2021,33,Total inventory,23891388527.0,VND,pdf
+SAB,2021,37,"Net plant, property and equipment",2273691.0,VND,pdf
+SAB,2021,38,Firm age,44.0,years,yahoo
+SAB,2022,1,Managerial ownership,10.0,%,yahoo
+SAB,2022,5,Total share outstanding,1282562372.0,shares,yahoo
+SAB,2022,6,Total sales revenue and Net sales revenue,41790818339475.0,VND,pdf
+SAB,2022,7,Total assets,4296905191970.0,VND,pdf
+SAB,2022,8,Selling expenses,4038486338919.0,VND,pdf
+SAB,2022,9,General and administrative expenditure,4011960350649.0,VND,pdf
+SAB,2022,12,Net operating income,4011960350649.0,VND,pdf
+SAB,2022,13,Consumption of raw material,366423789.0,VND,pdf
+SAB,2022,14,Merchandise purchase of the year,41790818339475.0,VND,pdf
+SAB,2022,15,Work-in-progress goods purchase,73009588351.0,VND,pdf
+SAB,2022,16,Outside manufacturing expenses,4193250170455.0,VND,pdf
+SAB,2022,17,Production cost,41790818339475.0,VND,pdf
+SAB,2022,21,Net Income,13073315740285.0,VND,pdf
+SAB,2022,22,Total shareholders' equity,20246947402325.0,VND,pdf
+SAB,2022,23,Market value of equity,88020161406486.97,VND,yahoo
+SAB,2022,24,Total liabilities,8372592055264.0,VND,pdf
+SAB,2022,25,Net cash from operating activities,219895651128.0,VND,pdf
+SAB,2022,27,Cash flows from investing activities,-21504308649.0,VND,pdf
+SAB,2022,28,Cash and cash equivalent,181904281432.0,VND,pdf
+SAB,2022,29,Long-term debt,85659737027.0,VND,pdf
+SAB,2022,30,Current assets,225562528592.0,VND,pdf
+SAB,2022,31,Current liabilities,8286932318237.0,VND,pdf
+SAB,2022,32,Growth ratio,32.94,%,computed
+SAB,2022,33,Total inventory,-302319392736.0,VND,pdf
+SAB,2022,37,"Net plant, property and equipment",2384281.0,VND,pdf
+SAB,2022,38,Firm age,45.0,years,yahoo
+SAB,2023,1,Managerial ownership,10.0,%,yahoo
+SAB,2023,5,Total share outstanding,1282562372.0,shares,yahoo
+SAB,2023,6,Total sales revenue and Net sales revenue,41813139058076.0,VND,pdf
+SAB,2023,7,Total assets,4296905191970.0,VND,pdf
+SAB,2023,8,Selling expenses,5226653233453.0,VND,pdf
+SAB,2023,9,General and administrative expenditure,5226653233453.0,VND,pdf
+SAB,2023,12,Net operating income,858079530098.0,VND,pdf
+SAB,2023,13,Consumption of raw material,700169207152.0,VND,pdf
+SAB,2023,14,Merchandise purchase of the year,32127500715007.0,VND,pdf
+SAB,2023,15,Work-in-progress goods purchase,96307399286.0,VND,pdf
+SAB,2023,17,Production cost,32127500715007.0,VND,pdf
+SAB,2023,21,Net Income,8586457831240.0,VND,pdf
+SAB,2023,22,Total shareholders' equity,21593626852752.0,VND,pdf
+SAB,2023,23,Market value of equity,66450217814543.06,VND,yahoo
+SAB,2023,24,Total liabilities,935170566006.0,VND,pdf
+SAB,2023,25,Net cash from operating activities,4845877996931.0,VND,pdf
+SAB,2023,27,Cash flows from investing activities,-99279856031.0,VND,pdf
+SAB,2023,28,Cash and cash equivalent,3197.0,VND,pdf
+SAB,2023,29,Long-term debt,87167019.0,VND,pdf
+SAB,2023,30,Current assets,23225562528592.0,VND,pdf
+SAB,2023,31,Current liabilities,848003546758.0,VND,pdf
+SAB,2023,32,Growth ratio,0.05,%,computed
+SAB,2023,33,Total inventory,236068075.0,VND,pdf
+SAB,2023,37,"Net plant, property and equipment",2589099.0,VND,pdf
+SAB,2023,38,Firm age,46.0,years,yahoo
+SAB,2024,1,Managerial ownership,10.0,%,yahoo
+SAB,2024,5,Total share outstanding,1282562372.0,shares,yahoo
+SAB,2024,6,Total sales revenue and Net sales revenue,40307905935578.0,VND,pdf
+SAB,2024,7,Total assets,29528797418758.0,VND,pdf
+SAB,2024,8,Selling expenses,4858079530098.0,VND,pdf
+SAB,2024,9,General and administrative expenditure,4858079530098.0,VND,pdf
+SAB,2024,12,Net operating income,906036032935.0,VND,pdf
+SAB,2024,13,Consumption of raw material,377389197309.0,VND,pdf
+SAB,2024,14,Merchandise purchase of the year,448691239392.0,VND,pdf
+SAB,2024,15,Work-in-progress goods purchase,252398.0,VND,pdf
+SAB,2024,17,Production cost,448691239392.0,VND,pdf
+SAB,2024,21,Net Income,3775246732311.0,VND,pdf
+SAB,2024,22,Total shareholders' equity,20658817613949.0,VND,pdf
+SAB,2024,23,Market value of equity,64920321305117.69,VND,yahoo
+SAB,2024,24,Total liabilities,7935170566006.0,VND,pdf
+SAB,2024,25,Net cash from operating activities,365990218.0,VND,pdf
+SAB,2024,26,Capital expenditure,-242908.0,VND,pdf
+SAB,2024,27,Cash flows from investing activities,-91516291764.0,VND,pdf
+SAB,2024,28,Cash and cash equivalent,151932106996.0,VND,pdf
+SAB,2024,29,Long-term debt,88050185067.0,VND,pdf
+SAB,2024,30,Current assets,22678040434933.0,VND,pdf
+SAB,2024,31,Current liabilities,8723003536581.0,VND,pdf
+SAB,2024,32,Growth ratio,-3.6,%,computed
+SAB,2024,33,Total inventory,75584452041.0,VND,pdf
+SAB,2024,38,Firm age,47.0,years,yahoo
+VNM,2020,1,Managerial ownership,10.0,%,yahoo
+VNM,2020,6,Total sales revenue and Net sales revenue,56400229726717.0,VND,pdf
+VNM,2020,7,Total assets,-417033042497.0,VND,pdf
+VNM,2020,8,Selling expenses,12003454552852.0,VND,pdf
+VNM,2020,9,General and administrative expenditure,12797090.0,VND,pdf
+VNM,2020,10,Value of intangible assets,-6834814390.0,VND,pdf
+VNM,2020,12,Net operating income,12797090.0,VND,pdf
+VNM,2020,14,Merchandise purchase of the year,31967662837839.0,VND,pdf
+VNM,2020,16,Outside manufacturing expenses,116189367411.0,VND,pdf
+VNM,2020,17,Production cost,31967662837839.0,VND,pdf
+VNM,2020,21,Net Income,7875462401924.0,VND,pdf
+VNM,2020,22,Total shareholders' equity,33647122229822.0,VND,pdf
+VNM,2020,24,Total liabilities,785358443807.0,VND,pdf
+VNM,2020,28,Cash and cash equivalent,2111242815581.0,VND,pdf
+VNM,2020,29,Long-term debt,572712158332.0,VND,pdf
+VNM,2020,30,Current assets,29665725805058.0,VND,pdf
+VNM,2020,31,Current liabilities,212646285475.0,VND,pdf
+VNM,2020,33,Total inventory,4905068613616.0,VND,pdf
+VNM,2020,37,"Net plant, property and equipment",4736593.0,VND,pdf
+VNM,2020,38,Firm age,44.0,years,yahoo
+VNM,2021,1,Managerial ownership,10.0,%,yahoo
+VNM,2021,6,Total sales revenue and Net sales revenue,59722908393236.0,VND,pdf
+VNM,2021,8,Selling expenses,13539380824416.0,VND,pdf
+VNM,2021,9,General and administrative expenditure,13539380824416.0,VND,pdf
+VNM,2021,10,Value of intangible assets,86503968330.0,VND,pdf
+VNM,2021,12,Net operating income,12727619820191.0,VND,pdf
+VNM,2021,14,Merchandise purchase of the year,65918346190.0,VND,pdf
+VNM,2021,16,Outside manufacturing expenses,107782976757.0,VND,pdf
+VNM,2021,17,Production cost,30848721191467.0,VND,pdf
+VNM,2021,21,Net Income,260378375.0,VND,pdf
+VNM,2021,22,Total shareholders' equity,33647122222.0,VND,pdf
+VNM,2021,24,Total liabilities,14785358443807.0,VND,pdf
+VNM,2021,28,Cash and cash equivalent,2348551874348.0,VND,pdf
+VNM,2021,29,Long-term debt,413872193316.0,VND,pdf
+VNM,2021,30,Current assets,36109910649785.0,VND,pdf
+VNM,2021,31,Current liabilities,17068416995519.0,VND,pdf
+VNM,2021,32,Growth ratio,5.89,%,computed
+VNM,2021,33,Total inventory,6773071634017.0,VND,pdf
+VNM,2021,35,EPS,4770.0,VND,pdf
+VNM,2021,37,"Net plant, property and equipment",5686436.0,VND,pdf
+VNM,2021,38,Firm age,45.0,years,yahoo
+VNM,2022,1,Managerial ownership,10.0,%,yahoo
+VNM,2022,6,Total sales revenue and Net sales revenue,61012074147764.0,VND,pdf
+VNM,2022,7,Total assets,-376218620545.0,VND,pdf
+VNM,2022,8,Selling expenses,12950670402404.0,VND,pdf
+VNM,2022,9,General and administrative expenditure,12727619820191.0,VND,pdf
+VNM,2022,10,Value of intangible assets,42841135518.0,VND,pdf
+VNM,2022,12,Net operating income,10491064827100.0,VND,pdf
+VNM,2022,14,Merchandise purchase of the year,36059015690711.0,VND,pdf
+VNM,2022,16,Outside manufacturing expenses,70716169179.0,VND,pdf
+VNM,2022,17,Production cost,36059015690711.0,VND,pdf
+VNM,2022,21,Net Income,3353468092666.0,VND,pdf
+VNM,2022,22,Total shareholders' equity,32816518355085.0,VND,pdf
+VNM,2022,24,Total liabilities,15666145881135.0,VND,pdf
+VNM,2022,28,Cash and cash equivalent,2299943527624.0,VND,pdf
+VNM,2022,29,Long-term debt,357722799611.0,VND,pdf
+VNM,2022,30,Current assets,31560382174.0,VND,pdf
+VNM,2022,31,Current liabilities,15308423081524.0,VND,pdf
+VNM,2022,32,Growth ratio,2.16,%,computed
+VNM,2022,33,Total inventory,5537563396117.0,VND,pdf
+VNM,2022,35,EPS,3632.0,VND,pdf
+VNM,2022,37,"Net plant, property and equipment",6688784.0,VND,pdf
+VNM,2022,38,Firm age,46.0,years,yahoo
+VNM,2023,1,Managerial ownership,10.0,%,yahoo
+VNM,2023,5,Total share outstanding,2089955445.0,shares,yahoo
+VNM,2023,6,Total sales revenue and Net sales revenue,60368915511505.0,VND,pdf
+VNM,2023,8,Selling expenses,13018093111879.0,VND,pdf
+VNM,2023,9,General and administrative expenditure,10903632881807.0,VND,pdf
+VNM,2023,12,Net operating income,10903632881807.0,VND,pdf
+VNM,2023,14,Merchandise purchase of the year,3257.0,VND,pdf
+VNM,2023,16,Outside manufacturing expenses,83065632575.0,VND,pdf
+VNM,2023,17,Production cost,32305714006438.0,VND,pdf
+VNM,2023,21,Net Income,3926232003987.0,VND,pdf
+VNM,2023,22,Total shareholders' equity,35025743765470.0,VND,pdf
+VNM,2023,23,Market value of equity,121796300812711.17,VND,yahoo
+VNM,2023,24,Total liabilities,17647627338990.0,VND,pdf
+VNM,2023,28,Cash and cash equivalent,2912027.0,VND,pdf
+VNM,2023,29,Long-term debt,508937364128.0,VND,pdf
+VNM,2023,30,Current assets,31560382174201.0,VND,pdf
+VNM,2023,31,Current liabilities,17138689974.0,VND,pdf
+VNM,2023,32,Growth ratio,-1.05,%,computed
+VNM,2023,33,Total inventory,128081805.0,VND,pdf
+VNM,2023,38,Firm age,47.0,years,yahoo
+VNM,2024,1,Managerial ownership,10.0,%,yahoo
+VNM,2024,5,Total share outstanding,2089955445.0,shares,yahoo
+VNM,2024,6,Total sales revenue and Net sales revenue,61823889921880.0,VND,pdf
+VNM,2024,7,Total assets,106931095492.0,VND,pdf
+VNM,2024,8,Selling expenses,13018093111879.0,VND,pdf
+VNM,2024,9,General and administrative expenditure,10903632881807.0,VND,pdf
+VNM,2024,10,Value of intangible assets,132226.0,VND,pdf
+VNM,2024,12,Net operating income,10903632881807.0,VND,pdf
+VNM,2024,14,Merchandise purchase of the year,36192.0,VND,pdf
+VNM,2024,16,Outside manufacturing expenses,100773003024.0,VND,pdf
+VNM,2024,17,Production cost,35824183896095.0,VND,pdf
+VNM,2024,21,Net Income,232003987.0,VND,pdf
+VNM,2024,22,Total shareholders' equity,36174402829663.0,VND,pdf
+VNM,2024,23,Market value of equity,122045707605073.47,VND,yahoo
+VNM,2024,28,Cash and cash equivalent,225943.0,VND,pdf
+VNM,2024,29,Long-term debt,415111869758.0,VND,pdf
+VNM,2024,30,Current assets,553650065098.0,VND,pdf
+VNM,2024,31,Current liabilities,18459546837640.0,VND,pdf
+VNM,2024,32,Growth ratio,2.41,%,computed
+VNM,2024,33,Total inventory,5686834.0,VND,pdf
+VNM,2024,37,"Net plant, property and equipment",11520200967499.0,VND,pdf
+VNM,2024,38,Firm age,48.0,years,yahoo

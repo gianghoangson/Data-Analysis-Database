@@ -1,0 +1,27 @@
+# Finance38 - Dependencies
+# Python 3.10+
+
+# PDF Processing
+pdfplumber>=0.10.0
+PyMuPDF>=1.23.0  # fitz
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Market data
+yfinance>=0.2.30
+
+# Config
+PyYAML>=6.0.0
+python-dotenv>=1.0.0
+
+# Progress bar
+tqdm>=4.65.0
+
+# Optional: OCR (chỉ cần nếu PDF là scan)
+# pytesseract>=0.3.10
+# Pillow>=10.0.0
+
+# Optional: Database tools
+# sqlalchemy>=2.0.0

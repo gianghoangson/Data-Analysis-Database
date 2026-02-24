@@ -1,0 +1,441 @@
+# Mapping 38 chỉ số tài chính
+# Cấu trúc: index_id -> keywords (Vietnamese) + extraction rules + compute formula
+
+# =====================
+# OWNERSHIP (Manual input)
+# =====================
+1:
+  name: Managerial ownership
+  name_vn: Sở hữu của ban điều hành
+  source: manual
+  unit: "%"
+  keywords: []
+
+2:
+  name: State ownership
+  name_vn: Sở hữu nhà nước
+  source: manual
+  unit: "%"
+  keywords: []
+
+3:
+  name: Institutional ownership
+  name_vn: Sở hữu tổ chức
+  source: manual
+  unit: "%"
+  keywords: []
+
+4:
+  name: Foreign ownership
+  name_vn: Sở hữu nước ngoài
+  source: manual
+  unit: "%"
+  keywords: []
+
+# =====================
+# MARKET DATA (Yahoo Finance)
+# =====================
+5:
+  name: Total share outstanding
+  name_vn: Tổng số cổ phiếu lưu hành
+  source: yahoo
+  unit: shares
+  yahoo_field: sharesOutstanding
+
+23:
+  name: Market value of equity
+  name_vn: Vốn hóa thị trường
+  source: yahoo
+  unit: VND
+  compute: "close_price * shares_outstanding"
+
+38:
+  name: Firm age
+  name_vn: Tuổi công ty
+  source: computed
+  unit: years
+  compute: "report_year - founding_year"
+
+# =====================
+# PDF - REVENUE
+# =====================
+6:
+  name: Total sales revenue and Net sales revenue
+  name_vn: Doanh thu thuần
+  source: pdf
+  unit: VND
+  keywords:
+    - "Doanh thu bán hàng và cung cấp dịch vụ"
+    - "Doanh thu thuần về bán hàng"
+    - "Doanh thu thuần bán hàng"
+    - "Doanh thu thuần"
+    - "Net revenue"
+  rule: first_match
+  min_value: 1000000000  # > 1 tỷ
+
+# =====================
+# PDF - ASSETS
+# =====================
+7:
+  name: Total assets
+  name_vn: Tổng tài sản
+  source: pdf
+  unit: VND
+  keywords:
+    - "TỔNG CỘNG TÀI SẢN"
+    - "TỔNG TÀI SẢN"
+    - "TÔNG TÀI SẢN"
+    - "TONG TAI SAN"
+    - "Tông cộng tài sản"
+    - "Total assets"
+  rule: first_match
+  min_value: 1000000000
+
+10:
+  name: Value of intangible assets
+  name_vn: Tài sản cố định vô hình
+  source: pdf
+  unit: VND
+  keywords:
+    - "Tài sản cố định vô hình"
+    - "Intangible assets"
+  rule: first_match
+
+28:
+  name: Cash and cash equivalent
+  name_vn: Tiền và tương đương tiền
+  source: pdf
+  unit: VND
+  keywords:
+    - "Tiền và các khoản tương đương tiền"
+    - "Cash and cash equivalents"
+  rule: first_match
+
+30:
+  name: Current assets
+  name_vn: Tài sản ngắn hạn
+  source: pdf
+  unit: VND
+  keywords:
+    - "TÀI SẢN NGẮN HẠN"
+    - "Tài sản ngắn hạn"
+    - "Current assets"
+  rule: first_match
+  min_value: 1000000000
+
+33:
+  name: Total inventory
+  name_vn: Hàng tồn kho
+  source: pdf
+  unit: VND
+  keywords:
+    - "Hàng tồn kho"
+    - "Inventories"
+    - "Total inventory"
+  rule: first_match
+
+37:
+  name: Net plant, property and equipment
+  name_vn: Tài sản cố định hữu hình
+  source: pdf
+  unit: VND
+  keywords:
+    - "Tài sản cố định hữu hình"
+    - "Property, plant and equipment"
+  rule: first_match
+
+# =====================
+# PDF - EXPENSES
+# =====================
+8:
+  name: Selling expenses
+  name_vn: Chi phí bán hàng
+  source: pdf
+  unit: VND
+  keywords:
+    - "Chi phí bán hàng"
+    - "Chỉ phí bán hàng"
+    - "Selling expenses"
+  rule: max_value  # Lấy giá trị lớn nhất (tránh nhầm với chi tiết)
+
+9:
+  name: General and administrative expenditure
+  name_vn: Chi phí quản lý doanh nghiệp
+  source: pdf
+  unit: VND
+  keywords:
+    - "Chi phí quản lý doanh nghiệp"
+    - "Chỉ phí quản lý doanh nghiệp"
+    - "General and administrative"
+    - "Chi phí QLDN"
+  rule: max_value
+
+11:
+  name: Manufacturing overhead
+  name_vn: Chi phí sản xuất chung
+  source: pdf
+  unit: VND
+  keywords:
+    - "Chi phí sản xuất chung"
+    - "Manufacturing overhead"
+  rule: first_match
+
+13:
+  name: Consumption of raw material
+  name_vn: Chi phí nguyên vật liệu
+  source: pdf
+  unit: VND
+  keywords:
+    - "Chi phí nguyên vật liệu"
+    - "Nguyên vật liệu trực tiếp"
+    - "Raw material"
+  rule: first_match
+
+14:
+  name: Merchandise purchase of the year
+  name_vn: Mua hàng hóa
+  source: pdf
+  unit: VND
+  keywords:
+    - "Hàng hóa"
+    - "Giá vốn hàng bán"
+    - "Cost of goods sold"
+  rule: first_match
+
+15:
+  name: Work-in-progress goods purchase
+  name_vn: Chi phí sản xuất kinh doanh dở dang
+  source: pdf
+  unit: VND
+  keywords:
+    - "Chi phí sản xuất kinh doanh dở dang"
+    - "Work in progress"
+  rule: first_match
+
+16:
+  name: Outside manufacturing expenses
+  name_vn: Chi phí dịch vụ mua ngoài
+  source: pdf
+  unit: VND
+  keywords:
+    - "Chi phí dịch vụ mua ngoài"
+    - "Thuê ngoài"
+  rule: first_match
+
+17:
+  name: Production cost
+  name_vn: Tổng chi phí sản xuất
+  source: pdf
+  unit: VND
+  keywords:
+    - "Tổng chi phí sản xuất"
+    - "Giá vốn hàng bán"
+    - "Production cost"
+  rule: first_match
+  min_value: 1000000000
+
+18:
+  name: R&D expenditure
+  name_vn: Chi phí nghiên cứu phát triển
+  source: pdf
+  unit: VND
+  keywords:
+    - "Chi phí nghiên cứu"
+    - "R&D"
+    - "Research and development"
+  rule: first_match
+
+# =====================
+# PDF - INCOME
+# =====================
+12:
+  name: Net operating income
+  name_vn: Lợi nhuận thuần từ hoạt động kinh doanh
+  source: pdf
+  unit: VND
+  keywords:
+    - "Lợi nhuận thuần từ hoạt động kinh doanh"
+    - "Lơi nhuận thuần từ hoạt động"
+    - "Operating income"
+    - "Operating profit"
+  rule: first_match
+  min_value: 1000000
+
+21:
+  name: Net Income
+  name_vn: Lợi nhuận sau thuế
+  source: pdf
+  unit: VND
+  keywords:
+    - "Lợi nhuận sau thuế thu nhập doanh nghiệp"
+    - "Lợi nhuận sau thuế TNDN"
+    - "Lợi nhuận sau thuế"
+    - "LNST chưa phân phối"
+    - "Net income"
+    - "Net profit"
+  rule: first_match
+  min_value: 1000000
+
+35:
+  name: EPS
+  name_vn: Lãi cơ bản trên cổ phiếu
+  source: pdf
+  unit: VND
+  keywords:
+    - "Lãi cơ bản trên cổ phiếu"
+    - "Lãi cơ bản trên cổ phiêu"
+    - "Lãi cơ ban trên cổ phiếu"
+    - "EPS"
+    - "Earnings per share"
+  rule: first_match
+  min_value: 0  # EPS có thể âm
+
+# =====================
+# PDF - EQUITY & LIABILITIES
+# =====================
+22:
+  name: Total shareholders' equity
+  name_vn: Vốn chủ sở hữu
+  source: pdf
+  unit: VND
+  keywords:
+    - "VỐN CHỦ SỞ HỮU"
+    - "VÓN CHỦ SỞ HỮU"
+    - "Vốn chủ sở hữu"
+    - "Vôn chủ sở hữu"
+    - "NGUỒN VỐN CHỦ SỞ HỮU"
+    - "Total equity"
+    - "Shareholders' equity"
+  rule: first_match
+  min_value: 1000000000
+
+24:
+  name: Total liabilities
+  name_vn: Nợ phải trả
+  source: pdf
+  unit: VND
+  keywords:
+    - "Nợ phải trả"
+    - "NỢ PHẢI TRẢ"
+    - "NƠ PHẢI TRẢ"
+    - "Total liabilities"
+  rule: first_match
+  min_value: 1000000000
+
+29:
+  name: Long-term debt
+  name_vn: Vay và nợ thuê tài chính dài hạn
+  source: pdf
+  unit: VND
+  keywords:
+    - "Vay và nợ thuê tài chính dài hạn"
+    - "Nợ dài hạn"
+    - "Long-term debt"
+    - "Long-term borrowings"
+  rule: first_match
+
+31:
+  name: Current liabilities
+  name_vn: Nợ ngắn hạn
+  source: pdf
+  unit: VND
+  keywords:
+    - "Nợ ngắn hạn"
+    - "NỢ NGẮN HẠN"
+    - "NƠ NGẮN HẠN"
+    - "Nợ llgắn hạn"
+    - "Current liabilities"
+  rule: first_match
+  min_value: 1000000000
+
+# =====================
+# PDF - CASH FLOW
+# =====================
+25:
+  name: Net cash from operating activities
+  name_vn: Lưu chuyển tiền thuần từ HĐKD
+  source: pdf
+  unit: VND
+  keywords:
+    - "Lưu chuyển tiền thuần từ hoạt động kinh doanh"
+    - "Lưu chuyển tiền từ hoạt động kinh doanh"
+    - "Cash flows from operating"
+  rule: first_match
+
+26:
+  name: Capital expenditure
+  name_vn: Chi mua sắm TSCĐ
+  source: pdf
+  unit: VND
+  keywords:
+    - "Tiền chi mua sắm, xây dựng TSCĐ"
+    - "Tiền chi mua sắm"
+    - "Capital expenditure"
+    - "CAPEX"
+  rule: first_match
+  is_negative: true  # Thường là số âm trong BCTC
+
+27:
+  name: Cash flows from investing activities
+  name_vn: Lưu chuyển tiền từ HĐĐT
+  source: pdf
+  unit: VND
+  keywords:
+    - "Lưu chuyển tiền thuần từ hoạt động đầu tư"
+    - "Cash flows from investing"
+  rule: first_match
+
+34:
+  name: Dividend payment
+  name_vn: Chi trả cổ tức
+  source: pdf
+  unit: VND
+  keywords:
+    - "Tiền chi trả cổ tức"
+    - "Cổ tức đã trả"
+    - "Dividend paid"
+  rule: first_match
+  is_negative: true
+
+# =====================
+# INNOVATION (Manual)
+# =====================
+19:
+  name: Product innovation
+  name_vn: Đổi mới sản phẩm
+  source: manual
+  unit: binary
+  keywords: []
+
+20:
+  name: Process innovation
+  name_vn: Đổi mới quy trình
+  source: manual
+  unit: binary
+  keywords: []
+
+# =====================
+# HR (PDF)
+# =====================
+36:
+  name: Number of employees
+  name_vn: Số lượng nhân viên
+  source: pdf
+  unit: people
+  keywords:
+    - "Số lượng nhân viên"
+    - "Tổng số nhân viên"
+    - "Number of employees"
+  rule: first_match
+  min_value: 10  # Tránh nhầm với số nhỏ
+
+# =====================
+# COMPUTED (Derived)
+# =====================
+32:
+  name: Growth ratio
+  name_vn: Tỷ lệ tăng trưởng doanh thu
+  source: computed
+  unit: "%"
+  compute: "(revenue_current - revenue_previous) / revenue_previous * 100"
+  depends_on: [6]
