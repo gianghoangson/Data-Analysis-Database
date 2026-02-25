@@ -2,13 +2,14 @@ import os
 import time
 import pandas as pd
 import numpy as np
+from typing import Any
 
 # Nhập các module đã tự viết
 from gemini_pdf import GeminiFinancialProcessor
 from compute import apply_calculations
 
-BCTC_PATH = "./BCTC_test"
-RESULT_FOLDER = "./result"
+BCTC_PATH = "./BCTC"
+RESULT_FOLDER = "./finance38/data/result"
 
 # TỪ ĐIỂN CẤU HÌNH GIAO DIỆN (Định hình 6 cột cho file CSV)
 METADATA_CONFIG = {
@@ -65,7 +66,8 @@ def get_pdf_files(root_dir):
                         try:
                             year = int(file.replace(".pdf", "").split("_")[-1])
                             pdf_list.append({"Symbol": company_code, "Year": year, "FilePath": os.path.join(comp_path, file)})
-                        except: pass
+                        except:
+                            pass
     return pdf_list
 
 def run_pipeline():
@@ -80,45 +82,40 @@ def run_pipeline():
         return
 
     print(f"🚀 BẮT ĐẦU XỬ LÝ {len(pdf_files)} FILE BÁO CÁO...")
-    
-    all_extracted_rows = []
+
+    # Process each file one by one and write results immediately
+    processed_rows: list[dict] = []
 
     for idx, item in enumerate(pdf_files):
         symbol = item['Symbol']
         year = item['Year']
         pdf_path = item['FilePath']
         output_csv = os.path.join(RESULT_FOLDER, f"{symbol}_{year}_result.csv")
-        
+
         print(f"\n[{idx+1}/{len(pdf_files)}] Đang xử lý: {symbol} - {year}")
-        
-        row_data = {"Symbol": symbol, "Year": year}
+
+        # Initialise row with all indicators set to None
+        row_data: dict[str, Any] = {"Symbol": symbol, "Year": year}
         for field in ALL_FIELDS:
             row_data[field] = None
 
         need_ai = True
-        
-        # KIỂM TRA FILE CŨ ĐỂ GIỮ DỮ LIỆU NHẬP TAY (Tương thích cả format 2 cột cũ và 6 cột mới)
+
+        # If CSV exists, read existing values and avoid API call
         if os.path.exists(output_csv):
             print(f"   📂 Đã có file cũ, đang đọc dữ liệu nhập tay...")
             try:
                 df_old = pd.read_csv(output_csv)
-                old_dict = {}
-                
-                # Nếu là format 6 cột mới
+                old_dict: dict[str, Any] = {}
                 if 'index_id' in df_old.columns and 'value' in df_old.columns:
                     for _, r in df_old.iterrows():
                         key = f"{int(r['index_id'])}. {r['index_name']}"
                         old_dict[key] = r['value']
-                # Nếu là format 2 cột cũ
                 elif 'Indicator' in df_old.columns and 'Value' in df_old.columns:
                     old_dict = df_old.set_index('Indicator')['Value'].to_dict()
-                
-                # Bypass nếu đã chạy AI
                 if pd.notna(old_dict.get("7. Total assets")):
                     need_ai = False
                     print("   ⏭️ File này đã chạy AI trước đó, sẽ bỏ qua gọi API.")
-                
-                # Nạp lại dữ liệu
                 for key in ALL_FIELDS:
                     val = old_dict.get(key)
                     if pd.notna(val) and str(val).strip() != "":
@@ -129,36 +126,58 @@ def run_pipeline():
         if need_ai:
             pdf_data = processor.extract_from_pdf(pdf_path)
             market_data = processor.get_market_data(symbol, year)
-            
-            for k, v in {**pdf_data, **market_data}.items():
+
+            # Build mapping of English names to field keys (with parentheses stripped)
+            english_to_field: dict[str, str] = {}
+            for field_key in ALL_FIELDS:
+                parts = field_key.split('. ', 1)
+                if len(parts) == 2:
+                    english_name = parts[1].strip()
+                    english_to_field[english_name] = field_key
+                    if '(' in english_name:
+                        english_clean = english_name.split('(', 1)[0].strip()
+                        english_to_field.setdefault(english_clean, field_key)
+
+            # Parse the PDF JSON and fill row_data
+            if isinstance(pdf_data, dict):
+                for _, indicators in pdf_data.items():
+                    if isinstance(indicators, dict):
+                        for full_name, value in indicators.items():
+                            if not isinstance(full_name, str):
+                                continue
+                            if ' — ' in full_name:
+                                english_name = full_name.split(' — ', 1)[0].strip()
+                            elif ' - ' in full_name:
+                                english_name = full_name.split(' - ', 1)[0].strip()
+                            else:
+                                english_name = full_name.strip()
+                            english_clean = english_name.split('(', 1)[0].strip()
+                            field_key = english_to_field.get(english_name) or english_to_field.get(english_clean)
+                            if field_key:
+                                if value is not None:
+                                    row_data[field_key] = value
+
+            # Merge market data
+            for k, v in market_data.items():
                 if k in ALL_FIELDS and v is not None:
                     row_data[k] = v
+
             time.sleep(5)
 
-        all_extracted_rows.append(row_data)
+        # Append row and compute derived metrics
+        processed_rows.append(row_data.copy())
+        df_all = pd.DataFrame(processed_rows)
+        df_all = apply_calculations(df_all)
+        df_row = df_all.iloc[-1]
 
-    # TÍNH TOÁN CÁC CHỈ TIÊU PHÁI SINH
-    df_all = pd.DataFrame(all_extracted_rows)
-    df_all = apply_calculations(df_all)
-
-    # XUẤT RA FILE CSV FORMAT 6 CỘT
-    print("\n💾 ĐANG LƯU KẾT QUẢ RA CÁC FILE CSV...")
-    for idx, row in df_all.iterrows():
-        symbol = row['Symbol']
-        year = row['Year']
-        output_csv = os.path.join(RESULT_FOLDER, f"{symbol}_{year}_result.csv")
-        
-        # Tạo danh sách các dictionary đại diện cho từng dòng của CSV
-        formatted_rows = []
+        # Write out CSV for this file immediately
+        formatted_rows: list[dict[str, Any]] = []
         for field in ALL_FIELDS:
-            # Tách "7. Total assets" thành ID (7) và Name ("Total assets")
             parts = field.split('. ', 1)
             index_id = int(parts[0])
             index_name = parts[1]
-            
             meta = METADATA_CONFIG[field]
-            val = row.get(field)
-            
+            val = df_row.get(field)
             formatted_rows.append({
                 "index_id": index_id,
                 "index_name": index_name,
@@ -167,11 +186,8 @@ def run_pipeline():
                 "unit": meta["unit"],
                 "source": meta["source"]
             })
-            
         df_final = pd.DataFrame(formatted_rows)
-        # Sắp xếp theo thứ tự index_id cho chuẩn chỉ
         df_final = df_final.sort_values(by="index_id")
-        
         df_final.to_csv(output_csv, index=False, encoding='utf-8-sig')
         print(f"   ✅ Đã xuất: {symbol}_{year}_result.csv")
 
