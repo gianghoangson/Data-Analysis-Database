@@ -12,7 +12,7 @@ Trích xuất và quản lý **38 chỉ số tài chính** từ Báo cáo tài c
 - KDC
 - MSN
 - NAF
-Còn cần chạy:
++ Còn cần chạy:
 - NTP
 - PLX
 - PNJ
