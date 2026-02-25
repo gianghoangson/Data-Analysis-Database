@@ -1,0 +1,189 @@
+================================================================================
+                         PDF DATA EXTRACTION - CODE OVERVIEW
+================================================================================
+
+📋 TÓ�M TẮT:
+───────────────────────────────────────────────────────────────────────────────
+Dự án này có 2 tệp chính xử lý PDF extraction:
+  1. run_ocr.py           - Script OCR chính (PyMuPDF + Tesseract)
+  2. app/extract_pdf.py   - Lớp PDFExtractor (pdfplumber + PyMuPDF + OCR)
+
+
+================================================================================
+                              1. RUN_OCR.PY
+================================================================================
+
+📍 Vị trí: finance38/run_ocr.py
+📝 Chức năng: Script chạy OCR từng file PDF và xuất CSV + lưu DB
+
+🔧 Các hàm chính:
+───────────────────────────────────────────────────────────────────────────────
+
+1️⃣ parse_vn_number(text)
+   - Chuyển đổi định dạng số Việt Nam: 109.842.249.570 → float
+   - Xử lý số âm: (xxx) → -xxx
+   - Xử lý ký tự không hợp lệ
+
+2️⃣ extract_numbers(line, min_value=1000)
+   - Trích xuất TẤT CẢ số từ 1 dòng text
+   - Dùng regex: r'\(?\d{1,3}(?:[.,]\d{3})+\)?'
+   - Lọc theo min_value
+
+3️⃣ ocr_pdf(pdf_path, dpi=150, quiet=False)      ⭐ MAIN OCR FUNCTION
+   - Chuyển từng trang PDF thành hình ảnh (dpi=150)
+   - Chạy Tesseract OCR để nhận dạng text
+   - Tìm keyword trong config và trích xuất số
+   - Return: Dict[index_id] -> value
+   
+   Các bước:
+   a) Mở PDF bằng PyMuPDF (fitz)
+   b) Duyệt từng trang
+   c) Convert PDF page → hình ảnh (pix)
+   d) Chạy Tesseract: pytesseract.image_to_string()
+   e) Split text thành dòng
+   f) Match keywords với từng dòng
+   g) Trích xuất số từ dòng + 5 dòng kế tiếp
+   h) Với các index quan trọng (Revenue, Total Assets): tìm số lớn nhất
+
+4️⃣ export_single_result(pdf_path, output_dir, save_db, quiet)
+   - Gọi ocr_pdf() để extract
+   - Parse filename: HPG_2024.pdf → company='HPG', year=2024
+   - Tạo DataFrame với đủ 38 index
+   - Xuất CSV: HPG_2024_result.csv
+   - Lưu vào SQLite DB
+
+📊 Data Flow:
+   PDF → PyMuPDF (fitz) → Images (pix)
+                      ↓
+   Tesseract OCR → Raw text
+                      ↓
+   Keyword matching + Number extraction
+                      ↓
+   CSV export + DB save
+
+🔑 Key Config (từ MAPPING):
+   - keywords: từ khóa để tìm dòng (VD: "Doanh thu", "Tổng tài sản")
+   - source: 'pdf' (loại dữ liệu)
+   - rule: 'first_match' | 'max_value' | 'last_match'
+   - min_value: Ngưỡng số tối thiểu
+   - is_negative: Có cộng dấu âm không
+
+
+================================================================================
+                           2. APP/EXTRACT_PDF.PY
+================================================================================
+
+📍 Vị trí: finance38/app/extract_pdf.py
+📝 Chức năng: Lớp PDFExtractor (object-oriented, nhiều phương pháp extraction)
+
+🔧 Lớp chính: PDFExtractor
+───────────────────────────────────────────────────────────────────────────────
+
+1️⃣ __init__(mapping_path, tesseract_path)
+   - Khởi tạo mapping config
+   - Config Tesseract path (Windows: C:\Program Files\Tesseract-OCR\...)
+
+2️⃣ _check_has_text(pdf_path) -> bool
+   - Kiểm tra PDF có text layer (searchable) không
+   - Check 5 trang đầu tiên
+
+3️⃣ extract_from_pdf(pdf_path) ⭐ METHOD 1 (Pdfplumber text extraction)
+   - Sử dụng pdfplumber (tốt hơn cho PDF digital có cấu trúc)
+   - extract_text(layout=True): Giữ layout gốc
+   - Match keywords + trích xuất số
+   - Return: Dict[index_id] -> value
+
+4️⃣ extract_with_tables(pdf_path) ⭐ METHOD 2 (Table extraction)
+   - extract_tables() từ pdfplumber
+   - Parse bảng theo hàng/cột
+   - Tìm label (cột 1) match keywords
+   - Trích xuất số từ các cột còn lại
+   - Hiệu quả nhất với BCTC có bảng cấu trúc rõ
+
+5️⃣ extract_with_ocr(pdf_path, dpi=200) ⭐ METHOD 3 (OCR for scanned PDF)
+   - Dùng PyMuPDF + Tesseract
+   - Tương tự run_ocr.py
+   - Dùng tqdm để hiển thị progress bar
+
+📊 Priority (lựa chọn phương pháp):
+   Priority 1: extract_with_tables() - BEST nếu PDF có bảng cấu trúc
+   Priority 2: extract_from_pdf()    - GOOD nếu PDF digital
+   Priority 3: extract_with_ocr()    - FALLBACK cho PDF scan
+
+
+================================================================================
+                              OVERALL FLOW
+================================================================================
+
+Khi chạy pipeline:
+───────────────────────────────────────────────────────────────────────────────
+
+python -m app.main
+
+  ↓
+  [2/5] OCR Extract từ PDF
+  ↓
+  Detect PDF files từ data/raw/filings/
+  ↓
+  Với mỗi PDF:
+    → extract_from_pdf() sử dụng PDFExtractor
+      hoặc run_ocr.py's ocr_pdf() (tuỳ config)
+  ↓
+  Generate DataFrame với 38 index
+  ↓
+  Export CSV: HPG_2024_result.csv
+  ↓
+  Save DB (SQLite): Lưu vào finance_data
+
+
+================================================================================
+                            KEY FILES SUMMARY
+================================================================================
+
+file                      Chức năng                          Chính?
+─────────────────────────────────────────────────────────────────────────────
+run_ocr.py                OCR extraction (script)            ⭐ PRIMARY
+app/extract_pdf.py        PDF extraction (class)             ⭐ SECONDARY (OOP)
+app/db.py                 Database operations
+app/utils.py              Helper functions (parse_vn_number, etc)
+mapping/mapping_index.yaml  38 indices config + keywords     ⭐
+data/raw/filings/         Input PDF files
+data/processed/           Output CSV + SQLite DB
+
+
+================================================================================
+                              DEPENDENCIES
+================================================================================
+
+Core PDF/OCR:
+  • fitz (PyMuPDF)      - Mở PDF, render pages thành ảnh
+  • pdfplumber          - Extract text/tables từ PDF
+  • pytesseract         - Wrapper cho Tesseract OCR
+  • Tesseract (binary)  - C:\Program Files\Tesseract-OCR\tesseract.exe
+
+Others:
+  • pandas              - DataFrame operations
+  • Pillow (PIL)        - Image processing
+  • pyyaml              - Load mapping config
+  • tqdm                - Progress bar
+
+
+================================================================================
+                              KEY FUNCTIONS
+================================================================================
+
+MAIN EXTRACTION:
+  • ocr_pdf()                    (run_ocr.py)
+  • export_single_result()       (run_ocr.py)
+  • PDFExtractor.extract_from_pdf()        (app/extract_pdf.py)
+  • PDFExtractor.extract_with_tables()     (app/extract_pdf.py)
+  • PDFExtractor.extract_with_ocr()        (app/extract_pdf.py)
+
+HELPERS:
+  • parse_vn_number()            (run_ocr.py + app/utils.py)
+  • extract_numbers()            (run_ocr.py)
+  • extract_numbers_from_line()  (app/utils.py)
+  • get_pdf_indices()            (app/utils.py)
+
+
+================================================================================
