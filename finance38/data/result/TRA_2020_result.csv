@@ -17,8 +17,8 @@
 16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,160803673111,VND,pdf
 17,Production cost,Tổng chi phí sản xuất,1621111455511,VND,pdf
 18,R&D expenditure,Chi phí nghiên cứu phát triển,14574500000,VND,pdf
-19,Product innovation,Đổi mới sản phẩm,null,binary,manual
-20,Process innovation,Đổi mới quy trình,null,binary,manual
+19,Product innovation,Đổi mới sản phẩm,1,binary,manual
+20,Process innovation,Đổi mới quy trình,1,binary,manual
 21,Net Income,Lợi nhuận sau thuế,216747577989,VND,pdf
 22,Total shareholders' equity,Vốn chủ sở hữu,1172449261500,VND,pdf
 23,Market value of equity,Vốn hóa thị trường,2851962702400,VND,yahoo
