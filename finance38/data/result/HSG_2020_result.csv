@@ -1,8 +1,8 @@
 ﻿index_id,index_name,name_vn,value,unit,source
-1,Managerial ownership,Sở hữu của ban điều hành,,%,manual
-2,State ownership,Sở hữu nhà nước,null,%,manual
+1,Managerial ownership,Sở hữu của ban điều hành,17.35,%,manual
+2,State ownership,Sở hữu nhà nước,0,%,manual
 3,Institutional ownership,Sở hữu tổ chức,null,%,manual
-4,Foreign ownership,Sở hữu nước ngoài,null,%,manual
+4,Foreign ownership,Sở hữu nước ngoài,70.88,%,manual
 5,Total share outstanding,Tổng số cổ phiếu lưu hành,444298113,shares,yahoo
 6,Total sales revenue and Net sales revenue,Doanh thu thuần,27765155626306,VND,pdf
 7,Total assets,Tổng tài sản,17756407664931,VND,pdf
@@ -17,8 +17,8 @@
 16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,1794833077709,VND,pdf
 17,Production cost,Tổng chi phí sản xuất,24841231202570,VND,pdf
 18,R&D expenditure,Chi phí nghiên cứu phát triển,null,VND,pdf
-19,Product innovation,Đổi mới sản phẩm,null,binary,manual
-20,Process innovation,Đổi mới quy trình,null,binary,manual
+19,Product innovation,Đổi mới sản phẩm,1,binary,manual
+20,Process innovation,Đổi mới quy trình,1,binary,manual
 21,Net Income,Lợi nhuận sau thuế,1153014017309,VND,pdf
 22,Total shareholders' equity,Vốn chủ sở hữu,6590738511323,VND,pdf
 23,Market value of equity,Vốn hóa thị trường,null,VND,yahoo
