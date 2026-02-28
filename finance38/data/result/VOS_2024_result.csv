@@ -1,7 +1,7 @@
 ﻿index_id,index_name,name_vn,value,unit,source
 1,Managerial ownership,Sở hữu của ban điều hành,0.06%,%,manual
 2,State ownership,Sở hữu nhà nước,51.00%,%,manual
-3,Institutional ownership,Sở hữu tổ chức,48.09%,,%,manual
+3,Institutional ownership,Sở hữu tổ chức,48.09%,%,manual
 4,Foreign ownership,Sở hữu nước ngoài,0.85%,%,manual
 5,Total share outstanding,Tổng số cổ phiếu lưu hành,140000000,shares,yahoo
 6,Total sales revenue and Net sales revenue,Doanh thu thuần,3847165744382,VND,pdf
