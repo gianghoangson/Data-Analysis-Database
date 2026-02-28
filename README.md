@@ -1,16 +1,16 @@
 # Finance38 - Financial Data Extraction Pipeline 📊
 
-Hệ thống tự động **trích xuất và quản lý 38 chỉ số tài chính** từ Báo cáo tài chính (BCTC) PDF của các công ty niêm yết Việt Nam, kết hợp với dữ liệu từ Yahoo Finance.
+Hệ thống tự động **trích xuất và quản lý 38 chỉ số tài chính** từ Báo cáo tài chính (BCTC) PDF của các công ty niêm yết Việt Nam, dùng **Gemini AI API** để đọc PDF và kết hợp với dữ liệu từ Yahoo Finance.
 
 ## 🎯 Mục đích & Tính năng
 
 **Finance38** là một pipeline hoàn chỉnh để:
-- 📄 Trích xuất dữ liệu từ BCTC PDF sử dụng pdfplumber (hỗ trợ OCR)
-- 📊 Tải dữ liệu thị trường từ Yahoo Finance (giá cổ phiếu, lịch sử...)
+- 🤖 Trích xuất dữ liệu từ BCTC PDF sử dụng **Gemini API** (độ chính xác cao, xử lý PDF scan tốt)
+- 📊 Tải dữ liệu thị trường từ Yahoo Finance (giá cổ phiếu, vốn hóa...)
 - 🔢 Tính toán các chỉ số phái sinh (tỉ lệ tài chính, so sánh...)
-- 💾 Lưu trữ dữ liệu trong SQLite database
+- 💾 Lưu trữ và quản lý dữ liệu JSON/CSV
 - 📁 Xuất kết quả thành CSV theo công ty và năm
-- ⚡ Hỗ trợ xử lý song song để tăng tốc độ
+- ✅ Hỗ trợ nhập dữ liệu manual để điền lỗ trống
 
 ## 📋 Tình trạng - Status
 
@@ -56,7 +56,15 @@ finance38/
 
 ## 🚀 Cài đặt & Sử dụng nhanh
 
-### 1️⃣ Chuẩn bị môi trường
+### 1️⃣ Setup Gemini API Key
+
+```bash
+# Tạo file .env trong root directory
+# Lấy API key từ https://ai.google.dev/
+echo "GEMINI_API_KEY=your-api-key-here" > .env
+```
+
+### 2️⃣ Chuẩn bị môi trường
 
 ```bash
 # Tạo virtual environment
@@ -66,53 +74,53 @@ python -m venv venv
 .venv\Scripts\activate
 
 # Cài đặt dependencies
-pip install -r finance38/requirements.txt
+pip install -r requirements.txt
 ```
 
-### 2️⃣ Chuẩn bị dữ liệu
+### 3️⃣ Chuẩn bị dữ liệu
 
 ```bash
-# Sao chép PDF vào:
-finance38/data/raw/filings/{COMPANY_CODE}/{COMPANY_CODE}_{YEAR}.pdf
-
-# Ví dụ:
-# finance38/data/raw/filings/EVG/EVG_2023.pdf
-# finance38/data/raw/filings/HAG/HAG_2022.pdf
-```
-
-### 3️⃣ Chạy Pipeline
-
-```bash
-cd finance38
-
-# Chạy full pipeline
-python -m app.main
-
-# Hoặc chạy song song (3x nhanh hơn)
-python -m app.main --parallel
-```
-
-### 📊 Kết quả
-
-```
-finance38/data/result/
-├── DCM_2020_result.csv
-├── DCM_2021_result.csv
-├── EVG_2020_result.csv
-├── HAG_2022_result.csv
+# Sao chép PDF vào thư mục BCTC (root):
+BCTC/
+├── EVG/
+│   ├── EVG_2020.pdf
+│   └── EVG_2023.pdf
+├── HAG/
+│   ├── HAG_2020.pdf
+│   └── HAG_2024.pdf
 └── ...
 ```
 
-## 🔧 Command-line Options
+### 4️⃣ Chạy Pipeline
 
 ```bash
-# Bỏ qua bước cụ thể
-python -m app.main --skip-ocr      # Bỏ qua trích xuất PDF
-python -m app.main --skip-yahoo    # Bỏ qua Yahoo Finance (offline)
-python -m app.main --skip-compute  # Bỏ qua tính toán chỉ số phái sinh
-python -m app.main --no-export     # Không export CSV
+# Chạy từ root directory
+python run.py
 
-# Parallel processing
+# Hoặc chạy từ finance38 folder
+cd finance38
+python -m app.main
+```
+
+### 📊 Kết quả
+Options & Cách sử dụng
+
+```bash
+# Chạy từ root - sử dụng Gemini API
+python run.py
+
+# Chạy từ finance38 - sử dụng pipeline module
+python -m app.main --filings ./BCTC     # Chỉ định folder PDF
+
+# Hoặc từ root
+python run.py → xuất vào ./finance38/data/result/
+```
+
+Mỗi file CSV chứa 38 cột với đầy đủ các chỉ số tài chính được Gemini AI trích xuất từ PDF.hon -m app.main --skip-yahoo         # Bỏ qua Yahoo Finance (offline)
+python -m app.main --init-only          # Chỉ khởi tạo database
+
+# Xem thống kê
+python -m app.main --stats
 python -m app.main --parallel --workers 4
 
 # Custom PDF folder
@@ -147,18 +155,20 @@ Xem [mapping_index.yaml](./finance38/mapping/) để biết danh sách đầy đ
 
 - **pdfplumber** - Trích xuất text/table từ PDF
 - **pandas** - Xử lý dữ liệu
+- **google-generativeai** - Gemini API để đọc PDF 🤖
+- **pandas** - Xử lý dữ liệu
 - **yfinance** - Lấy dữ liệu chứng khoán
-- **PyYAML** - Đọc config YAML
-- **pytesseract** (optional) - OCR cho PDF scan
-
-Chi tiết xem [requirements.txt](./finance38/requirements.txt)
+- **P0.x** - OCR-based extraction (độ chính xác thấp)
+- **v1.0** - Chuyển sang Gemini API (độ chính xác cao) ✨
+- **v1.1** (hiện tại) - Hoàn thành extraction cho 8 công ty (2020-2024)nt variablesuirements.txt)
 
 ## 📅 Lịch sử phát triển
 
-- **v1.0** - Hoàn thành extraction cho 8 công ty (2020-2024)
-- **v1.1** - Hỗ trợ parallel processing
-- **Sắp tới** - Thêm 7 công ty còn lại
-
+- **Gemini 2.5 Flash** được sử dụng vì tốc độ và cost-effective
+- Xử lý tốt cả PDF native text và PDF scan (có OCR support)
+- Sử dụng SQLite cho dễ dàng back-up, sharing và query
+- Hỗ trợ nhập dữ liệu manual để fill gaps (ownership, innovation)
+- Lưu trữ source info để track dữ liệu từ đâu (pdf/yahoo/manual/computed)
 ## 💡 Ghi chú phát triển
 
 - Sử dụng SQLite cho dễ dàng back-up và sharing
