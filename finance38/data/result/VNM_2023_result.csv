@@ -1,24 +1,24 @@
 ﻿index_id,index_name,name_vn,value,unit,source
-1,Managerial ownership,Sở hữu của ban điều hành,,%,manual
+1,Managerial ownership,Sở hữu của ban điều hành,0.53%,%,manual
 2,State ownership,Sở hữu nhà nước,36.00%,%,manual
-3,Institutional ownership,Sở hữu tổ chức,null,%,manual
-4,Foreign ownership,Sở hữu nước ngoài,null,%,manual
+3,Institutional ownership,Sở hữu tổ chức,9.29%,%,manual
+4,Foreign ownership,Sở hữu nước ngoài,54.18%,%,manual
 5,Total share outstanding,Tổng số cổ phiếu lưu hành,2089955445,shares,yahoo
 6,Total sales revenue and Net sales revenue,Doanh thu thuần,60478912566740.0,VND,pdf
 7,Total assets,Tổng tài sản,52673371104460,VND,pdf
 8,Selling expenses,Chi phí bán hàng,13018093111879,VND,pdf
 9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,1755619128197,VND,pdf
 10,Value of intangible assets,Tài sản cố định vô hình,1001132072466,VND,pdf
-11,Manufacturing overhead,Chi phí sản xuất chung,null,VND,pdf
+11,Manufacturing overhead,Chi phí sản xuất chung,2585345282883,VND,pdf
 12,Net operating income,Lợi nhuận thuần từ hoạt động kinh doanh,10903632881807,VND,pdf
 13,Consumption of raw material,Chi phí nguyên vật liệu,27814583335708,VND,pdf
-14,Merchandise purchase of the year,Mua hàng hóa,null,VND,pdf
-15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,null,VND,pdf
+14,Merchandise purchase of the year,Mua hàng hóa,3418653284453,VND,pdf
+15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,1285345282883,VND,pdf
 16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,3254256874931,VND,pdf
 17,Production cost,Tổng chi phí sản xuất,35824183896095,VND,pdf
-18,R&D expenditure,Chi phí nghiên cứu phát triển,null,VND,pdf
-19,Product innovation,Đổi mới sản phẩm,null,binary,manual
-20,Process innovation,Đổi mới quy trình,null,binary,manual
+18,R&D expenditure,Chi phí nghiên cứu phát triển,40528847450,VND,pdf
+19,Product innovation,Đổi mới sản phẩm,1,binary,manual
+20,Process innovation,Đổi mới quy trình,1,binary,manual
 21,Net Income,Lợi nhuận sau thuế,9019354165051,VND,pdf
 22,Total shareholders' equity,Vốn chủ sở hữu,35025743765470,VND,pdf
 23,Market value of equity,Vốn hóa thị trường,123057507284884.1,VND,yahoo
