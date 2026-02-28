@@ -1,24 +1,24 @@
 ﻿index_id,index_name,name_vn,value,unit,source
-1,Managerial ownership,Sở hữu của ban điều hành,,%,manual
+1,Managerial ownership,Sở hữu của ban điều hành,0.38%,%,manual
 2,State ownership,Sở hữu nhà nước,35.67%,%,manual
-3,Institutional ownership,Sở hữu tổ chức,null,%,manual
-4,Foreign ownership,Sở hữu nước ngoài,45.12%,%,manual
+3,Institutional ownership,Sở hữu tổ chức,17.8%,%,manual
+4,Foreign ownership,Sở hữu nước ngoài,46.36%,%,manual
 5,Total share outstanding,Tổng số cổ phiếu lưu hành,41450540,shares,yahoo
-6,Total sales revenue and Net sales revenue,Doanh thu thuần,,VND,pdf
+6,Total sales revenue and Net sales revenue,Doanh thu thuần,2347165744382,VND,pdf
 7,Total assets,Tổng tài sản,2168910960793,VND,pdf
 8,Selling expenses,Chi phí bán hàng,625016144416,VND,pdf
 9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,304984668591,VND,pdf
 10,Value of intangible assets,Tài sản cố định vô hình,59995277457,VND,pdf
-11,Manufacturing overhead,Chi phí sản xuất chung,null,VND,pdf
+11,Manufacturing overhead,Chi phí sản xuất chung,158749697513,VND,pdf
 12,Net operating income,Lợi nhuận thuần từ hoạt động kinh doanh,323883771128,VND,pdf
 13,Consumption of raw material,Chi phí nguyên vật liệu,583902393426,VND,pdf
-14,Merchandise purchase of the year,Mua hàng hóa,null,VND,pdf
-15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,null,VND,pdf
+14,Merchandise purchase of the year,Mua hàng hóa,556764120672,VND,pdf
+15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,23614945744,VND,pdf
 16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,363648406770,VND,pdf
-17,Production cost,Tổng chi phí sản xuất,null,VND,pdf
-18,R&D expenditure,Chi phí nghiên cứu phát triển,null,VND,pdf
-19,Product innovation,Đổi mới sản phẩm,null,binary,manual
-20,Process innovation,Đổi mới quy trình,null,binary,manual
+17,Production cost,Tổng chi phí sản xuất,1200730297747,VND,pdf
+18,R&D expenditure,Chi phí nghiên cứu phát triển,25105800000,VND,pdf
+19,Product innovation,Đổi mới sản phẩm,1,binary,manual
+20,Process innovation,Đổi mới quy trình,1,binary,manual
 21,Net Income,Lợi nhuận sau thuế,257358010178,VND,pdf
 22,Total shareholders' equity,Vốn chủ sở hữu,1532699671834,VND,pdf
 23,Market value of equity,Vốn hóa thị trường,3003917719308.9062,VND,yahoo
@@ -36,4 +36,4 @@
 35,EPS,Lãi cơ bản trên cổ phiếu,4990,VND,pdf
 36,Number of employees,Số lượng nhân viên,1670,người,manual
 37,"Net plant, property and equipment",Tài sản cố định hữu hình,435646685762,VND,pdf
-38,Firm age,Tuổi công ty,,years,computed
+38,Firm age,Tuổi công ty,52,years,computed
