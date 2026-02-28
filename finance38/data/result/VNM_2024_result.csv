@@ -1,10 +1,10 @@
 ﻿index_id,index_name,name_vn,value,unit,source
-1,Managerial ownership,Sở hữu của ban điều hành,,%,manual
+1,Managerial ownership,Sở hữu của ban điều hành,0.53%,%,manual
 2,State ownership,Sở hữu nhà nước,36.00%,%,manual
-3,Institutional ownership,Sở hữu tổ chức,null,%,manual
-4,Foreign ownership,Sở hữu nước ngoài,null,%,manual
+3,Institutional ownership,Sở hữu tổ chức,9.13%,%,manual
+4,Foreign ownership,Sở hữu nước ngoài,54.34%,%,manual
 5,Total share outstanding,Tổng số cổ phiếu lưu hành,2089955445,shares,yahoo
-6,Total sales revenue and Net sales revenue,Doanh thu thuần,,VND,pdf
+6,Total sales revenue and Net sales revenue,Doanh thu thuần,61121527170435,VND,pdf
 7,Total assets,Tổng tài sản,55049061537061,VND,pdf
 8,Selling expenses,Chi phí bán hàng,13357706796806,VND,pdf
 9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,1827916838987,VND,pdf
@@ -12,13 +12,13 @@
 11,Manufacturing overhead,Chi phí sản xuất chung,2077780000851,VND,pdf
 12,Net operating income,Lợi nhuận thuần từ hoạt động kinh doanh,11593977638387,VND,pdf
 13,Consumption of raw material,Chi phí nguyên vật liệu,28601880330178,VND,pdf
-14,Merchandise purchase of the year,Mua hàng hóa,null,VND,pdf
-15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,null,VND,pdf
+14,Merchandise purchase of the year,Mua hàng hóa,3651468966862,VND,pdf
+15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,1358468966862,VND,pdf
 16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,3432445669949,VND,pdf
 17,Production cost,Tổng chi phí sản xuất,49438163585048,VND,pdf
-18,R&D expenditure,Chi phí nghiên cứu phát triển,null,VND,pdf
-19,Product innovation,Đổi mới sản phẩm,null,binary,manual
-20,Process innovation,Đổi mới quy trình,null,binary,manual
+18,R&D expenditure,Chi phí nghiên cứu phát triển,45828847450,VND,pdf
+19,Product innovation,Đổi mới sản phẩm,1,binary,manual
+20,Process innovation,Đổi mới quy trình,1,binary,manual
 21,Net Income,Lợi nhuận sau thuế,9452892989948,VND,pdf
 22,Total shareholders' equity,Vốn chủ sở hữu,36174402829663,VND,pdf
 23,Market value of equity,Vốn hóa thị trường,122238514158763.19,VND,yahoo
@@ -30,7 +30,7 @@
 29,Long-term debt,Vay và nợ thuê tài chính dài hạn,157903902450,VND,pdf
 30,Current assets,Tài sản ngắn hạn,37553650065098,VND,pdf
 31,Current liabiltiies,Nợ ngắn hạn,18459546837640,VND,pdf
-32,Growth ratio,Tỷ lệ tăng trưởng,0.0,%,computed
+32,Growth ratio,Tỷ lệ tăng trưởng,1.2%,%,computed
 33,Total inventory,Hàng tồn kho,5686840161996,VND,pdf
 34,Divident payment,Cổ tức đã trả,8046328463250,VND,pdf
 35,EPS,Lãi cơ bản trên cổ phiếu,4022,VND,pdf
