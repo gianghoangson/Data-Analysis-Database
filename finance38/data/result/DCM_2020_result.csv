@@ -9,10 +9,10 @@
 8,Selling expenses,Chi phí bán hàng,369000315151,VND,pdf
 9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,304406663012,VND,pdf
 10,Value of intangible assets,Tài sản cố định vô hình,55797572196,VND,pdf
-11,Manufacturing overhead,Chi phí sản xuất chung,null,VND,pdf
+11,Manufacturing overhead,Chi phí sản xuất chung,1726372662359,VND,pdf
 12,Net operating income,Lợi nhuận thuần từ hoạt động kinh doanh,708522977930,VND,pdf
 13,Consumption of raw material,Chi phí nguyên vật liệu,2729909573228,VND,pdf
-14,Merchandise purchase of the year,Mua hàng hóa,null,VND,pdf
+14,Merchandise purchase of the year,Mua hàng hóa,1232744382350,VND,pdf
 15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,null,VND,pdf
 16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,408220209653,VND,pdf
 17,Production cost,Tổng chi phí sản xuất,5258898362097,VND,pdf
@@ -21,7 +21,7 @@
 20,Process innovation,Đổi mới quy trình,1,binary,manual
 21,Net Income,Lợi nhuận sau thuế,662446334271,VND,pdf
 22,Total shareholders' equity,Vốn chủ sở hữu,6326447669948,VND,pdf
-23,Market value of equity,Vốn hóa thị trường,null,VND,yahoo
+23,Market value of equity,Vốn hóa thị trường,7305720000000,VND,yahoo
 24,Total liabilities,Nợ phải trả,2391033021663,VND,pdf
 25,Net cash from operating activities,Lưu chuyển tiền thuần từ HĐKD,1780630001870,VND,pdf
 26,Capital expenditure,Chi mua sắm TSCĐ,-272862033943,VND,pdf
@@ -30,7 +30,7 @@
 29,Long-term debt,Vay và nợ thuê tài chính dài hạn,137062222093,VND,pdf
 30,Current assets,Tài sản ngắn hạn,3978192126939,VND,pdf
 31,Current liabiltiies,Nợ ngắn hạn,2050151784755,VND,pdf
-32,Growth ratio,Tỷ lệ tăng trưởng,,%,computed
+32,Growth ratio,Tỷ lệ tăng trưởng,7.36,%,computed
 33,Total inventory,Hàng tồn kho,834134886038,VND,pdf
 34,Divident payment,Cổ tức đã trả,-319485623200,VND,pdf
 35,EPS,Lãi cơ bản trên cổ phiếu,1.017,VND,pdf
