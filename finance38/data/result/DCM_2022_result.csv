@@ -9,19 +9,19 @@
 8,Selling expenses,Chi phí bán hàng,698294873644,VND,pdf
 9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,652594258961,VND,pdf
 10,Value of intangible assets,Tài sản cố định vô hình,47207630472,VND,pdf
-11,Manufacturing overhead,Chi phí sản xuất chung,null,VND,pdf
+11,Manufacturing overhead,Chi phí sản xuất chung,1942846126353,VND,pdf
 12,Net operating income,Lợi nhuận thuần từ hoạt động kinh doanh,4593146316328,VND,pdf
 13,Consumption of raw material,Chi phí nguyên vật liệu,6495993694524,VND,pdf
-14,Merchandise purchase of the year,Mua hàng hóa,null,VND,pdf
-15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,null,VND,pdf
+14,Merchandise purchase of the year,Mua hàng hóa,1876086382217,VND,pdf
+15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,130760098970,VND,pdf
 16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,803513719686,VND,pdf
 17,Production cost,Tổng chi phí sản xuất,10161763907912,VND,pdf
 18,R&D expenditure,Chi phí nghiên cứu phát triển,318816929387,VND,pdf
-19,Product innovation,Đổi mới sản phẩm,null,binary,manual
-20,Process innovation,Đổi mới quy trình,null,binary,manual
+19,Product innovation,Đổi mới sản phẩm,1,binary,manual
+20,Process innovation,Đổi mới quy trình,1,binary,manual
 21,Net Income,Lợi nhuận sau thuế,4321080734535,VND,pdf
 22,Total shareholders' equity,Vốn chủ sở hữu,10605448816520,VND,pdf
-23,Market value of equity,Vốn hóa thị trường,null,VND,yahoo
+23,Market value of equity,Vốn hóa thị trường,14452620000000,VND,yahoo
 24,Total liabilities,Nợ phải trả,3561411903496,VND,pdf
 25,Net cash from operating activities,Lưu chuyển tiền thuần từ HĐKD,5731609693298,VND,pdf
 26,Capital expenditure,Chi mua sắm TSCĐ,-146931424446,VND,pdf
@@ -30,7 +30,7 @@
 29,Long-term debt,Vay và nợ thuê tài chính dài hạn,3607887032,VND,pdf
 30,Current assets,Tài sản ngắn hạn,11624186590632,VND,pdf
 31,Current liabiltiies,Nợ ngắn hạn,2874435985843,VND,pdf
-32,Growth ratio,Tỷ lệ tăng trưởng,1.1061,%,computed
+32,Growth ratio,Tỷ lệ tăng trưởng,61.35,%,computed
 33,Total inventory,Hàng tồn kho,2282527702409,VND,pdf
 34,Divident payment,Cổ tức đã trả,-948281198160,VND,pdf
 35,EPS,Lãi cơ bản trên cổ phiếu,7701,VND,pdf
