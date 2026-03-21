@@ -1,6 +1,6 @@
-﻿index_id,index_name,name_vn,value,unit,source
-1,Managerial ownership,Sở hữu của ban điều hành,,%,manual
-2,State ownership,Sở hữu nhà nước,null,%,manual
+index_id,index_name,name_vn,value,unit,source
+1,Managerial ownership,Sở hữu của ban điều hành,null,%,manual
+2,State ownership,Sở hữu nhà nước,37.1,%,manual
 3,Institutional ownership,Sở hữu tổ chức,null,%,manual
 4,Foreign ownership,Sở hữu nước ngoài,null,%,manual
 5,Total share outstanding,Tổng số cổ phiếu lưu hành,129575334,shares,yahoo
@@ -17,8 +17,8 @@
 16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,308901106570,VND,pdf
 17,Production cost,Tổng chi phí sản xuất,null,VND,pdf
 18,R&D expenditure,Chi phí nghiên cứu phát triển,null,VND,pdf
-19,Product innovation,Đổi mới sản phẩm,0,binary,manual
-20,Process innovation,Đổi mới quy trình,0,binary,manual
+19,Product innovation,Đổi mới sản phẩm,1,binary,manual
+20,Process innovation,Đổi mới quy trình,1,binary,manual
 21,Net Income,Lợi nhuận sau thuế,559414720517,VND,pdf
 22,Total shareholders' equity,Vốn chủ sở hữu,3115499287238,VND,pdf
 23,Market value of equity,Vốn hóa thị trường,null,VND,yahoo
@@ -28,12 +28,12 @@
 27,Cash flows from investing activities,Lưu chuyển tiền từ HĐĐT,-557343703465,VND,pdf
 28,Cash and cash equivalent,Tiền và tương đương tiền,485324285487,VND,pdf
 29,Long-term debt,Vay và nợ thuê tài chính dài hạn,null,VND,pdf
-30,Current assets,Tài sản ngắn hạn,3501190530399,VND,pdf
-31,Current liabiltiies,Nợ ngắn hạn,2338199851626,VND,pdf
-32,Growth ratio,Tỷ lệ tăng trưởng,,%,computed
-33,Total inventory,Hàng tồn kho,1158634823678,VND,pdf
+30,Current assets,Tài sản ngắn hạn,4171221775877,VND,pdf
+31,Current liabiltiies,Nợ ngắn hạn,2306277251840,VND,pdf
+32,Growth ratio,Tỷ lệ tăng trưởng,-9.0,%,computed
+33,Total inventory,Hàng tồn kho,1118320499690,VND,pdf
 34,Divident payment,Cổ tức đã trả,259150668000,VND,pdf
-35,EPS,Lãi cơ bản trên cổ phiếu,3891,VND,pdf
-36,Number of employees,Số lượng nhân viên,1372,người,manual
-37,"Net plant, property and equipment",Tài sản cố định hữu hình,1321443292812,VND,pdf
-38,Firm age,Tuổi công ty,,years,computed
+35,EPS,Lãi cơ bản trên cổ phiếu,4269,VND,pdf
+36,Number of employees,Số lượng nhân viên,1246,người,manual
+37,"Net plant, property and equipment",Tài sản cố định hữu hình,1184090008436,VND,pdf
+38,Firm age,Tuổi công ty,63,years,computed
