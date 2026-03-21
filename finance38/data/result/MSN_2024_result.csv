@@ -1,10 +1,10 @@
-﻿index_id,index_name,name_vn,value,unit,source
-1,Managerial ownership,Sở hữu của ban điều hành,,%,manual
-2,State ownership,Sở hữu nhà nước,null,%,manual
-3,Institutional ownership,Sở hữu tổ chức,null,%,manual
-4,Foreign ownership,Sở hữu nước ngoài,null,%,manual
+index_id,index_name,name_vn,value,unit,source
+1,Managerial ownership,Sở hữu của ban điều hành,0,%,manual
+2,State ownership,Sở hữu nhà nước,0,%,manual
+3,Institutional ownership,Sở hữu tổ chức,66.5,%,manual
+4,Foreign ownership,Sở hữu nước ngoài,32.5,%,manual
 5,Total share outstanding,Tổng số cổ phiếu lưu hành,1445915457,shares,yahoo
-6,Total sales revenue and Net sales revenue,Doanh thu thuần,83456446000000.0,VND,pdf
+6,Total sales revenue and Net sales revenue,Doanh thu thuần,83456446000000,VND,pdf
 7,Total assets,Tổng tài sản,147584718000000,VND,pdf
 8,Selling expenses,Chi phí bán hàng,14565375000000,VND,pdf
 9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,3916974000000,VND,pdf
@@ -21,7 +21,7 @@
 20,Process innovation,Đổi mới quy trình,1,binary,manual
 21,Net Income,Lợi nhuận sau thuế,4272384000000,VND,pdf
 22,Total shareholders' equity,Vốn chủ sở hữu,40752380000000,VND,pdf
-23,Market value of equity,Vốn hóa thị trường,101214081990000.0,VND,yahoo
+23,Market value of equity,Vốn hóa thị trường,101214081990000,VND,yahoo
 24,Total liabilities,Nợ phải trả,106832338000000,VND,pdf
 25,Net cash from operating activities,Lưu chuyển tiền thuần từ HĐKD,9525462000000,VND,pdf
 26,Capital expenditure,Chi mua sắm TSCĐ,3099300000000,VND,pdf
@@ -30,10 +30,10 @@
 29,Long-term debt,Vay và nợ thuê tài chính dài hạn,38825185000000,VND,pdf
 30,Current assets,Tài sản ngắn hạn,53569663000000,VND,pdf
 31,Current liabiltiies,Nợ ngắn hạn,58712175000000,VND,pdf
-32,Growth ratio,Tỷ lệ tăng trưởng,1066512.9848,%,computed
+32,Growth ratio,Tỷ lệ tăng trưởng,6.65,%,computed
 33,Total inventory,Hàng tồn kho,10787396000000,VND,pdf
 34,Divident payment,Cổ tức đã trả,1721291000000,VND,pdf
 35,EPS,Lãi cơ bản trên cổ phiếu,1345,VND,pdf
 36,Number of employees,Số lượng nhân viên,34835,người,manual
 37,"Net plant, property and equipment",Tài sản cố định hữu hình,27121453000000,VND,pdf
-38,Firm age,Tuổi công ty,,years,computed
+38,Firm age,Tuổi công ty,20,years,computed
