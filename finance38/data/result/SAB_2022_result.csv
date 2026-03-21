@@ -9,11 +9,11 @@
 8,Selling expenses,Chi phí bán hàng,4038486338919,VND,pdf
 9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,347706978997,VND,pdf
 10,Value of intangible assets,Tài sản cố định vô hình,847741647492,VND,pdf
-11,Manufacturing overhead,Chi phí sản xuất chung,,VND,pdf
+11,Manufacturing overhead,Chi phí sản xuất chung,null,VND,pdf
 12,Net operating income,Lợi nhuận thuần từ hoạt động kinh doanh,5226653233453,VND,pdf
 13,Consumption of raw material,Chi phí nguyên vật liệu,2045092919850,VND,pdf
-14,Merchandise purchase of the year,Mua hàng hóa,,VND,pdf
-15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,,VND,pdf
+14,Merchandise purchase of the year,Mua hàng hóa,null,VND,pdf
+15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,null,VND,pdf
 16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,4193220170454,VND,pdf
 17,Production cost,Tổng chi phí sản xuất,6847750875586,VND,pdf
 18,R&D expenditure,Chi phí nghiên cứu phát triển,0,VND,bctn_no_separate_disclosure
