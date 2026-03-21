@@ -30,7 +30,7 @@ index_id,index_name,name_vn,value,unit,source
 29,Long-term debt,Vay và nợ thuê tài chính dài hạn,155576868843,VND,pdf
 30,Current assets,Tài sản ngắn hạn,991065823419,VND,pdf
 31,Current liabiltiies,Nợ ngắn hạn,856499415826,VND,pdf
-32,Growth ratio,Tỷ lệ tăng trưởng,-17.0,%,computed
+32,Growth ratio,Tỷ lệ tăng trưởng,-17,%,computed
 33,Total inventory,Hàng tồn kho,211153464465,VND,pdf
 34,Divident payment,Cổ tức đã trả,13415040000,VND,pdf
 35,EPS,Lãi cơ bản trên cổ phiếu,2089,VND,pdf
