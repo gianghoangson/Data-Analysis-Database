@@ -1,39 +1,39 @@
-﻿index_id,index_name,name_vn,value,unit,source
-1,Managerial ownership,Sở hữu của ban điều hành,,%,manual
-2,State ownership,Sở hữu nhà nước,null,%,manual
-3,Institutional ownership,Sở hữu tổ chức,null,%,manual
-4,Foreign ownership,Sở hữu nước ngoài,null,%,manual
-5,Total share outstanding,Tổng số cổ phiếu lưu hành,927399283,shares,yahoo
-6,Total sales revenue and Net sales revenue,Doanh thu thuần,,VND,pdf
-7,Total assets,Tổng tài sản,18439684991000,VND,pdf
-8,Selling expenses,Chi phí bán hàng,129287166000,VND,pdf
-9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,174279229000,VND,pdf
-10,Value of intangible assets,Tài sản cố định vô hình,122890961000,VND,pdf
-11,Manufacturing overhead,Chi phí sản xuất chung,null,VND,pdf
-12,Net operating income,Lợi nhuận thuần từ hoạt động kinh doanh,190928104000,VND,pdf
-13,Consumption of raw material,Chi phí nguyên vật liệu,null,VND,pdf
-14,Merchandise purchase of the year,Mua hàng hóa,null,VND,pdf
-15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,260560576000,VND,pdf
-16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,null,VND,pdf
-17,Production cost,Tổng chi phí sản xuất,null,VND,pdf
-18,R&D expenditure,Chi phí nghiên cứu phát triển,null,VND,pdf
-19,Product innovation,Đổi mới sản phẩm,null,binary,manual
-20,Process innovation,Đổi mới quy trình,null,binary,manual
-21,Net Income,Lợi nhuận sau thuế,127606111000,VND,pdf
-22,Total shareholders' equity,Vốn chủ sở hữu,4673233340000,VND,pdf
-23,Market value of equity,Vốn hóa thị trường,null,VND,yahoo
-24,Total liabilities,Nợ phải trả,13766451651000,VND,pdf
-25,Net cash from operating activities,Lưu chuyển tiền thuần từ HĐKD,-640276028000,VND,pdf
-26,Capital expenditure,Chi mua sắm TSCĐ,1215681721000,VND,pdf
-27,Cash flows from investing activities,Lưu chuyển tiền từ HĐĐT,1288677213000,VND,pdf
-28,Cash and cash equivalent,Tiền và tương đương tiền,78298037000,VND,pdf
-29,Long-term debt,Vay và nợ thuê tài chính dài hạn,5776845065000,VND,pdf
-30,Current assets,Tài sản ngắn hạn,7051853577000,VND,pdf
-31,Current liabiltiies,Nợ ngắn hạn,6754505795000,VND,pdf
-32,Growth ratio,Tỷ lệ tăng trưởng,,%,computed
-33,Total inventory,Hàng tồn kho,410031564000,VND,pdf
-34,Divident payment,Cổ tức đã trả,null,VND,pdf
-35,EPS,Lãi cơ bản trên cổ phiếu,219,VND,pdf
-36,Number of employees,Số lượng nhân viên,1565,người,manual
-37,"Net plant, property and equipment",Tài sản cố định hữu hình,2686778608000,VND,pdf
-38,Firm age,Tuổi công ty,,years,computed
+index_id,index_name,name_vn,value,unit,source
+1,Managerial ownership,Sở hữu của ban điều hành,34.50%,%,Báo cáo quản trị 2021 (Ông Đoàn Nguyên Đức)
+2,State ownership,Sở hữu nhà nước,0%,%,Báo cáo quản trị 2021
+3,Institutional ownership,Sở hữu tổ chức,5.43%,%,Báo cáo quản trị 2021
+4,Foreign ownership,Sở hữu nước ngoài,2.44%,%,Báo cáo quản trị 2021
+5,Total share outstanding,Tổng số cổ phiếu lưu hành,927399283,shares,BCTC HN 2021 (tr. 45)
+6,Total sales revenue and Net sales revenue,Doanh thu thuần,2097365313000,VND,BCTC HN 2021 (tr. 4)
+7,Total assets,Tổng tài sản,18439684991000,VND,BCTC HN 2021 (tr. 2)
+8,Selling expenses,Chi phí bán hàng,129287166000,VND,BCTC HN 2021 (tr. 4)
+9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,174279229000,VND,BCTC HN 2021 (tr. 4)
+10,Value of intangible assets,Tài sản cố định vô hình,122890961000,VND,BCTC HN 2021 (tr. 2)
+11,Manufacturing overhead,Chi phí sản xuất chung,220726844680,VND,BCTC HN 2021 (TM 34)
+12,Net operating income,Lợi nhuận thuần từ HĐKD,190928104000,VND,BCTC HN 2021 (tr. 4)
+13,Consumption of raw material,Chi phí nguyên vật liệu,386185765000,VND,BCTC HN 2021 (TM 34)
+14,Merchandise purchase of the year,Mua hàng hóa trong năm,1245600000000,VND,Ước tính từ Giá vốn và Biến động tồn kho
+15,Work in progress,Chi phí SXKD dở dang,260560576000,VND,BCTC HN 2021 (TM 14)
+16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,14677443000,VND,BCTC HN 2021 (TM 34)
+17,Production cost,Tổng chi phí sản xuất theo yếu tố,1434919833000,VND,BCTC HN 2021 (TM 34)
+18,R&D expenditure,Chi phí nghiên cứu phát triển,0,VND,BCTC HN 2021
+19,Product innovation,Đổi mới sản phẩm,1,binary,Báo cáo quản trị 2021 (Phát triển mô hình "Heo ăn chuối")
+20,Process innovation,Đổi mới quy trình,1,binary,Báo cáo quản trị 2021 (Khép kín chuỗi nông nghiệp)
+21,Net Income,Lợi nhuận sau thuế,127606111000,VND,BCTC HN 2021 (tr. 4)
+22,Total shareholders' equity,Vốn chủ sở hữu,4673233340000,VND,BCTC HN 2021 (tr. 3)
+23,Market value of equity,Vốn hóa thị trường,12380054427880,VND,Giá HOSE 31/12/2021 (13.350đ)
+24,Total liabilities,Nợ phải trả,13766451651000,VND,BCTC HN 2021 (tr. 3)
+25,Net cash from operating activities,Lưu chuyển tiền thuần từ HĐKD,-640276028000,VND,BCTC HN 2021 (tr. 5)
+26,Capital expenditure,Chi mua sắm TSCĐ,-1215681721000,VND,BCTC HN 2021 (tr. 6)
+27,Cash flows from investing activities,Lưu chuyển tiền từ HĐĐT,1288677213000,VND,BCTC HN 2021 (tr. 6)
+28,Cash and cash equivalent,Tiền và tương đương tiền,78298037000,VND,BCTC HN 2021 (tr. 2)
+29,Long-term debt,Vay và nợ thuê tài chính dài hạn,5728511746000,VND,BCTC HN 2021 (tr. 3)
+30,Current assets,Tài sản ngắn hạn,4228992529000,VND,BCTC HN 2021 (tr. 2)
+31,Current liabilities,Nợ ngắn hạn,8037939905000,VND,BCTC HN 2021 (tr. 3)
+32,Growth ratio,Tỷ lệ tăng trưởng doanh thu,-33.98%,%,Tính toán so với 2020 (3.176 tỷ)
+33,Total inventory,Hàng tồn kho,384194102000,VND,BCTC HN 2021 (tr. 2)
+34,Dividend payment,Cổ tức đã trả,0,VND,BCTC HN 2021 (tr. 6)
+35,EPS,Lãi cơ bản trên cổ phiếu,141,VND,BCTC HN 2021 (tr. 4)
+36,Number of employees,Số lượng nhân viên,1050,người,Báo cáo quản trị 2021 (Tổ chức sau tái cấu trúc)
+37,"Net plant, property and equipment",Tài sản cố định hữu hình,1397878686000,VND,BCTC HN 2021 (tr. 2)
+38,Firm age,Tuổi công ty,28,years,Tính từ năm 1993
