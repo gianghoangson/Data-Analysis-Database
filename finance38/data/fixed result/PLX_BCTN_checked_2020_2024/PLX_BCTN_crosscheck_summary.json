@@ -1,0 +1,47 @@
+[
+  {
+    "year": 2020,
+    "state_ownership": "75.87%",
+    "foreign_ownership": "15.70%",
+    "employees": "25392",
+    "R&D_expenditure": "0 (no separate disclosure in BCTN/BCTC)",
+    "product_innovation": "1 (inferred from annual-report product/green-energy initiatives)",
+    "process_innovation": "1 (supported by digital transformation / automation / e-invoice / cashless payment initiatives)"
+  },
+  {
+    "year": 2021,
+    "state_ownership": "75.87%",
+    "foreign_ownership": "17.02%",
+    "employees": "25577",
+    "R&D_expenditure": "0 (no separate disclosure in BCTN/BCTC)",
+    "product_innovation": "1 (inferred from annual-report product/green-energy initiatives)",
+    "process_innovation": "1 (supported by digital transformation / automation / e-invoice / cashless payment initiatives)"
+  },
+  {
+    "year": 2022,
+    "state_ownership": "75.87%",
+    "foreign_ownership": "17.26%",
+    "employees": "26153",
+    "R&D_expenditure": "0 (no separate disclosure in BCTN/BCTC)",
+    "product_innovation": "1 (inferred from annual-report product/green-energy initiatives)",
+    "process_innovation": "1 (supported by digital transformation / automation / e-invoice / cashless payment initiatives)"
+  },
+  {
+    "year": 2023,
+    "state_ownership": "75.87%",
+    "foreign_ownership": "17.05%",
+    "employees": "26262",
+    "R&D_expenditure": "0 (no separate disclosure in BCTN/BCTC)",
+    "product_innovation": "1 (inferred from annual-report product/green-energy initiatives)",
+    "process_innovation": "1 (supported by digital transformation / automation / e-invoice / cashless payment initiatives)"
+  },
+  {
+    "year": 2024,
+    "state_ownership": "75.87%",
+    "foreign_ownership": "17.58%",
+    "employees": "25967",
+    "R&D_expenditure": "0 (no separate disclosure in BCTN/BCTC)",
+    "product_innovation": "1 (inferred from annual-report product/green-energy initiatives)",
+    "process_innovation": "1 (supported by digital transformation / automation / e-invoice / cashless payment initiatives)"
+  }
+]
