@@ -9,19 +9,19 @@ index_id,index_name,name_vn,value,unit,source
 8,Selling expenses,Chi phí bán hàng,1687654952494,VND,pdf
 9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,501819303928,VND,pdf
 10,Value of intangible assets,Tài sản cố định vô hình,650848303823,VND,pdf
-11,Manufacturing overhead,Chi phí sản xuất chung,,VND,pdf
+11,Manufacturing overhead,Chi phí sản xuất chung,null,VND,pdf
 12,Net operating income,Lợi nhuận thuần từ hoạt động kinh doanh,1306897354354,VND,pdf
 13,Consumption of raw material,Chi phí nguyên vật liệu,6533668664645,VND,pdf
-14,Merchandise purchase of the year,Mua hàng hóa,,VND,pdf
+14,Merchandise purchase of the year,Mua hàng hóa,null,VND,pdf
 15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,147603238069,VND,pdf
 16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,651162176248,VND,pdf
 17,Production cost,Tổng chi phí sản xuất,9061955781205,VND,pdf
-18,R&D expenditure,Chi phí nghiên cứu phát triển,0,VND,bctn_no_separate_disclosure
+18,R&D expenditure,Chi phí nghiên cứu phát triển,null,VND,bctn_no_separate_disclosure
 19,Product innovation,Đổi mới sản phẩm,1,binary,bctn_supported
 20,Process innovation,Đổi mới quy trình,1,binary,bctn_supported
 21,Net Income,Lợi nhuận sau thuế,1029042165645,VND,pdf
 22,Total shareholders' equity,Vốn chủ sở hữu,6012633980253,VND,pdf
-23,Market value of equity,Vốn hóa thị trường,,VND,yahoo
+23,Market value of equity,Vốn hóa thị trường,null,VND,yahoo
 24,Total liabilities,Nợ phải trả,4606382566869,VND,pdf
 25,Net cash from operating activities,Lưu chuyển tiền thuần từ HĐKD,-722367231513,VND,pdf
 26,Capital expenditure,Chi mua sắm TSCĐ,61304197645,VND,pdf
