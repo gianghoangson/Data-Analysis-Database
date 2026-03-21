@@ -17,8 +17,8 @@ index_id,index_name,name_vn,value,unit,source
 16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,14677443000,VND,BCTC HN 2021 (TM 34)
 17,Production cost,Tổng chi phí sản xuất theo yếu tố,1434919833000,VND,BCTC HN 2021 (TM 34)
 18,R&D expenditure,Chi phí nghiên cứu phát triển,0,VND,BCTC HN 2021
-19,Product innovation,Đổi mới sản phẩm,1,binary,Báo cáo quản trị 2021 (Phát triển mô hình "Heo ăn chuối")
-20,Process innovation,Đổi mới quy trình,1,binary,Báo cáo quản trị 2021 (Khép kín chuỗi nông nghiệp)
+19,Product innovation,Đổi mới sản phẩm,1,binary,Báo cáo quản trị 2021
+20,Process innovation,Đổi mới quy trình,1,binary,Báo cáo quản trị 2021
 21,Net Income,Lợi nhuận sau thuế,127606111000,VND,BCTC HN 2021 (tr. 4)
 22,Total shareholders' equity,Vốn chủ sở hữu,4673233340000,VND,BCTC HN 2021 (tr. 3)
 23,Market value of equity,Vốn hóa thị trường,12380054427880,VND,Giá HOSE 31/12/2021 (13.350đ)
