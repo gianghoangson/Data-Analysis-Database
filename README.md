@@ -27,31 +27,52 @@ Hệ thống tự động **trích xuất và quản lý 38 chỉ số tài chí
 ### ⏳ Còn lại:
 - NTP, PLX, PNJ, SAB, TRA, VNM, VOS
 
-## 📂 Cấu trúc Project
+## � Cấu trúc Project Chi tiết
 
 ```
-finance38/
-├── app/                          # Core modules
-│   ├── main.py                  # Entry point - chạy pipeline
-│   ├── extract_pdf.py           # PDF extraction logic
-│   ├── external.py              # Yahoo Finance data
-│   ├── compute.py               # Tính chỉ số phái sinh
-│   ├── db.py                    # Database operations
-│   ├── annual_report.py         # Annual report parser
-│   ├── utils.py                 # Helper functions
-│   ├── fiingroup.py             # Company classification
-│   └── worldbank.py             # World Bank data
-├── data/
-│   ├── raw/filings/             # Input: PDF files theo company code
-│   ├── processed/               # Output: Database & results
-│   └── manual_input_template.csv # Manual data input
-├── db/
-│   └── schema_sqlite.sql        # Database schema
-├── mapping/
-│   └── mapping_index.yaml       # Config cho 38 chỉ số
-├── requirements.txt             # Dependencies
-├── RUNNING_GUIDE.md             # Hướng dẫn chi tiết
-└── run_ocr.py                   # Standalone OCR script
+.
+├── README.md                        # Tài liệu chính (bạn đang đọc)
+├── run.py                           # Entry point chính - chạy PDF extraction
+├── check_models.py                  # Model validation script
+├── requirements.txt                 # Python dependencies
+├── .env.example                     # Template cho environment variables
+│
+├── BCTC/                            # Input: PDF files của các công ty
+│   ├── EVG/
+│   ├── HAG/
+│   ├── HPG/
+│   └── ...
+│
+├── finance38/                       # Core pipeline modules
+│   ├── load_result_to_mysql.py      # ⭐ Script load CSV vào MySQL
+│   │
+│   ├── app/
+│   │   ├── main.py                  # Entry point pipeline
+│   │   ├── extract_pdf.py           # Gemini API PDF extraction
+│   │   ├── external.py              # Yahoo Finance integration
+│   │   ├── compute.py               # Derived indicators
+│   │   ├── db.py                    # Database operations
+│   │   ├── annual_report.py         # Report parser
+│   │   ├── utils.py                 # Utilities
+│   │   ├── fiingroup.py             # Company classification
+│   │   └── worldbank.py             # World Bank data
+│   │
+│   ├── data/
+│   │   ├── raw/filings/             # Input: PDF files (excluded from git)
+│   │   ├── result/                  # Output: 75 CSV files (15 companies × 5 years)
+│   │   ├── cache/                   # Cached data
+│   │   └── manual_input_template.csv # Manual data input template
+│   │
+│   ├── db/
+│   │   ├── schema_sqlite.sql        # SQLite schema
+│   │   └── schema_mysql_result.sql  # MySQL normalized schema
+│   │
+│   ├── mapping/
+│   │   └── mapping_index.yaml       # 38 financial indices definitions
+│   │
+│   └── requirements.txt             # finance38 dependencies
+│
+└── .gitignore                       # Exclude BCTC/ and data/raw/
 ```
 
 ## 🚀 Cài đặt & Sử dụng nhanh
@@ -77,7 +98,7 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Chuẩn bị dữ liệu
+### 3️⃣ Chuẩn bị dữ liệu PDF
 
 ```bash
 # Sao chép PDF vào thư mục BCTC (root):
@@ -91,10 +112,10 @@ BCTC/
 └── ...
 ```
 
-### 4️⃣ Chạy Pipeline
+### 4️⃣ Chạy Pipeline Gemini PDF Extraction
 
 ```bash
-# Chạy từ root directory
+# Chạy từ root directory - trích xuất BCTC PDF
 python run.py
 
 # Hoặc chạy từ finance38 folder
@@ -102,83 +123,147 @@ cd finance38
 python -m app.main
 ```
 
-### 📊 Kết quả
-Options & Cách sử dụng
+### 5️⃣ Load CSV Data vào MySQL Database
+
+Sau khi có file CSV kết quả, import vào MySQL:
 
 ```bash
-# Chạy từ root - sử dụng Gemini API
-python run.py
+# ⚠️ IMPORTANT: Chạy từ thư mục finance38
+cd finance38
 
-# Chạy từ finance38 - sử dụng pipeline module
-python -m app.main --filings ./BCTC     # Chỉ định folder PDF
+# Basic usage (localhost, default port 3306)
+python load_result_to_mysql.py \
+  --user root \
+  --password YOUR_PASSWORD \
+  --database finance38_result
 
-# Hoặc từ root
-python run.py → xuất vào ./finance38/data/result/
+# Custom host/port
+python load_result_to_mysql.py \
+  --host 127.0.0.1 \
+  --port 3306 \
+  --user root \
+  --password 123456 \
+  --database finance38_result
+
+# Truncate tables trước khi load (fresh import)
+python load_result_to_mysql.py \
+  --user root \
+  --password 123456 \
+  --database finance38_result \
+  --truncate
 ```
 
-Mỗi file CSV chứa 38 cột với đầy đủ các chỉ số tài chính được Gemini AI trích xuất từ PDF.hon -m app.main --skip-yahoo         # Bỏ qua Yahoo Finance (offline)
-python -m app.main --init-only          # Chỉ khởi tạo database
+**Kết quả sau khi chạy (75 files):**
+- 15 công ty (companies table)
+- 38 chỉ số (indices table)
+- 2,850 dòng dữ liệu (financial_data table)
 
-# Xem thống kê
-python -m app.main --stats
-python -m app.main --parallel --workers 4
+**Database Schema:**
+- `companies`: company_code (PK)
+- `indices`: index_id (PK), index_name, name_vn, unit
+- `financial_data`: normalized fact table with foreign keys, 3-column unique constraint
 
-# Custom PDF folder
-python -m app.main --filings /path/to/pdfs
+## � Mô tả chi tiết các thành phần
 
-# Liệt kê thống kê database
-python -m app.main --stats
+### 🤖 PDF Extraction (Gemini API)
+- Sử dụng **Gemini 2.5 Flash** API để trích xuất dữ liệu từ PDF BCTC
+- Xử lý cả PDF text-based và PDF scan (có OCR support)
+- Độ chính xác cao, tốc độ nhanh, chi phí thấp
+- Kết quả lưu thành CSV files trong `finance38/data/result/`
 
-# Khởi tạo database mới
-python -m app.main --init-only
-```
+### 💾 Data Management
+- **SQLite** (in-app): Database tạm cho pipeline
+- **MySQL**: Database chính để lưu trữ và phân tích dữ liệu
+  - Normalized 3-table schema (companies, indices, financial_data)
+  - Hỗ trợ query, join, aggregation
 
-## 📚 Tài liệu chi tiết
+### 🔢 38 Financial Indices
+Bao gồm:
+- Ownership metrics (Management, State, Institutional, Foreign ownership)
+- Revenue & expenses breakdown
+- Assets & liabilities
+- Cash flow indicators
+- Innovation metrics
+- Market-based metrics (từ Yahoo Finance)
+- Derived ratios (profitability, liquidity, solvency)
 
-Xem [RUNNING_GUIDE.md](./finance38/RUNNING_GUIDE.md) để có:
-- Hướng dẫn cài đặt chi tiết
-- Mô tả cấu trúc input/output
-- Troubleshooting
-- Công dụng của từng module
-
-## 📊 38 Chỉ số tài chính
-
-Xem [mapping_index.yaml](./finance38/mapping/) để biết danh sách đầy đủ 38 chỉ số, bao gồm:
-- Doanh thu thuần (Net Sales)
-- Lợi nhuận sau thuế (Net Income)
-- Tổng tài sản (Total Assets)
-- Vốn chủ sở hữu (Equity)
-- Các chỉ số solvency, liquidity, profitability ratios
-- Dữ liệu từ Yahoo Finance (giá, vốn hóa...)
+### 📥 MySQL Data Import
+- Script `load_result_to_mysql.py` tự động convert CSV → normalized database
+- Hỗ trợ upsert (insert or update)
+- Full transaction management với rollback
+- Proper foreign key relationships
 
 ## 🔗 Dependencies
 
-- **pdfplumber** - Trích xuất text/table từ PDF
-- **pandas** - Xử lý dữ liệu
-- **google-generativeai** - Gemini API để đọc PDF 🤖
-- **pandas** - Xử lý dữ liệu
-- **yfinance** - Lấy dữ liệu chứng khoán
-- **P0.x** - OCR-based extraction (độ chính xác thấp)
-- **v1.0** - Chuyển sang Gemini API (độ chính xác cao) ✨
-- **v1.1** (hiện tại) - Hoàn thành extraction cho 8 công ty (2020-2024)nt variablesuirements.txt)
+**PDF Processing & Data Extraction:**
+- `pdfplumber` - Text/table extraction từ PDF
+- `PyMuPDF` / `fitz` - PDF manipulation
+- `google-generativeai` - Gemini API client
 
-## 📅 Lịch sử phát triển
+**Data Processing:**
+- `pandas` - Data manipulation & analysis
+- `numpy` - Numerical operations
+- `PyYAML` - YAML config parsing
 
-- **Gemini 2.5 Flash** được sử dụng vì tốc độ và cost-effective
-- Xử lý tốt cả PDF native text và PDF scan (có OCR support)
-- Sử dụng SQLite cho dễ dàng back-up, sharing và query
+**Database:**
+- `pymysql` - Pure Python MySQL client (lightweight, compatible)
+- `mysql-connector-python` - Official MySQL connector (fallback)
+
+**Market Data:**
+- `yfinance` - Yahoo Finance API
+
+**Utilities:**
+- `python-dotenv` - Environment variables
+- `tqdm` - Progress bars
+
+## 📅 Project Status & Changelog
+
+| Version | Date | Status | Notes |
+|---------|------|--------|-------|
+| v1.2 | 2026-03 | ✅ Active | Added MySQL loader, normalized database schema |
+| v1.1 | 2025-12 | ✅ Complete | PDF extraction for 8 companies (2020-2024) |
+| v1.0 | 2025-11 | ✅ MVP | Switched to Gemini API from P0.x OCR |
+
+**Completed Companies (2020-2024):**
+✅ DCM, EVG, HAG, HPG, HSG, KDC, MSN, NAF
+
+**In Progress:**
+⏳ NTP, PLX, PNJ, SAB, TRA, VNM, VOS
+## 💡 Ghi chú & Best Practices
+
+- **SQLite** được dùng cho in-app caching, dễ back-up và sharing
+- **MySQL** là primary database cho production use, supports complex queries
+- Pipeline có thể chạy incrementally (skip những bước không cần)
+- Lưu trữ `source` info để track dữ liệu từ đâu (pdf/yahoo/manual/computed)
 - Hỗ trợ nhập dữ liệu manual để fill gaps (ownership, innovation)
-- Lưu trữ source info để track dữ liệu từ đâu (pdf/yahoo/manual/computed)
-## 💡 Ghi chú phát triển
+- Gemini 2.5 Flash được chọn vì cost-effective + tốc độ nhanh
 
-- Sử dụng SQLite cho dễ dàng back-up và sharing
-- Có hỗ trợ nhập dữ liệu manual để fill gaps
-- Pipeline có thể chạy incrementally (skip bước không cần)
-- Lưu trữ source info để track dữ liệu từ đâu
+## 📖 Troubleshooting
 
-## 📝 License & References
+**MySQL Connection Failed:**
+- Kiểm tra MySQL service đang chạy: `services.msc` (Windows)
+- Verify credentials: localhost:3306, user/password
+- Ensure database exists hoặc script sẽ tự tạo (`CREATE DATABASE IF NOT EXISTS`)
 
-Dữ liệu từ:
-- BCTC PDF công ty niêm yết
-- Yahoo Finance API
-- Số liệu kinh tế Việt Nam
+**File Not Found:**
+- Chạy `load_result_to_mysql.py` từ folder `finance38/`
+- Ensure `data/result/` có CSV files
+- Ensure `db/schema_mysql_result.sql` tồn tại
+
+**Gemini API Errors:**
+- Verify API key trong `.env`
+- Check quota limits on Google AI Studio
+- Retry từ đầu nếu rate-limited
+
+## 📝 License & Data Sources
+
+**Data Sources:**
+- BCTC PDF: Công ty niêm yết Việt Nam
+- Market Data: Yahoo Finance API
+- Economic Indicators: World Bank API
+- Manual Input: User-provided data
+
+**References:**
+- [Gemini API Docs](https://ai.google.dev/)
+- [Yahoo Finance](https://finance.yahoo.com/)
+- [Vietnamese Stock Exchange](https://www.hsx.vn/)
