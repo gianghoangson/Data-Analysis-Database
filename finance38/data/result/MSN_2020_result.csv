@@ -1,10 +1,10 @@
-﻿index_id,index_name,name_vn,value,unit,source
-1,Managerial ownership,Sở hữu của ban điều hành,,%,manual
-2,State ownership,Sở hữu nhà nước,null,%,manual
-3,Institutional ownership,Sở hữu tổ chức,null,%,manual
-4,Foreign ownership,Sở hữu nước ngoài,null,%,manual
+index_id,index_name,name_vn,value,unit,source
+1,Managerial ownership,Sở hữu của ban điều hành,0,%,manual
+2,State ownership,Sở hữu nhà nước,0,%,manual
+3,Institutional ownership,Sở hữu tổ chức,66.5,%,manual
+4,Foreign ownership,Sở hữu nước ngoài,32.5,%,manual
 5,Total share outstanding,Tổng số cổ phiếu lưu hành,1174683246,shares,yahoo
-6,Total sales revenue and Net sales revenue,Doanh thu thuần,78868319000000.0,VND,pdf
+6,Total sales revenue and Net sales revenue,Doanh thu thuần,77218000000000,VND,pdf
 7,Total assets,Tổng tài sản,115736562000000,VND,pdf
 8,Selling expenses,Chi phí bán hàng,13166087000000,VND,pdf
 9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,3040896000000,VND,pdf
@@ -17,11 +17,11 @@
 16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,null,VND,pdf
 17,Production cost,Tổng chi phí sản xuất,null,VND,pdf
 18,R&D expenditure,Chi phí nghiên cứu phát triển,44397000000,VND,pdf
-19,Product innovation,Đổi mới sản phẩm,null,binary,manual
-20,Process innovation,Đổi mới quy trình,null,binary,manual
+19,Product innovation,Đổi mới sản phẩm,1,binary,manual
+20,Process innovation,Đổi mới quy trình,1,binary,manual
 21,Net Income,Lợi nhuận sau thuế,1395013000000,VND,pdf
 22,Total shareholders' equity,Vốn chủ sở hữu,25030279000000,VND,pdf
-23,Market value of equity,Vốn hóa thị trường,null,VND,yahoo
+23,Market value of equity,Vốn hóa thị trường,104429340569400,VND,yahoo
 24,Total liabilities,Nợ phải trả,90706283000000,VND,pdf
 25,Net cash from operating activities,Lưu chuyển tiền thuần từ HĐKD,1351299000000,VND,pdf
 26,Capital expenditure,Chi mua sắm TSCĐ,3678162000000,VND,pdf
@@ -30,10 +30,10 @@
 29,Long-term debt,Vay và nợ thuê tài chính dài hạn,39466043000000,VND,pdf
 30,Current assets,Tài sản ngắn hạn,29760685000000,VND,pdf
 31,Current liabiltiies,Nợ ngắn hạn,38874663000000,VND,pdf
-32,Growth ratio,Tỷ lệ tăng trưởng,,%,computed
+32,Growth ratio,Tỷ lệ tăng trưởng,106.7,%,computed
 33,Total inventory,Hàng tồn kho,12497917000000,VND,pdf
 34,Divident payment,Cổ tức đã trả,1402069000000,VND,pdf
 35,EPS,Lãi cơ bản trên cổ phiếu,1054,VND,pdf
 36,Number of employees,Số lượng nhân viên,37285,người,manual
 37,"Net plant, property and equipment",Tài sản cố định hữu hình,34321764000000,VND,pdf
-38,Firm age,Tuổi công ty,,years,computed
+38,Firm age,Tuổi công ty,16,years,computed
