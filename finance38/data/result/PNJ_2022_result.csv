@@ -9,7 +9,7 @@ index_id,index_name,name_vn,value,unit,source
 8,Selling expenses,Chi phí bán hàng,2828208644376,VND,pdf
 9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,673996996684,VND,pdf
 10,Value of intangible assets,Tài sản cố định vô hình,642698269328,VND,pdf
-11,Manufacturing overhead,Chi phí sản xuất chung,,VND,pdf
+11,Manufacturing overhead,Chi phí sản xuất chung,null,VND,pdf
 12,Net operating income,Lợi nhuận thuần từ hoạt động kinh doanh,2337466664419,VND,pdf
 13,Consumption of raw material,Chi phí nguyên vật liệu,9777777838685,VND,pdf
 14,Merchandise purchase of the year,Mua hàng hóa,29702671338938,VND,pdf
@@ -21,7 +21,7 @@ index_id,index_name,name_vn,value,unit,source
 20,Process innovation,Đổi mới quy trình,1,binary,bctn_supported
 21,Net Income,Lợi nhuận sau thuế,1810691843397,VND,pdf
 22,Total shareholders' equity,Vốn chủ sở hữu,8444094654850,VND,pdf
-23,Market value of equity,Vốn hóa thị trường,,VND,yahoo
+23,Market value of equity,Vốn hóa thị trường,null,VND,yahoo
 24,Total liabilities,Nợ phải trả,4893029994396,VND,pdf
 25,Net cash from operating activities,Lưu chuyển tiền thuần từ HĐKD,100581206696,VND,pdf
 26,Capital expenditure,Chi mua sắm TSCĐ,52384601566,VND,pdf
