@@ -98,6 +98,40 @@ python -m app.main --init-only
 python -m app.main --stats
 ```
 
+### 📥 Load CSV Data vào MySQL
+
+Chạy script để import các file CSV result vào MySQL database:
+
+```bash
+# Basic usage (localhost, default port 3306)
+python load_result_to_mysql.py --user root --password YOUR_PASSWORD --database finance38_result
+
+# Custom host/port
+python load_result_to_mysql.py \
+  --host 127.0.0.1 \
+  --port 3306 \
+  --user root \
+  --password 123456 \
+  --database finance38_result
+
+# Truncate tables trước khi load
+python load_result_to_mysql.py \
+  --user root \
+  --password 123456 \
+  --database finance38_result \
+  --truncate
+```
+
+**Kết quả sau khi chạy (75 files):**
+- 15 công ty (companies)
+- 38 chỉ số (indices)
+- 2,850 dòng dữ liệu (financial_data)
+
+**Schema:**
+- `companies`: company_code (PK)
+- `indices`: index_id (PK), index_name, name_vn, unit
+- `financial_data`: fact table with relationships, unique constraint on (company_code, year, index_id)
+
 ### Sử dụng trong code
 
 ```python
