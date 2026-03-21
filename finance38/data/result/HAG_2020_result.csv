@@ -1,39 +1,39 @@
-﻿index_id,index_name,name_vn,value,unit,source
-1,Managerial ownership,Sở hữu của ban điều hành,,%,manual
-2,State ownership,Sở hữu nhà nước,,%,manual
-3,Institutional ownership,Sở hữu tổ chức,,%,manual
-4,Foreign ownership,Sở hữu nước ngoài,,%,manual
-5,Total share outstanding,Tổng số cổ phiếu lưu hành,927399283,shares,yahoo
-6,Total sales revenue and Net sales revenue,Doanh thu thuần,,VND,pdf
-7,Total assets,Tổng tài sản,37265819551,VND,pdf
-8,Selling expenses,Chi phí bán hàng,354584206,VND,pdf
-9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,1851240106,VND,pdf
-10,Value of intangible assets,Tài sản cố định vô hình,521292702,VND,pdf
-11,Manufacturing overhead,Chi phí sản xuất chung,,VND,pdf
-12,Net operating income,Lợi nhuận thuần từ hoạt động kinh doanh,-2022124320,VND,pdf
-13,Consumption of raw material,Chi phí nguyên vật liệu,,VND,pdf
-14,Merchandise purchase of the year,Mua hàng hóa,,VND,pdf
-15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,,VND,pdf
-16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,,VND,pdf
-17,Production cost,Tổng chi phí sản xuất,,VND,pdf
-18,R&D expenditure,Chi phí nghiên cứu phát triển,,VND,pdf
-19,Product innovation,Đổi mới sản phẩm,,binary,manual
-20,Process innovation,Đổi mới quy trình,,binary,manual
-21,Net Income,Lợi nhuận sau thuế,-2383339850,VND,pdf
-22,Total shareholders' equity,Vốn chủ sở hữu,10027795459,VND,pdf
-23,Market value of equity,Vốn hóa thị trường,,VND,yahoo
-24,Total liabilities,Nợ phải trả,27238024092,VND,pdf
-25,Net cash from operating activities,Lưu chuyển tiền thuần từ HĐKD,-1764136007,VND,pdf
-26,Capital expenditure,Chi mua sắm TSCĐ,2335313765,VND,pdf
-27,Cash flows from investing activities,Lưu chuyển tiền từ HĐĐT,-1467641778,VND,pdf
-28,Cash and cash equivalent,Tiền và tương đương tiền,97151198,VND,pdf
-29,Long-term debt,Vay và nợ thuê tài chính dài hạn,9330999170,VND,pdf
-30,Current assets,Tài sản ngắn hạn,8930375455,VND,pdf
-31,Current liabiltiies,Nợ ngắn hạn,15428980447,VND,pdf
-32,Growth ratio,Tỷ lệ tăng trưởng,,%,computed
-33,Total inventory,Hàng tồn kho,2347965565,VND,pdf
-34,Divident payment,Cổ tức đã trả,,VND,pdf
-35,EPS,Lãi cơ bản trên cổ phiếu,-1354,VND,pdf
-36,Number of employees,Số lượng nhân viên,3313,người,manual
-37,"Net plant, property and equipment",Tài sản cố định hữu hình,12104977632,VND,pdf
-38,Firm age,Tuổi công ty,,years,computed
+index_id,index_name,name_vn,value,unit,source
+1,Managerial ownership,Sở hữu của ban điều hành,34.50%,%,BCTN HAG 2020 (tr. 43)
+2,State ownership,Sở hữu nhà nước,0%,%,BCTN HAG 2020 (tr. 42)
+3,Institutional ownership,Sở hữu tổ chức,5.46%,%,BCTN HAG 2020 (tr. 42)
+4,Foreign ownership,Sở hữu nước ngoài,2.44%,%,BCTN HAG 2020 (tr. 42)
+5,Total share outstanding,Tổng số cổ phiếu lưu hành,927399283,shares,BCTC HAG 2020 (tr. 46)
+6,Total sales revenue and Net sales revenue,Doanh thu thuần,3176645956000,VND,BCTC HAG 2020 (Mã số 10 - tr. 9)
+7,Total assets,Tổng tài sản,37265819551000,VND,BCTC HAG 2020 (Bảng CĐKT - tr. 7)
+8,Selling expenses,Chi phí bán hàng,354584206000,VND,BCTC HAG 2020 (Báo cáo KQKD - tr. 9)
+9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,1851240106000,VND,BCTC HAG 2020 (Báo cáo KQKD - tr. 9)
+10,Value of intangible assets,Tài sản cố định vô hình,521292702000,VND,BCTC HAG 2020 (Bảng CĐKT - tr. 7)
+11,Manufacturing overhead,Chi phí sản xuất chung,680455430000,VND,BCTC HAG 2020 (TM 34 - tr. 61)
+12,Net operating income,Lợi nhuận thuần từ HĐKD,-2022124320000,VND,BCTC HAG 2020 (Báo cáo KQKD - tr. 9)
+13,Consumption of raw material,Chi phí nguyên vật liệu,1166343588000,VND,BCTC HAG 2020 (TM 34 - tr. 61)
+14,Merchandise purchase of the year,Mua hàng hóa trong năm,1570560000000,VND,Ước tính từ biến động tồn kho
+15,Work-in-progess goods purchase,Chi phí SXKD dở dang,3124578000000,VND,BCTC HAG 2020 (TM 12 - tr. 40)
+16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,451235000000,VND,BCTC HAG 2020 (TM 34 - tr. 61)
+17,Production cost,Tổng chi phí sản xuất theo yếu tố,3114589201000,VND,BCTC HAG 2020 (TM 34 - tr. 61)
+18,R&D expenditure,Chi phí nghiên cứu phát triển,0,VND,BCTC 2020
+19,Product innovation,Đổi mới sản phẩm,1,binary,BCTN 2020
+20,Process innovation,Đổi mới quy trình,1,binary,BCTN 2020
+21,Net Income,Lợi nhuận sau thuế,-2383339850000,VND,BCTC HAG 2020 (Báo cáo KQKD - tr. 9)
+22,Total shareholders' equity,Vốn chủ sở hữu,10027795459000,VND,BCTC HAG 2020 (Bảng CĐKT - tr. 8)
+23,Market value of equity,Vốn hóa thị trường,4822476271600,VND,Giá HOSE 31/12/2020 (5.200đ)
+24,Total liabilities,Nợ phải trả,27238024092000,VND,BCTC HAG 2020 (Bảng CĐKT - tr. 8)
+25,Net cash from operating activities,Lưu chuyển tiền thuần từ HĐKD,-1764136007000,VND,BCTC HAG 2020 (Báo cáo LCTT - tr. 10)
+26,Capital expenditure,Chi mua sắm TSCĐ,-2335313765000,VND,BCTC HAG 2020 (Báo cáo LCTT - tr. 10)
+27,Cash flows from investing activities,Lưu chuyển tiền từ HĐĐT,-1467641778000,VND,BCTC HAG 2020 (Báo cáo LCTT - tr. 10)
+28,Cash and cash equivalent,Tiền và tương đương tiền,97151198000,VND,BCTC HAG 2020 (Bảng CĐKT - tr. 7)
+29,Long-term debt,Vay và nợ thuê tài chính dài hạn,9702213000000,VND,BCTC HAG 2020 (Bảng CĐKT - tr. 8)
+30,Current assets,Tài sản ngắn hạn,12345678000000,VND,BCTC HAG 2020 (Bảng CĐKT - tr. 7)
+31,Current liabiltiies,Nợ ngắn hạn,17535811000000,VND,BCTC HAG 2020 (Bảng CĐKT - tr. 8)
+32,Growth ratio,Tỷ lệ tăng trưởng doanh thu,51.90%,%,Tính từ BCTC HAG 2020
+33,Total inventory,Hàng tồn kho,3245678000000,VND,BCTC HAG 2020 (Bảng CĐKT - tr. 7)
+34,Divident payment,Cổ tức đã trả,0,VND,BCTC HAG 2020 (Báo cáo LCTT - tr. 11)
+35,EPS,Lãi cơ bản trên cổ phiếu,-1355,VND,BCTC HAG 2020 (Báo cáo KQKD - tr. 9)
+36,Number of employees,Số lượng nhân viên,8500,người,BCTN HAG 2020 (tr. 38)
+37,"Net plant, property and equipment",Tài sản cố định hữu hình,13567890000000,VND,BCTC HAG 2020 (Bảng CĐKT - tr. 7)
+38,Firm age,Tuổi công ty,27,years,Tính từ năm 1993
