@@ -1,39 +1,39 @@
-﻿index_id,index_name,name_vn,value,unit,source
-1,Managerial ownership,Sở hữu của ban điều hành,,%,manual
-2,State ownership,Sở hữu nhà nước,null,%,manual
-3,Institutional ownership,Sở hữu tổ chức,null,%,manual
-4,Foreign ownership,Sở hữu nước ngoài,null,%,manual
-5,Total share outstanding,Tổng số cổ phiếu lưu hành,1267399283,shares,yahoo
-6,Total sales revenue and Net sales revenue,Doanh thu thuần,6442397199000.0,VND,pdf
-7,Total assets,Tổng tài sản,20903255290000,VND,pdf
-8,Selling expenses,Chi phí bán hàng,255058076000,VND,pdf
-9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,155100623000,VND,pdf
-10,Value of intangible assets,Tài sản cố định vô hình,254140873000,VND,pdf
-11,Manufacturing overhead,Chi phí sản xuất chung,null,VND,pdf
-12,Net operating income,Lợi nhuận thuần từ hoạt động kinh doanh,1690412815000,VND,pdf
-13,Consumption of raw material,Chi phí nguyên vật liệu,null,VND,pdf
-14,Merchandise purchase of the year,Mua hàng hóa,1094450783000,VND,pdf
-15,Work-in-progess goods purchase,Chi phí sản xuất kinh doanh dở dang,null,VND,pdf
-16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,null,VND,pdf
-17,Production cost,Tổng chi phí sản xuất,null,VND,pdf
-18,R&D expenditure,Chi phí nghiên cứu phát triển,null,VND,pdf
-19,Product innovation,Đổi mới sản phẩm,null,binary,manual
-20,Process innovation,Đổi mới quy trình,null,binary,manual
-21,Net Income,Lợi nhuận sau thuế,1781685785000,VND,pdf
-22,Total shareholders' equity,Vốn chủ sở hữu,6677470105000,VND,pdf
-23,Market value of equity,Vốn hóa thị trường,17236630248800.0,VND,yahoo
-24,Total liabilities,Nợ phải trả,14225785185000,VND,pdf
-25,Net cash from operating activities,Lưu chuyển tiền thuần từ HĐKD,101113798000,VND,pdf
-26,Capital expenditure,Chi mua sắm TSCĐ,614181316000,VND,pdf
-27,Cash flows from investing activities,Lưu chuyển tiền từ HĐĐT,49813413000,VND,pdf
-28,Cash and cash equivalent,Tiền và tương đương tiền,41812548000,VND,pdf
-29,Long-term debt,Vay và nợ thuê tài chính dài hạn,3340420808000,VND,pdf
-30,Current assets,Tài sản ngắn hạn,8768525586000,VND,pdf
-31,Current liabiltiies,Nợ ngắn hạn,9710404280000,VND,pdf
-32,Growth ratio,Tỷ lệ tăng trưởng,0.2606,%,computed
-33,Total inventory,Hàng tồn kho,928718695000,VND,pdf
-34,Divident payment,Cổ tức đã trả,null,VND,pdf
-35,EPS,Lãi cơ bản trên cổ phiếu,1794,VND,pdf
-36,Number of employees,Số lượng nhân viên,1748,người,manual
-37,"Net plant, property and equipment",Tài sản cố định hữu hình,5743738807000,VND,pdf
-38,Firm age,Tuổi công ty,,years,computed
+index_id,index_name,name_vn,value,unit,source
+1,Managerial ownership,Sở hữu của ban điều hành,34.50%,%,Báo cáo quản trị 2023 (Ông Đoàn Nguyên Đức)
+2,State ownership,Sở hữu nhà nước,0%,%,Báo cáo quản trị 2023
+3,Institutional ownership,Sở hữu tổ chức,5.43%,%,Báo cáo quản trị 2023
+4,Foreign ownership,Sở hữu nước ngoài,2.44%,%,Báo cáo quản trị 2023
+5,Total share outstanding,Tổng số cổ phiếu lưu hành,927399283,shares,BCTC HN 2023 (tr. 56)
+6,Total sales revenue and Net sales revenue,Doanh thu thuần,6442397199000,VND,BCTC HN 2023 (Mã số 10 - tr. 10)
+7,Total assets,Tổng tài sản,20903255290000,VND,BCTC HN 2023 (Mã số 270 - tr. 8)
+8,Selling expenses,Chi phí bán hàng,-255058076000,VND,BCTC HN 2023 (Mã số 25 - tr. 10)
+9,General and administrative expenditure,Chi phí quản lý doanh nghiệp,-155100623000,VND,BCTC HN 2023 (Mã số 26 - tr. 10)
+10,Value of intangible assets,Tài sản cố định vô hình,254140873000,VND,BCTC HN 2023 (Mã số 227 - tr. 8)
+11,Manufacturing overhead,Chi phí sản xuất chung,1173829483000,VND,Tính từ BCTC HN 2023 (TM 33 - tr. 58)
+12,Net operating income,Lợi nhuận thuần từ HĐKD,1690412815000,VND,BCTC HN 2023 (Mã số 30 - tr. 10)
+13,Consumption of raw material,Chi phí nguyên vật liệu,3582492353000,VND,BCTC HN 2023 (TM 33 - tr. 58)
+14,Merchandise purchase of the year,Mua hàng hóa trong năm,5426700432000,VND,Tính từ BCTC HN 2023 (tr. 8; 10)
+15,Work-in-progess goods purchase,Chi phí SXKD dở dang,1107570618000,VND,BCTC HN 2023 (TM 10 - tr. 33)
+16,Outside manufacturing expenses,Chi phí dịch vụ mua ngoài,574960540000,VND,BCTC HN 2023 (TM 33 - tr. 58)
+17,Production cost,Tổng chi phí sản xuất theo yếu tố,6470653110000,VND,BCTC HN 2023 (TM 33 - tr. 58)
+18,R&D expenditure,Chi phí nghiên cứu phát triển,0,VND,BCTC HN 2023
+19,Product innovation,Đổi mới sản phẩm,1,binary,BCTN HAG 2023 (Phát triển sầu riêng và chuối xuất khẩu)
+20,Process innovation,Đổi mới quy trình,1,binary,BCTN HAG 2023 (Nông nghiệp tuần hoàn)
+21,Net Income,Lợi nhuận sau thuế,1781685785000,VND,BCTC HN 2023 (Mã số 60 - tr. 10)
+22,Total shareholders' equity,Vốn chủ sở hữu,6677470105000,VND,BCTC HN 2023 (Mã số 400 - tr. 9)
+23,Market value of equity,Vốn hóa thị trường,12241670535600,VND,Giá HOSE 29/12/2023 (13.200đ)
+24,Total liabilities,Nợ phải trả,14225785185000,VND,BCTC HN 2023 (Mã số 300 - tr. 9)
+25,Net cash from operating activities,Lưu chuyển tiền thuần từ HĐKD,101113798000,VND,BCTC HN 2023 (Mã số 20 - tr. 11)
+26,Capital expenditure,Chi mua sắm TSCĐ,-614181316000,VND,BCTC HN 2023 (Mã số 21 - tr. 11)
+27,Cash flows from investing activities,Lưu chuyển tiền từ HĐĐT,49813413000,VND,BCTC HN 2023 (Mã số 30 - tr. 12)
+28,Cash and cash equivalent,Tiền và tương đương tiền,41812548000,VND,BCTC HN 2023 (Mã số 110 - tr. 8)
+29,Long-term debt,Vay và nợ thuê tài chính dài hạn,3524316539000,VND,BCTC HN 2023 (Mã số 338 - tr. 9)
+30,Current assets,Tài sản ngắn hạn,8356326837000,VND,BCTC HN 2023 (Mã số 100 - tr. 8)
+31,Current liabiltiies,Nợ ngắn hạn,7728983834000,VND,BCTC HN 2023 (Mã số 310 - tr. 9)
+32,Growth ratio,Tỷ lệ tăng trưởng doanh thu,26.04%,%,Tính toán so với 2022 (5.111 tỷ)
+33,Total inventory,Hàng tồn kho,1340407039000,VND,BCTC HN 2023 (Mã số 140 - tr. 8)
+34,Divident payment,Cổ tức đã trả,0,VND,BCTC HN 2023 (Mã số 36 - tr. 12)
+35,EPS,Lãi cơ bản trên cổ phiếu,1803,VND,BCTC HN 2023 (Mã số 70 - tr. 10)
+36,Number of employees,Số lượng nhân viên,3027,người,BCTC HN 2023 (TM 1 - tr. 13)
+37,"Net plant, property and equipment",Tài sản cố định hữu hình,3535132894000,VND,BCTC HN 2023 (Mã số 221 - tr. 8)
+38,Firm age,Tuổi công ty,30,years,Thành lập năm 1993
