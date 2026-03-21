@@ -9,6 +9,10 @@ PyMuPDF>=1.23.0  # fitz
 pandas>=2.0.0
 numpy>=1.24.0
 
+# Database
+pymysql>=1.0.0
+mysql-connector-python>=9.0.0
+
 # Market data
 yfinance>=0.2.30
 
